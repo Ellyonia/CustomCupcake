@@ -1,5 +1,6 @@
 html {
-   background-color: white;
+   background-color: #E6BE8A;
+   color: #990012;
 
 }
 
@@ -18,27 +19,28 @@ img {
 
 #login div.password input:last-child {
 	display: block;
-	margin-left: 195px;
+	margin-left: 175px;
 }
 
 .about {
 	margin-top: 200px;
-	color:orange;
 	position: relative;
+	font-size: 150%;
 }
 
 #register {
 	position: relative;
-	float: right;
+	margin-left: 500px;
+	margin-top: -200px;
+	font-size: 150%;
 }
 
-#register div.hr {
-
+#register ul li {
+	list-style-type: none;
 }
 
 .page {
 	display: block;
 	margin-left: 200px;
 	margin-right: 200px;
-	color: blue;
 }
