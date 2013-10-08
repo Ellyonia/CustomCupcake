@@ -15,13 +15,15 @@ request.onreadystatechange = function(e){
 		var jsonData = JSON.parse(request.responseText);
 		console.log(jsonData);
 
-		var myCake = $("#flavor div");
+		var myCake = $("#flavor div ul");
 
 		for (var i = 0, len = jsonData.menu.cakes.length; i < len; i++){
 				var img = document.createElement("img");
 				img.setAttribute("src", "artwork/" + jsonData.menu.cakes[i].img_url);
 				//document.body.appendChild(img); //adds the image to the document
+				myCake.append('<li>');
 				myCake.append(img);
+				myCake.append('</li>');
 			
 		}
 		// var img = document.createElement("img");
