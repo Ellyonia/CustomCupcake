@@ -10,35 +10,36 @@ Chris Linstromberg
 <html lang="en">
   <head>
     <title></title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
   </head>
 
-
   <body>
-
-
-    <form>
-    <fieldset>
-    <legend>Log In</legend>
-        <input type="text" placeholder="Email" id="email" required/>
-
-        <input type="text" placeholder="password" id="password" required/>
-        <input type="submit" value="Sign In" id="signIn" />
-    </fieldset>
+    <form id="login">
+        <div class="email">
+            <label>Email: </label>
+            <input type="text" id="email" required/>
+        </div>
+        <div class="password"> 
+            <label>Password: </label>
+            <input type="text" id="password" required/>
+            <input type="submit" value="Login" id="signIn" /> 
+        </div>
     </form>
 
+    <div class="page">
+    <img src="artwork/cupcake_icon.png" alt = "Custom Cupcake Logo">
 
-    <img src="images/customCupcakeLogo.png" alt="Custom Cupcake Logo">
+    <div class="about site">    
+        <p>Great Flavors!</p>
+        <p>Awesome Cupcakes</p>
+        <p>Fast Delivery</p>
+    </div>
 
-    <p>Great Flavors!</p>
-    <p>Awesome Cupcakes</p>
-    <p>Fast Delivery</p>
 
 
-    <form>
-    <fieldset>
-    <legend>Create Account</legend>
+    <form id="register">
+        <header>Create a Custome Cupcake Account</header>
+        <div class="hr"><hr /></div>
     <ul>
         <li>
             <input type="radio" name="mailingList" value="Yes" checked> Yes
@@ -126,8 +127,8 @@ Chris Linstromberg
         </li>
     </ul>
             <input type="submit" value="Sign Up" id="signUp" />
-    </fieldset>
   </form>
+</div>
  
       
   </body>

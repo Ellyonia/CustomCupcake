@@ -1,0 +1,44 @@
+html {
+   background-color: white;
+
+}
+
+img {
+	position: relative;
+}
+
+#login {
+	float:right;
+	/*color: green;*/
+}
+
+#login div.email {
+	float: right;
+}
+
+#login div.password input:last-child {
+	display: block;
+	margin-left: 195px;
+}
+
+.about {
+	margin-top: 200px;
+	color:orange;
+	position: relative;
+}
+
+#register {
+	position: relative;
+	float: right;
+}
+
+#register div.hr {
+
+}
+
+.page {
+	display: block;
+	margin-left: 200px;
+	margin-right: 200px;
+	color: blue;
+}
