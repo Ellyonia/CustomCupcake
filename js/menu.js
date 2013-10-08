@@ -1,13 +1,9 @@
-
-
-
-
 $(document).ready( function() {
 	var mCurrentIndex = 0;
 var request = new XMLHttpRequest();
 var mImages = new Array();
 var json;
-var path = '/~rtanner/3345/a6/data/menu.json';
+var path = '/~rcstewart/3345/test/customcupcakes/data/menu.json';
 
 /*added*/
 request.open("GET",path, true);
@@ -19,9 +15,9 @@ request.onreadystatechange = function(e){
 		var jsonData = JSON.parse(request.responseText);
 		console.log(jsonData);
 
-		for (var i = 0, len = jsonData.menu.length; i < len; i++){
+		for (var i = 0, len = jsonData.menu.cakes.length; i < len; i++){
 				var img = document.createElement("img");
-				img.setAttribute("src", jsonData.menu.cakes[i].img_url);
+				img.setAttribute("src", "artwork/" + jsonData.menu.cakes[i].img_url);
 				document.body.appendChild(img); //adds the image to the document
 			
 		}
@@ -31,7 +27,6 @@ request.onreadystatechange = function(e){
 	}
 
 }
-
 
 });
 
