@@ -7,7 +7,7 @@ $(document).ready( function() {
 var request = new XMLHttpRequest();
 var mImages = new Array();
 var json;
-var path = '../data/menu.json';
+var path = '/~rtanner/3345/a6/data/menu.json';
 
 /*added*/
 request.open("GET",path, true);
@@ -20,16 +20,19 @@ request.onreadystatechange = function(e){
 		console.log(jsonData);
 
 		for (var i = 0, len = jsonData.menu.length; i < len; i++){
-			for(var j =0, len2 = jsonData.menu[i].length; j < len2; j++){
 				var img = document.createElement("img");
-				img.setAttribute("src", jsonData.menu[i][j].imgPath);
+				img.setAttribute("src", jsonData.menu.cakes[i].img_url);
 				document.body.appendChild(img); //adds the image to the document
-			}
+			
 		}
+		// var img = document.createElement("img");
+		// img.setAttribute("src", jsonData.menu.cakes[0].img_url);
+		// document.body.appendChild(img);
 	}
 
 }
-	
+
+
 });
 
 window.addEventListener('load', function() {
