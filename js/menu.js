@@ -20,6 +20,7 @@ request.onreadystatechange = function(e){
 		for (var i = 0, len = jsonData.menu.cakes.length; i < len; i++){
 				var img = document.createElement("img");
 				img.setAttribute("src", "artwork/" + jsonData.menu.cakes[i].img_url);
+				img.setAttribute("value", jsonData.menu.cakes[i].flavor);
 				//document.body.appendChild(img); //adds the image to the document
 				myCake.append('<li>');
 				myCake.append(img);
