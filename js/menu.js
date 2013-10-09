@@ -38,13 +38,22 @@ request.onreadystatechange = function(e){
 		var myCake = $("#filling div ul");
 
 		for (var i = 0, len = jsonData.menu.fillings.length; i < len; i++){
-				var img = document.createElement("img");
-				//img.setAttribute("src", "artwork/" + jsonData.menu.fillings[i].img_url);
-				img.setAttribute("value", jsonData.menu.cakes[i].flavor);
-				//document.body.appendChild(img); //adds the image to the document
+				var circle = document.createElement("div");
+				circle.setAttribute("class", "circle");
+				circle.setAttribute("value", jsonData.menu.fillings[i].flavor);
+				var myId = "c";
+				myId = myId + jsonData.menu.fillings[i].flavor;
+				myId = myId.replace(/\s+/g,"");
+				circle.setAttribute("id", myId);
 				myCake.append('<li>');
-				myCake.append(img);
+				myCake.append('<div>');
+				myCake.append(circle);
+				myCake.append(jsonData.menu.fillings[i].flavor);
+				myCake.append('</div>');
 				myCake.append('</li>');
+				$('#' + myId).css('background-color', jsonData.menu.fillings[i].rgb);
+				//document.getElementById(myId).style.bgcolor=jsonData.menu.fillings[i].rgb;
+				
 			
 		}
 
@@ -69,7 +78,6 @@ request.onreadystatechange = function(e){
 		var toppings = $("#topping div ul");
 		for (var i = 0, len = jsonData.menu.Toppings.length; i < len; i++){
 				var top = jsonData.menu.Toppings[i]
-				console.log(jsonData.menu.Toppings[i]);
 				var checkbox = document.createElement("input");
 				checkbox.type = "checkbox";
 				checkbox.value = top;
