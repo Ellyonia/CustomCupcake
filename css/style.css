@@ -4,7 +4,7 @@ html {
 
 }
 
-img {
+#logo {
 	position: relative;
 }
 
@@ -45,9 +45,22 @@ img {
 	margin-right: 200px;
 }
 
+<<<<<<< HEAD
 .circle {
     	width: 50px;
     	height: 50px;
     	border-radius: 50%;
 
+=======
+#flavor div {
+	display: inline;
+}
+
+#flavor div ul li {
+	list-style-type: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+>>>>>>> 7e2d50f9347366362fd45d01c31192122761172f
 }
