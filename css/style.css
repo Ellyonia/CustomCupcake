@@ -4,7 +4,7 @@ html {
 
 }
 
-img {
+#logo {
 	position: relative;
 }
 
@@ -43,4 +43,16 @@ img {
 	display: block;
 	margin-left: 200px;
 	margin-right: 200px;
+}
+
+#flavor div {
+	display: inline;
+}
+
+#flavor div ul li {
+	list-style-type: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
 }
