@@ -15,13 +15,13 @@ Chris Linstromberg
 
   <body>
     <form id="login">
-        <div class="email">
+        <div class="logEmail">
             <label>Email: </label>
-            <input type="email" id="email" required placeholder="email@example.com" />
+            <input type="email" id="logEmail" required placeholder="email@example.com" />
         </div>
-        <div class="password"> 
+        <div class="logPass"> 
             <label>Password: </label>
-            <input type="text" id="password" name = "password" required/>
+            <input type="password" id="logPass" name = "password" pattern = "[A-Za-z]{8,}" placeholder = "Password" required/>
             <input type="submit" value="Login" id="signIn" /> 
         </div>
     </form>
@@ -51,15 +51,15 @@ Chris Linstromberg
         </li>
 
         <li>
-            <input type="text" placeholder="Email" id="email" required/>
+            <input type="email" placeholder="Email" id="email" required/>
         </li>
 
         <li>
-            <input type="text" placeholder="password" id="password" required/>
+            <input type="password" id="password" name = "password" pattern = "[A-Za-z]{8,}" placeholder = "Password" required/>
         </li>
 
         <li>
-            <input type="text" placeholder="Telephone Number" id="phone" required/>
+            <input type="text" placeholder="Telephone Number" id="phone" pattern = "[0-9]{10}" required/>
         </li>
 
         <li>
@@ -123,7 +123,7 @@ Chris Linstromberg
         </li>
 
         <li>
-            <input type="text" placeholder="Zipcode" id="zip" required/>
+            <input type="text" placeholder="Zipcode" id="zip" pattern = "[0-9]{5}" required/>
         </li>
     </ul>
             <input type="submit" value="Sign Up" id="signUp" />
