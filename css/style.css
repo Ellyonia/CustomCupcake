@@ -13,11 +13,11 @@ html {
 	/*color: green;*/
 }
 
-#login div.email {
+#login div.logEmail {
 	float: right;
 }
 
-#login div.password input:last-child {
+#login div.logPassword input:last-child {
 	display: block;
 	margin-left: 175px;
 }
@@ -51,16 +51,29 @@ html {
     	border-radius: 50%;
 }
 
-ul{
-	list-style-type: none;
-	
-	width: 600px;
+#order fieldset {
+	width: 500px;
+	height: 200px;
+	float: right;
 }
 
-li{
+#fav fieldset {
+	float: left;
+	width: 100px;
+	height: 500px;
+	margin-top: 100px;
+}
+
+#flavor {
+	position: absolute;
+	top: 200px;
+}
+
+li {
 	display: inline;
-	overflow: scroll;
-	
+    white-space:nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 <<<<<<< HEAD
@@ -68,14 +81,14 @@ li{
 
 =======
 #flavor div {
-	display: inline;
+	
 }
 
 #flavor div ul li {
-	list-style-type: none;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-right: 20px;
-	margin-left: 20px;
->>>>>>> 7e2d50f9347366362fd45d01c31192122761172f
+	/*list-style-type: none;*/
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+/*>>>>>>> 7e2d50f9347366362fd45d01c31192122761172f*/
 }
