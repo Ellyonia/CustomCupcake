@@ -53,9 +53,13 @@ html {
 
 ul{
 	list-style-type: none;
+	
+	width: 600px;
 }
 
 li{
+	display: inline;
+	overflow: scroll;
 	
 }
 
