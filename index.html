@@ -17,7 +17,7 @@ Chris Linstromberg
     <form id="login">
         <div class="logEmail">
             <label>Email: </label>
-            <input type="email" id="logEmail" required placeholder="email@example.com" />
+            <input type="email" id="logEmail" required placeholder="email@example.com" oninvalid="setCustomValidity('Please eneter a valid email address')"/>
         </div>
         <div class="logPass"> 
             <label>Password: </label>
