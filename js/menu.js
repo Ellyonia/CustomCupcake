@@ -15,7 +15,7 @@ request.onreadystatechange = function(e){
 		var jsonData = JSON.parse(request.responseText);
 		console.log(jsonData);
 
-		var myCake = $("#flavor div ul");
+		var myCake = $(".flavor div ul");
 
 		for (var i = 0, len = jsonData.menu.cakes.length; i < len; i++){
 				var listitem = document.createElement("li");
@@ -32,7 +32,7 @@ request.onreadystatechange = function(e){
 		var jsonData = JSON.parse(request.responseText);
 		console.log(jsonData);
 
-		var myCake = $("#filling div ul");
+		var myCake = $(".filling div ul");
 
 		for (var i = 0, len = jsonData.menu.fillings.length; i < len; i++){
 				var listitem = document.createElement("li");
@@ -60,7 +60,7 @@ request.onreadystatechange = function(e){
 
 		var jsonData = JSON.parse(request.responseText);
 		console.log(jsonData);
-		var myCake = $("#icing div ul");
+		var myCake = $(".icing div ul");
 		for (var i = 0, len = jsonData.menu.frosting.length; i < len; i++){
 				var listitem = document.createElement("li");
 				var img = document.createElement("img");
@@ -74,7 +74,7 @@ request.onreadystatechange = function(e){
 
 		var jsonData = JSON.parse(request.responseText);
 		console.log(jsonData);
-		var toppings = $("#topping div ul");
+		var toppings = $(".topping div ul");
 		for (var i = 0, len = jsonData.menu.Toppings.length; i < len; i++){
 				var listitem = document.createElement("li");
 				var divitem = document.createElement("div");
