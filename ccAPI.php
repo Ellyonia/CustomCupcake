@@ -6,18 +6,14 @@ include 'database.php';
 Takes in customerID, returns JSON of their favorite designs.
 
 JSON Format:
- elements 1,2,3...n return favorite_IDs
- flavor's key = {favorite_ID}.flavor
- icing's key = {favorite_ID}.icing
- topping's key = {favorite_ID}.topping
- filling's key = {favorite_ID}.filling
+ [favoriteID1=>[flavor,icing,topping,filling],favoriteID2=>[flavor,icing,topping,filling],...]
 
  @param int $customerID ID of the customer
  @return JSONArray the customer's favorites
 */
 function getUserFavorites($customerID)
 {
-	$arr = getFavoriteFromDB($customerID);
+	$arr = getFavoritesFromDB($customerID);
 	$jsonarr = json_encode($arr);
 	return $jsonarr;
 }
@@ -42,10 +38,24 @@ function addUserFavorite($favoriteAsJSON)
 	addFavoriteToDB($arrToSubmit, $customerID);
 }
 
+/**
+Gets the sales information from the DB for flavors,icings,toppings,fillings
 
+JSON Format:
+ [flavors=>[name=>amountSold,name2=>amountSold,...],icings=>[...],toppings=>[...],fillings=>[...]]
+
+@return JSONArray Contains the sales results for the items sold.
+*/
 function getSalesInformation()
 {
-	
+	$arr = array(
+		"flavors" => getFlavorsSalesFromDB(),
+		"icings" => getIcingsSalesFromDB(),
+		"toppings" => getToppingsSalesFromDB(),
+		"fillings" => getFillingsSalesFromDB()
+	);
+	$jsonarr = json_encode($arr);
+	return $jsonarr;
 }
 
 ?>
