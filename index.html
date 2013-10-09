@@ -17,11 +17,11 @@ Chris Linstromberg
     <form id="login">
         <div class="logEmail">
             <label>Email: </label>
-            <input type="email" id="logEmail" required placeholder="email@example.com" oninvalid="setCustomValidity('Please eneter a valid email address')"/>
+            <input type="email" id="logEmail" required placeholder="email@example.com" oninvalid="setCustomValidity('Please eneter a valid email address')" onchange="try{setCustomValidity('')}catch(e){}"/>
         </div>
         <div class="logPass"> 
             <label>Password: </label>
-            <input type="password" id="logPass" name = "password" pattern = "[A-Za-z]{8,}" placeholder = "Password" required/>
+            <input type="password" id="logPass" name = "password" pattern = "[a-zA-Z0-9:.,?!@]{8,}" placeholder = "Password" oninvalid="setCustomValidity('Password must be greater than 8 characters')" onchange="try{setCustomValidity('')}catch(e){}" required/>
             <input type="submit" value="Login" id="signIn" /> 
         </div>
     </form>
@@ -51,15 +51,15 @@ Chris Linstromberg
         </li>
 
         <li>
-            <input type="email" placeholder="Email" id="email" required/>
+            <input type="email" placeholder="Email" id="email" oninvalid="setCustomValidity('Please eneter a valid email address')" onchange="try{setCustomValidity('')}catch(e){}" required/>
         </li>
 
         <li>
-            <input type="password" id="password" name = "password" pattern = "[A-Za-z]{8,}" placeholder = "Password" required/>
+            <input type="password" id="password" name = "password" pattern = "[a-zA-Z0-9:.,?!@]{8,}" placeholder = "Password" oninvalid="setCustomValidity('Password must be greater than 8 characters')" onchange="try{setCustomValidity('')}catch(e){}" required/>
         </li>
 
         <li>
-            <input type="text" placeholder="Telephone Number" id="phone" pattern = "[0-9]{10}" required/>
+            <input type="text" placeholder="Telephone Number" id="phone" pattern = "[0-9]{10}" oninvalid="setCustomValidity('Phone number must be 10 characters, only numbers')" onchange="try{setCustomValidity('')}catch(e){}" required/>
         </li>
 
         <li>
