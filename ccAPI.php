@@ -37,7 +37,9 @@ JSON Format:
 function addUserFavorite($favoriteAsJSON)
 {
 	$arr = json_decode($favoriteAsJSON);
-	
+	$customerID = $arr['customerID'];
+	$arrToSubmit = array_pop($arr);
+	addFavoriteToDB($arrToSubmit, $customerID);
 }
 
 
