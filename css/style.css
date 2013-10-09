@@ -64,24 +64,12 @@ html {
 	margin-top: 100px;
 }
 
-#flavor {
+#flavor fieldset {
 	position: absolute;
-	top: 200px;
-}
-
-li {
-	display: inline;
-    white-space:nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-
-<<<<<<< HEAD
-
-
-=======
-#flavor div {
-	
+	top: 250px;
+	left: 200px;
+	right: 50px;
+	white-space:nowrap;
 }
 
 #flavor div ul li {
@@ -92,3 +80,53 @@ li {
 	margin-left: 5px;
 /*>>>>>>> 7e2d50f9347366362fd45d01c31192122761172f*/
 }
+
+#filling fieldset {
+	position: absolute;
+	top: 450px;
+	left: 200px;
+	right: 50px;
+	display: inline;
+	white-space:nowrap;
+}
+
+
+#filling li {
+	float: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#icing fieldset {
+	position: absolute;
+	top: 650px;
+	left: 200px;
+	right: 50px;
+	white-space:nowrap;
+}
+
+#topping fieldset {
+	position: absolute;
+	top: 850px;
+	left: 200px;
+	right: 50px;
+	white-space:nowrap;
+}
+
+#topping li  {
+	float: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+li {
+	display: inline;
+    /*white-space:nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;*/
+}
+
