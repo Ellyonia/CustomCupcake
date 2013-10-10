@@ -109,7 +109,7 @@ fieldset{
     	border-radius: 50%;
 }
 
-#filling {
+#filling fieldset {
 	position: absolute;
 	top: 470px;
 	left: 200px;
@@ -127,7 +127,7 @@ fieldset{
 	margin-left: 20px;
 }
 
-#icing fieldset {
+#icing {
 	position: absolute;
 	top: 650px;
 	left: 200px;
@@ -135,7 +135,7 @@ fieldset{
 	white-space:nowrap;
 }
 
-#icing fieldset div {
+#icing div {
 	width: 600px;
 	/*width: 1510px;*/
 	overflow-x: scroll;
