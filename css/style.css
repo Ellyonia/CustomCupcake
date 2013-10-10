@@ -1,8 +1,12 @@
 html {
    background-color: #E6BE8A;
    color: #990012;
-
+   
 }
+
+/*****************
+CSS FOR index.html
+******************/
 
 #logo {
 	position: relative;
@@ -45,21 +49,27 @@ html {
 	margin-right: 200px;
 }
 
-.circle {
-    	width: 50px;
-    	height: 50px;
-    	border-radius: 50%;
-}
+/*****************
+CSS FOR order.html
+******************/
 
 #order fieldset {
 	width: 500px;
 	height: 200px;
 	float: right;
+	text-align: center;
+	top: 100px;
+}
+
+.submitOrder {
+	position: relative;
+	text-align: center;
+	top: 70%;
 }
 
 #fav fieldset {
 	float: left;
-	width: 100px;
+	width: 150px;
 	height: 500px;
 	margin-top: 100px;
 }
@@ -69,34 +79,44 @@ html {
 	top: 250px;
 	left: 200px;
 	right: 50px;
-	white-space:nowrap;
 }
 
-#flavor div ul li {
-	/*list-style-type: none;*/
+#flavor fieldset div {
+	width: 1510px;
+	overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#flavor li {
 	padding-left: 5px;
 	padding-right: 5px;
 	margin-right: 5px;
 	margin-left: 5px;
-/*>>>>>>> 7e2d50f9347366362fd45d01c31192122761172f*/
+	
+}
+
+.circle {
+    	width: 50px;
+    	height: 50px;
+    	border-radius: 50%;
 }
 
 #filling fieldset {
 	position: absolute;
-	top: 450px;
+	top: 470px;
 	left: 200px;
-	right: 50px;
+	right: 10px;
 	display: inline;
 	white-space:nowrap;
 }
 
-
 #filling li {
 	float: left;
-	padding-left: 5px;
-	padding-right: 5px;
-	margin-right: 5px;
-	margin-left: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
 }
 
 #icing fieldset {
@@ -107,12 +127,19 @@ html {
 	white-space:nowrap;
 }
 
+#icing fieldset div {
+	width: 1510px;
+	overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
 #topping fieldset {
 	position: absolute;
 	top: 850px;
 	left: 200px;
-	right: 50px;
-	white-space:nowrap;
+	right: 5px;
+	
 }
 
 #topping li  {
@@ -123,10 +150,30 @@ html {
 	margin-left: 5px;
 }
 
+.toppingClear { 
+	position: relative;
+	margin-left: 700px;
+	margin-top: 100px;
+	/*text-align: center;*/
+	/*top: 70%;*/
+}
+
 li {
 	display: inline;
-    /*white-space:nowrap;
+    white-space:nowrap;
     overflow-x: auto;
-    overflow-y: hidden;*/
+    overflow-y: hidden;
+}
+
+.reset {
+	position: relative;
+	left: 20px;
+	top: 1005px;
+}
+
+.update {
+	position: relative;
+	left: 1300px;
+	top: 980px;
 }
 
