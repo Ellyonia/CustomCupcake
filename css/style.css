@@ -117,9 +117,7 @@ fieldset{
 	display: inline;
 	white-space:nowrap;
 }
-#filling fieldset div {
-	width: 600px;
-}
+
 
 #filling li {
 	float: left;
