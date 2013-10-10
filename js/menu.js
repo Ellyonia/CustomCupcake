@@ -125,7 +125,7 @@ window.addEventListener('load', function() {
 }, false);
 
 
-var flavors = $('.flavor');
+var flavors = $('.flavor fieldset div ul li');
 
 for(var i = 0, len = flavors.length; i < len; i++){
 
