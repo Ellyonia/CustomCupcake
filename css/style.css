@@ -84,7 +84,6 @@ fieldset{
 	
 	top: 250px;
 	left: 200px;
-	right: 50px;
 }
 
 #flavor div {
@@ -113,7 +112,6 @@ fieldset{
 	position: absolute;
 	top: 470px;
 	left: 200px;
-	right: 10px;
 	display: inline;
 	white-space:nowrap;
 }
