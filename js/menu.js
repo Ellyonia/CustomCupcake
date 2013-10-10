@@ -126,7 +126,7 @@ window.addEventListener('load', function() {
 
 
 var li = $('li');
-$( "li.flavor" ).find( allListElements );
+$( "li.flavor" ).find( li );
 
 for(var i = 0, len = flavors.length; i < len; i++){
 
