@@ -144,12 +144,15 @@ fieldset{
 }
 
 #topping fieldset {
-	width: 600px;
 	position: absolute;
 	top: 850px;
 	left: 200px;
 	right: 5px;
 	
+}
+
+#topping div {
+	width: 600px;
 }
 
 #topping li  {
