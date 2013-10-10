@@ -110,7 +110,7 @@ fieldset{
 }
 
 #filling fieldset {
-	/*position: absolute;*/
+	position: absolute;
 	top: 470px;
 	left: 200px;
 	right: 10px;
@@ -128,7 +128,7 @@ fieldset{
 }
 
 #icing fieldset {
-	/*position: absolute;*/
+	position: absolute;
 	top: 650px;
 	left: 200px;
 	right: 50px;
@@ -149,10 +149,6 @@ fieldset{
 	left: 200px;
 	right: 5px;
 	
-}
-
-#topping div {
-	width: 600px;
 }
 
 #topping li  {
