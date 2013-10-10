@@ -82,7 +82,7 @@ CSS FOR order.html
 	right: 50px;
 }
 
-#flavor fieldset div {
+#flavor div {
 	width: 80%;
 	/*width: 1510px;*/
 	overflow-x: scroll;
