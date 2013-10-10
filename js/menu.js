@@ -97,6 +97,37 @@ request.onreadystatechange = function(e){
 
 });
 
+
+function onMouseDown(e){
+
+    var img = e.target;
+
+    e.target.lastX = e.clientX;
+    e.target.lastY = e.clientY;
+
+
+    if(img.complete)
+    {
+    	$('.selected').removeClass('selected');
+    		
+    	img.className = "selected";
+    	changeImage(img);
+
+    }
+    else
+    {
+    	return 0;
+    }
+}
+
 window.addEventListener('load', function() {
 	console.log('window loaded');
 }, false);
+
+
+var flavors = $('.flavor');
+
+for(var i = 0, len = flavors.length; i < len; i++){
+
+	flavors[i].addEventListener('mousedown', onMouseDown, false);
+}
