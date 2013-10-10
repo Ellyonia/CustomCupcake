@@ -31,11 +31,13 @@
 			</fieldset>
 		</form>
 		<form id = 'flavor'>
+			<fieldset>
 				<legend>Cupcake Flavor</legend>
 				<div>
 					<ul>
 					</ul>
 				</div>
+			</fieldset>
 		</form>
 		<form id = 'filling'>
 			<fieldset>

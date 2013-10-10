@@ -53,6 +53,12 @@ CSS FOR index.html
 CSS FOR order.html
 ******************/
 
+fieldset{
+    overflow: hidden;
+    float: left;
+    background-color: #eee;
+}
+
 #order fieldset {
 	width: 500px;
 	height: 200px;
@@ -76,14 +82,14 @@ CSS FOR order.html
 
 #flavor {
 	position: absolute;
-	width: 600px;
+	
 	top: 250px;
 	left: 200px;
 	right: 50px;
 }
 
 #flavor div {
-	width: 80%;
+	width: 600px;
 	/*width: 1510px;*/
 	overflow-x: scroll;
     overflow-y: hidden;
@@ -105,13 +111,15 @@ CSS FOR order.html
 }
 
 #filling fieldset {
-	width: 600px;
-	position: absolute;
+	/*position: absolute;*/
 	top: 470px;
 	left: 200px;
 	right: 10px;
 	display: inline;
 	white-space:nowrap;
+}
+#filling fieldset div {
+	width: 600px;
 }
 
 #filling li {
@@ -123,8 +131,7 @@ CSS FOR order.html
 }
 
 #icing fieldset {
-	width: 600px;
-	position: absolute;
+	/*position: absolute;*/
 	top: 650px;
 	left: 200px;
 	right: 50px;
@@ -132,7 +139,7 @@ CSS FOR order.html
 }
 
 #icing fieldset div {
-	width: 95%;
+	width: 600px;
 	/*width: 1510px;*/
 	overflow-x: scroll;
     overflow-y: hidden;
