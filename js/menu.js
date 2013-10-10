@@ -125,8 +125,7 @@ window.addEventListener('load', function() {
 }, false);
 
 
-var flavorSub = $('.flavor');
-var flavors = flavorSub.getElementsByTagName('li');
+var flavors = $('.flavor').find('li');
 
 for(var i = 0, len = flavors.length; i < len; i++){
 
