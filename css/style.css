@@ -67,7 +67,7 @@ CSS FOR order.html
 	top: 70%;
 }
 
-#fav fieldset {
+#fav {
 	float: left;
 	width: 150px;
 	height: 500px;
