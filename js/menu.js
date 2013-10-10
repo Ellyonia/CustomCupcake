@@ -3,7 +3,7 @@ $(document).ready( function() {
 var request = new XMLHttpRequest();
 var mImages = new Array();
 var json;
-var path = '/~rcstewart/3345/test/customcupcakes/data/menu.json';
+var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/menu.json';
 
 /*added*/
 request.open("GET",path, true);
