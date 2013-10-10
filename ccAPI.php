@@ -28,7 +28,7 @@ JSON Format:
  filling => {filling value}
  customerID => {customerID value}
 
-@param JSONArray The favorite's settings to be stored
+@param JSONArray $favoriteAsJSON The favorite's settings to be stored
 */
 function addUserFavorite($favoriteAsJSON)
 {
@@ -58,4 +58,33 @@ function getSalesInformation()
 	return $jsonarr;
 }
 
+/**
+This function takes in a JSON containing the sales information of the cupcakes being sold, and ships it off to the DB to be inserted.
+
+JSON Format:
+[customerID=>{val},cupcakeFlavor_ID=>{val},cupcakeIcing_ID=>{val},cupcakeTopping_ID=>{val},cupcakeQuantity=>{val}]
+
+@param JSONArray $informationAsJSON The order details
+*/
+function addSaleInformation($informationAsJSON)
+{
+	$arr = json_decode($informationAsJSON);
+	updateSaleToDB($arr);
+}
+
+/**
+This function takes in a customerID value and returns all the orders associated with that customer as a JSON array.
+
+JSON Format:
+[{orderID1}=>[cupcakeFlavor_ID=>{val},cupcakeIcing_ID=>{val},cupcakeTopping_ID=>{val},cupcakeFilling_ID=>{val},cupcakeQuantity=>{val}],{orderID2}=>[...],...]
+
+@param JSONArray $customerID The customer's ID
+@return JSONArray The JSONArray containing all of the customer's orders
+*/
+function getCustomerOrders($customerID)
+{
+	$arr = getCustomerOrdersFromDB($customerID);
+	$jsonarr = json_encode($arr);
+	return $jsonarr;
+}
 ?>
