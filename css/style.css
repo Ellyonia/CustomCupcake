@@ -74,7 +74,7 @@ CSS FOR order.html
 	margin-top: 100px;
 }
 
-#flavor fieldset {
+#flavor {
 	position: absolute;
 	width: 600px;
 	top: 250px;
