@@ -1,0 +1,46 @@
+Read CSV file into mySQL table (using SQL)
+
+//example I found on stackoverflow
+
+//following information is contained in CSV file
+
+1;8-25-2010;0:05;210;4
+2;8-25-2010;2:45;412;5
+3;8-25-2010;3:40;300;3
+4;8-25-2010;4:45;226;6
+5;8-25-2010;5:20;206;4
+6;8-25-2010;5:25;216;3
+
+//load into mySQL table
+
+TRUNCATE TABLE tablename;
+LOAD DATA LOCAL INFILE 'nameoffile.csv'
+INTO TABLE tablename 
+FIELDS TERMINATED BY ';'
+ENCLOSED BY '"' 
+LINES TERMINATED BY '\r\n' 
+(attributes, separated, by, commas);
+
+
+
+Update mySQL table using data from json file (with php)
+
+//again, taken from stackoverflow
+
+//json file contents
+
+{"100001":{"person":{"name":"John","age":"32,"address":"123 street"}}},
+{"100002":{"person":{"name":"jenny","age":"22,"address":"100 street"}}},
+{"100003":{"person":{"name":"james","age":"25,"address":"200 street"}}}
+
+//load into mySQL table
+
+$var = {"100001":{"person":{"name":"John","age":"32,"address":"123 street"}}},
+{"100002":{"person":{"name":"jenny","age":"22,"address":"100 street"}}},
+{"100003":{"person":{"name":"james","age":"25,"address":"200 street"}}};
+
+print_r(json_decode($var));
+
+
+
+
