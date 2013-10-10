@@ -74,7 +74,7 @@ CSS FOR order.html
 	margin-top: 100px;
 }
 
-#flavor fieldset {
+#flavor {
 	position: absolute;
 	width: 600px;
 	top: 250px;
@@ -104,7 +104,7 @@ CSS FOR order.html
     	border-radius: 50%;
 }
 
-#filling fieldset {
+#filling  {
 	width: 600px;
 	position: absolute;
 	top: 470px;
@@ -122,7 +122,7 @@ CSS FOR order.html
 	margin-left: 20px;
 }
 
-#icing fieldset {
+#icing  {
 	width: 600px;
 	position: absolute;
 	top: 650px;
@@ -139,7 +139,7 @@ CSS FOR order.html
     white-space: nowrap;
 }
 
-#topping fieldset {
+#topping  {
 	width: 600px;
 	position: absolute;
 	top: 850px;
