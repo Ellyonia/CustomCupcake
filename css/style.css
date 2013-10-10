@@ -68,7 +68,7 @@ CSS FOR order.html
 }
 
 #fav fieldset {
-	left: 0px;
+	float: left;
 	width: 150px;
 	height: 500px;
 	margin-top: 100px;
@@ -76,13 +76,15 @@ CSS FOR order.html
 
 #flavor fieldset {
 	position: absolute;
+	width: 80%;
 	top: 250px;
 	left: 200px;
 	right: 50px;
 }
 
 #flavor fieldset div {
-	width: 1510px;
+	width: 80%;
+	/*width: 1510px;*/
 	overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -103,6 +105,7 @@ CSS FOR order.html
 }
 
 #filling fieldset {
+	width: 80%;
 	position: absolute;
 	top: 470px;
 	left: 200px;
@@ -120,6 +123,7 @@ CSS FOR order.html
 }
 
 #icing fieldset {
+	width: 80%;
 	position: absolute;
 	top: 650px;
 	left: 200px;
@@ -128,13 +132,15 @@ CSS FOR order.html
 }
 
 #icing fieldset div {
-	width: 1510px;
+	width: 80%;
+	/*width: 1510px;*/
 	overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
 }
 
 #topping fieldset {
+	width: 80%;
 	position: absolute;
 	top: 850px;
 	left: 200px;
