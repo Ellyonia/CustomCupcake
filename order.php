@@ -17,6 +17,9 @@
 
 					</ul>
 				</div>
+				<div class = "submitOrder">
+					<input type="submit" value="Order" id="submitOrder" /> 
+				</div>
 			</fieldset>
 		</form>
 		<form id = 'fav'>
@@ -39,7 +42,7 @@
 		<form id = 'filling'>
 			<fieldset>
 				<legend>Filling</legend>
-				<div>
+				<div class="test">
 					<ul>
 					</ul>
 				</div>
@@ -61,7 +64,18 @@
 					<ul>
 					</ul>
 				</div>
+				<div class="toppingClear">
+					<input type="submit" value="Clear All Toppings" id="toppingClear" /> 
+				</div>
 			</fieldset>
+		</form>
+		
+		<div class="reset">
+				<input type="submit" value="Reset Cupcake" id="reset" /> 
+		</div>
+		<form class="update">	
+			<input type="number" value="1" id="amount" /> 
+			<input type="submit" value="Update Order" id="update" /> 
 		</form>
 	</body>
 </html>
