@@ -97,6 +97,10 @@ request.onreadystatechange = function(e){
 
 }
 
+		$('#test li').on("click", function() {
+		    $('#test li').css("background-color", "red");
+		});
+
 });
 
 
@@ -128,15 +132,11 @@ window.addEventListener('load', function() {
 }, false);
 
 
-/*$(document).ready(function(){*/
-
 
 
 $(document).ready(function(){
 
 
-		$('#test li').on("click", function() {
-		    $('#test li').css("background-color", "red");
-		});
+
 
 });
