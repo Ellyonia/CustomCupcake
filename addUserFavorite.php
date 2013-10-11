@@ -1,4 +1,4 @@
-<?
+<?php
     include "ccAPI.php";
 
     $start = new ccAPI();
