@@ -112,7 +112,7 @@ fieldset{
 	position: relative;
 	top: -350px;
 	left: 200px;
-	width: 85%;
+	width: 83%;
 	/*display: inline;*/
 	white-space: nowrap;
 }
@@ -149,7 +149,7 @@ fieldset{
 
 #topping fieldset {
 	position: relative;
-	width: 85%;
+	width: 83%;
 	top: -250px;
 	left: 200px;
 	/*right: 5px;*/
