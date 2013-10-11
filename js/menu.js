@@ -220,7 +220,7 @@ var request = new XMLHttpRequest();
 			var url = "addUserFavorite.php";
 			var pass = "jsonArr=" + JSON.stringify(json);
 			console.log(pass);
-			alert("FUCK THIS SHIT");
+			//alert("FUCK THIS SHIT");
 			request.onreadystatechange = function(){
 				
 			if(request.readyState === 4)
@@ -228,16 +228,16 @@ var request = new XMLHttpRequest();
 		    request.open("POST", url, true);
 		    if(request.readyState === 4)
 			request.send(pass);
-			request.onreadystatechange = function(){
+			//request.onreadystatechange = function(){
 				
-				if(request.readyState === 4)
-				{
+				// if(request.readyState === 4)
+				// {
 					var string = request.responseText;
 					alert("FUCK THIS SHIT");
-					alert(string);
+					alert(request.responseText);
 					console.log(string);
-				}
-			}
+				// }
+			// }
 
 
 			}
