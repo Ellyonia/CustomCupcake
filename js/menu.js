@@ -294,7 +294,7 @@ var request = new XMLHttpRequest();
   			type: "POST",
   			data: "jsonArr=" + datastring,
   			url: 'newOrder.php'
-   )};
+   };
 });
 });
 
