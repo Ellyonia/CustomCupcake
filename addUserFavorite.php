@@ -2,5 +2,7 @@
     include "ccAPI.php";
 
     $start = new ccAPI();
-    echo($start->addFavorites());
+    echo $_POST['jsonArr'];
+    //echo($start->addFavorites());
+
 ?>
