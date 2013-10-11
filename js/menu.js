@@ -125,7 +125,7 @@ window.addEventListener('load', function() {
 }, false);
 
 
-var flavors = $('flavor').find('li').click().css('background-color: blue');
+var flavors = $('flavor').find('li').css('background-color', 'blue');
 
 /*
 
