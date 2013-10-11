@@ -307,7 +307,7 @@ var request = new XMLHttpRequest();
 
 			orders.append(listitem);
 
-			$("#order div ul li").css("list-style-type", "circle");
+			$("#order div ul li").css({"list-style-type":"circle", "display":"block"});
 
 			/*
 			$.ajax({
