@@ -60,7 +60,7 @@ request.onreadystatechange = function(e) {
             new Chart(ctx).Bar(data, options);
         }
 
-	};
+	});
 // 		new Chart(ctx).PolarArea(data,{
 // 	//Boolean - Whether we should show a stroke on each segment
 // 	segmentShowStroke : true,
