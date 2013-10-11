@@ -290,12 +290,16 @@ var request = new XMLHttpRequest();
 
 	$('#update').click(function() {
 			var datastring = "lol"; //create json of the attributes (see ccAPI line#72 for formatting) and stringify it
+
+			alert($('#CFlavor .selected').attribute("value"));
+
+			/*
 			$.ajax({
 	  			type: "POST",
 	  			data: "jsonArr=" + datastring,
 	  			url: 'newOrder.php'
    
-			});
+			});*/
 });
 
 
