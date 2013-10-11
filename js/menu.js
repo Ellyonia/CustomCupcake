@@ -250,6 +250,8 @@ var request = new XMLHttpRequest();
 	$('#reset').click(function() {
 			$(".boxes").attr('checked', false);
 			$("#icing .selected").removeClass("selected");
+			$("#filling .selected").removeClass("selected");
+			$("#flavor .selected").removeClass("selected");
 });
 
 
