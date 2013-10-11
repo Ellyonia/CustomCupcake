@@ -1,7 +1,15 @@
 
 
 
+		function addFavorite() {
+			var url = "../CustomCupcake/addUserFavorite.php";
+			var pass = "jsonArr=" + JSON.stringify(json);
+		    request.open("POST", url, true);
+		    //if(request.readyState === 4)
+				request.send(pass);
+		}
 
+				//$('#reset').click(addFavorite());
 
 	$(document).ready( function() {
 
@@ -24,13 +32,7 @@
 
 
 
-		// function addFavorite() {
-		// 	var url = "../CustomCupcake/addUserFavorite.php";
-		// 	var pass = "jsonArr=" + JSON.stringify(json);
-		//     request.open("POST", url, true);
-		//     //if(request.readyState === 4)
-		// 		request.send(pass);
-		// }
+
 
 
 		request.open("GET",path, true);
@@ -38,7 +40,7 @@
 
 
 
-		//$('#reset').click(addFavorite());
+
 
 
 
