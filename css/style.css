@@ -216,3 +216,7 @@ CSS FOR analytics.html
 	font-size: 50px;
 	margin-bottom: 20px;
 }
+
+#flavorLengend, #fillingLengend, #icingLegend {
+	float: left;
+}
