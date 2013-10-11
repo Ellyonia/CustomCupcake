@@ -226,7 +226,6 @@ var request = new XMLHttpRequest();
 			if(request.readyState === 4)
 			{
 		    request.open("POST", url, true);
-		    if(request.readyState === 4)
 			request.send(pass);
 			//request.onreadystatechange = function(){
 				
