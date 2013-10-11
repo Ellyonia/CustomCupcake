@@ -88,7 +88,7 @@ request.onreadystatechange = function(e){
 				container.appendChild(flavorflav);
 				
 				$(container).addClass("member");
-				div.onclick = function(){
+				container.onclick = function(){
 					$(".selected").removeClass("selected");
 					$(this).addClass("selected");
 				};
@@ -122,7 +122,7 @@ request.onreadystatechange = function(e){
 				container.appendChild(circle);
 				container.appendChild(par);
 				$(container).addClass("member");
-				div.onclick = function(){
+				container.onclick = function(){
 					$(".selected").removeClass("selected");
 					$(this).addClass("selected");
 				};
