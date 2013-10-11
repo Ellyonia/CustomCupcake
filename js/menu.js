@@ -125,8 +125,10 @@ window.addEventListener('load', function() {
 }, false);
 
 
-var flavors = $('flavor').find('li').css('background-color', 'blue');
+$('flavor').css('background-color', 'blue');
 
+/*var flavors = $('flavor').find('li').css('background-color', 'blue');
+*/
 /*
 
 for(var i = 0, len = flavors.length; i < len; i++){
