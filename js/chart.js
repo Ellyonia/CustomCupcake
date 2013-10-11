@@ -12,7 +12,7 @@ function TChart() {
             
         	var jsonData = JSON.parse(request.responseText);
         	console.log(jsonData);
-        	var toppingsChart = jsonData.salesToppings;
+        	var data = jsonData.salesToppings;
             var ctx = document.getElementById("myChart").getContext("2d");
 
             //The options we are going to pass to the chart
@@ -27,7 +27,7 @@ function TChart() {
             // };
 
             //Create the chart
-            new Chart(ctx).Bar(toppingsChart, options1);
+            new Chart(ctx).Bar(data, options1);
                
         }
     }
@@ -46,11 +46,11 @@ function FChart() {
             
             var jsonData = JSON.parse(request.responseText);
             console.log(jsonData);
-            var toppingsChart = jsonData.salesFlavor;
+            var data = jsonData.salesFlavor;
             var ctx = document.getElementById("myChart").getContext("2d");
 
 
-            new Chart(ctx).Pie(flavorChart);
+            new Chart(ctx).Pie(data);
 
         }
     }
