@@ -153,10 +153,10 @@ fieldset{
 
 #topping fieldset {
 	position: relative;
+	width: 90%;
 	top: -250px;
 	left: 200px;
-	right: 5px;
-	width: 90%;
+	/*right: 5px;*/
 }
 
 #topping li  {
