@@ -253,8 +253,9 @@ var request = new XMLHttpRequest();
   			dataType: "text",
   			data: "test=" + datastring,
   			url: 'addUserFavorite.php',
-  			success: function() {
-        		alert("yay");
+  			success: function(e) {
+  				//var message = e.responseText;
+        		alert(e);
     		},
     		error: function(){
         	alert("neigh");
