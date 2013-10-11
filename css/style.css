@@ -207,3 +207,10 @@ li {
 	background-color: orange;
 }
 
+/*****************
+CSS FOR order.html
+******************/
+#flavChart {
+	position: relative;
+	text-align: center;
+}

@@ -11,13 +11,12 @@
 
 	</head>
 	<body>
-        <div>
+        <div id="flavChart">
             <header>Flavor flav!</header>
-		<canvas id="flavorChart" width="700" height="400"></canvas>
-    </div>
+		    <canvas id="flavorChart" width="700" height="400"></canvas>
+        </div>
         <canvas id="fillingChart" width="700" height="400"></canvas>
         <canvas id="icingChart" width="700" height="400"></canvas>
         <canvas id="toppingChart" width="700" height="400"></canvas>
-		<header>stuff</header>
 	</body>
 </html>
