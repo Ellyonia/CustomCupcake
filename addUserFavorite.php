@@ -5,6 +5,6 @@
     echo "adlfkjad;lfj";
     echo $_POST['test'];
     echo "adlfja;ldsjf";
-    echo(addFavorites());
+    echo(addUserFavorite());
 
 ?>
