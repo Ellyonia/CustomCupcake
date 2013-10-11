@@ -24,7 +24,13 @@
 
 
 
-
+		function addFavorite() {
+			var url = "../CustonCupcake/addUserFavorite.php";
+			var pass = "jsonArr=" + JSON.stringify(json);
+		    request.open("POST", url, true);
+		    if(request.readyState === 4)
+				request.send(pass);
+		}
 
 
 		request.open("GET",path, true);
@@ -34,13 +40,7 @@
 
 		$('#reset').click(addFavorite());
 
-		function addFavorite() {
-			var url = "../addUserFavorite.php";
-			var pass = "jsonArr=" + JSON.stringify(json);
-		    request.open("POST", url, true);
-		    if(request.readyState === 4)
-				request.send(pass);
-		}
+
 
 
 
