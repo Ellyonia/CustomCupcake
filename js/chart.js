@@ -49,7 +49,7 @@ function flavChart() {
 
             options = {
                 animation : false,
-                showLabels: true
+                scaleShowLabels: true
             };
 
             new Chart(ctx).Pie(data, options);
