@@ -77,18 +77,18 @@ request.onreadystatechange = function(e){
 
 		for (var i = 0, len = jsonData.menu.cakes.length; i < len; i++){
 				var listitem = document.createElement("li");
-				var container = document.createElement("div");
+				var div = document.createElement("div");
 				var flavorflav = document.createElement("a");
 				var img = document.createElement("img");
 				img.setAttribute("src", "artwork/" + jsonData.menu.cakes[i].img_url);
 				img.setAttribute("value", jsonData.menu.cakes[i].flavor);
 				flavorflav.innerHTML = jsonData.menu.cakes[i].flavor;
 				//document.body.appendChild(img); //adds the image to the document
-				container.appendChild(img);
-				container.appendChild(flavorflav);
+				div.appendChild(img);
+				div.appendChild(flavorflav);
 				
-				$(container).addClass("member");
-				$(".member").onclick = function(){
+				$(div).addClass("member");
+				div.onclick = function(){
 					$(".selected").removeClass("selected");
 					$(this).addClass("selected");
 				};
@@ -96,7 +96,7 @@ request.onreadystatechange = function(e){
 				// // 	console.log("let's click");
 				// // 	$(this).fadeOut("slow")};
 				// listitem.appendChild(img);
-				listitem.appendChild(container);
+				listitem.appendChild(div);
 				myCake.append(listitem);
 			
 		}
