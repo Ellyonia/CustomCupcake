@@ -30,31 +30,31 @@
     "value" : 0,
     "color" : "#F38630",
     "title" : "Chocolate",
-    "labelFontSize" : "16px"
+    "labelFontSize" : "12px"
   },
   {
     "value" : 80,
     "color" : "#F3A660",
     "title" : "Chocolate",
-    "labelFontSize" : "16px"
+    "labelFontSize" : "12px"
   },
   {
     "value" : 6,
     "color" : "#F3D680",
     "title" : "Chocolate",
-    "labelFontSize" : "16px"
+    "labelFontSize" : "12px"
   },
   {
     "value" : 50,
     "color" : "#E0E4CC",
     "title" : "Vanilla",
-    "labelFontSize" : "16px"
+    "labelFontSize" : "12px"
   },
   {
     "value" : 100,
     "color" : "#69D2E7",
     "title" : "strawb",
-    "labelFontSize" : "16px"
+    "labelFontSize" : "12px"
   }],
 
   "salesFilling" : [
@@ -62,19 +62,19 @@
     "value": 30,
     "color": "#F38630",
     "title" : "Chocolate",
-    "labelFontSize" : "16px"
+    "labelFontSize" : "12px"
   },
   {
     "value" : 50,
     "color" : "#E0E4CC",
     "title" : "cherry",
-    "labelFontSize" : "16px"
+    "labelFontSize" : "12px"
   },
   {
     "value" : 100,
     "color" : "#69D2E7",
     "title" : "Creme",
-    "labelFontSize" : "16px"
+    "labelFontSize" : "12px"
   }],
 
   "salesIcing" : [
@@ -82,19 +82,19 @@
     "value": 30,
     "color": "#F38630",
     "title" : "Red",
-    "labelFontSize" : "16px"
+    "labelFontSize" : "12px"
   },
   {
     "value" : 50,
     "color" : "#E0E4CC",
     "title" : "Blue",
-    "labelFontSize" : "16px"
+    "labelFontSize" : "12px"
   },
   {
     "value" : 100,
     "color" : "#69D2E7",
     "title" : "Orange",
-    "labelFontSize" : "16px"
+    "labelFontSize" : "12px"
   }]
   
 }
