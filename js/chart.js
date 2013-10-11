@@ -56,7 +56,7 @@ function flavChart() {
             };
 
             new Chart(ctx).Pie(data, options);
-            legend(document.getElementById("pieLegend"), data);
+            legend(document.getElementById("pieLegend", data);
 
         }
     }
