@@ -1,4 +1,4 @@
-function init() {
+//function init() {
 
 
 
@@ -254,4 +254,4 @@ function init() {
 	}, false);
 
 	$('#reset').click(addFavorite());
-}
+//}
