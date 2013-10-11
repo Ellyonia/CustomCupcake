@@ -191,7 +191,7 @@ request.onreadystatechange = function(e){
 				toppings.append(listitem);
 			
 		}
-		//addFavorite();
+		
 
 		
 	}
@@ -204,7 +204,7 @@ request.onreadystatechange = function(e){
 
 });
 
-
+addFavorite();
 
 function onMouseDown(e){
 
