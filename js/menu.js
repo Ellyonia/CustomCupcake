@@ -92,6 +92,9 @@ request.onreadystatechange = function(e){
 			
 		}
 
+		$("flavor").on("click", function() {
+		    $(this).css("background", "red");
+		})
 
 		$('#flavor').click().css('background-color', '').css('background-color', 'blue');
 	}
