@@ -6,6 +6,8 @@
 // // var myNewChart = new Chart(ctx);
 
 // // new Chart(ctx).PolarArea(data,options);
+$(document).ready(function()){
+
 
 var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/sales.json';
 request.open("GET",path, true);
@@ -60,6 +62,7 @@ request.onreadystatechange = function(e) {
             new Chart(ctx).Bar(data, options);
         }
 
+	}
 	});
 // 		new Chart(ctx).PolarArea(data,{
 // 	//Boolean - Whether we should show a stroke on each segment
