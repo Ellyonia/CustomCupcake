@@ -145,7 +145,7 @@ function getIcingsSalesFromDB()
 
 	while($row = mysql_fetch_array($result))
 	{
-		$finalArr[$row['icing_Name']] => $row['purchase_Amount'];
+		$finalArr[$row['icing_Name']] = $row['purchase_Amount'];
 	}
 
 	mysql_close($con);
@@ -175,7 +175,7 @@ function getToppingsSalesFromDB()
 
 	while($row = mysql_fetch_array($result))
 	{
-		$finalArr[$row['topping_Name']] => $row['purchase_Amount'];
+		$finalArr[$row['topping_Name']] = $row['purchase_Amount'];
 	}
 
 	mysql_close($con);
@@ -205,7 +205,7 @@ function getFillingsSalesFromDB()
 
 	while($row = mysql_fetch_array($result))
 	{
-		$finalArr[$row['filling_Name']] => $row['purchase_Amount'];
+		$finalArr[$row['filling_Name']] = $row['purchase_Amount'];
 	}
 
 	mysql_close($con);
