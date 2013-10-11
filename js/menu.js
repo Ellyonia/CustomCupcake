@@ -252,7 +252,7 @@ var request = new XMLHttpRequest();
 			
 			var url = "addUserFavorite.php";
 			var pass = "jsonArr=" + JSON.stringify(json);
-			console.log(pass);
+			//console.log(pass);
 
 			request.onreadystatechange = function(e){
 				
@@ -261,7 +261,7 @@ var request = new XMLHttpRequest();
 		  	$.ajax({
   			type: "POST",
   			url: url,
-  			data: data,
+  			data: pass,
   			success: success,
  			dataType: dataType
 			});
