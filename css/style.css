@@ -99,7 +99,7 @@ fieldset{
 }
 
 .test {
-	display: block;
+	display: inline;
 }
 
 #flavor li {
