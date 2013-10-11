@@ -60,17 +60,35 @@ function addFavoriteToDB($arrToAdd, $customerID)
 	$rowForFavoriteID = mysql_fetch_array($resultForFavoriteID);
 
 	$newFaveID = $rowForFavoriteID['favorite_ID'] + 1;
+	
+	$query = "SELECT cupcake_ID FROM Cupcakes ORDER BY Cupcakes DESC";
+	
+	$newCupcakeID = mysql_fetch_array(mysql_query($query))['cupcake_ID'] + 1;
 
 	//This query actually adds in the new favorite
-	$query = "INSERT INTO Favorites VALUES ('" . $newFaveID .
+	$query = "INSERT INTO Cupcakes VALUES ('" . $newCupcakeID .
 	"','" . $arrToAdd['flavor'] .
 	"','" . $arrToAdd['icing'] .
-	"','" . $arrToAdd['topping'] .
 	"','" . $arrToAdd['filling'] .
-	"','" . $customerID . "');";
+	"',NULL,'" . $customerID . "');";
 
 	mysql_query($query);
-
+	
+	$query = "SELECT Rn_ID FROM CupcakeToppings ORDER BY Rn_ID DESC";
+	
+	$newRnID = mysql_fetch_array(mysql_query($query))['Rn_ID'] + 1;
+	
+	$increment = 1;
+	
+	while($currentToppingID = $arrToAdd['topping'][$increment])
+	{
+		$query = "INSERT INTO CupcakeToppings VALUES ('" .$newCupcakeID .
+		"','" . $currentToppingID .
+		"','" . $newRnID . "');";
+		mysql_query($query);
+		$increment = $increment + 1;
+		$newRnID = $newRnID + 1;
+	}
 	mysql_close($con);
 }
 
