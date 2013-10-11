@@ -33,6 +33,18 @@
     "labelFontSize" : "16px"
   },
   {
+    "value" : 80,
+    "color" : "#F3A660",
+    "title" : "Chocolate",
+    "labelFontSize" : "16px"
+  },
+  {
+    "value" : 6,
+    "color" : "#F3D680",
+    "title" : "Chocolate",
+    "labelFontSize" : "16px"
+  },
+  {
     "value" : 50,
     "color" : "#E0E4CC",
     "title" : "Vanilla",
