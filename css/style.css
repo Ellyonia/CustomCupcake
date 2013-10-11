@@ -88,24 +88,10 @@ fieldset{
 	width: 90%;
 }
 
-#flavor fieldset {
-<<<<<<< HEAD
-	
-	overflow: auto;
-
-=======
-	overflow: auto;
->>>>>>> 6b9d840bc7a4bd3161be70f0870433ea547f127e
-}
-
-.testa {
+.CFlavor {
 	overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-}
-
-.test {
-	display: inline;
 }
 
 #flavor li {
@@ -115,49 +101,67 @@ fieldset{
 	margin-left: 5px;
 }
 
+.member {
+	display: inline;
+}
+
 .circle {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
 }
 
-#filling fieldset {
-	position: relative;
+#filling {
+	position: relative; 
 	top: -350px;
 	left: 200px;
-	width: 82%;
-	/*display: inline;*/
-	white-space: nowrap;
+	border: ridge;
+	width: 90%;
 }
 
-#filling ul {
-	/*display: inline;*/
+.CFilling {
 	overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
 }
 
-
 #filling li {
-	float: left;
 	padding-left: 20px;
 	padding-right: 20px;
 	margin-right: 20px;
 	margin-left: 20px;
 }
 
+/*#filling fieldset {
+	position: relative;
+	top: -350px;
+	left: 200px;
+	width: 82%;
+	/*display: inline;
+	white-space: nowrap;
+}
+*/
+
+
+/*#filling ul {
+	/*display: inline;
+	overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}*/
+
+
+
+
 #icing {
 	position: relative;
 	top: -300px;
 	left: 200px;
-	white-space:nowrap;
+	border: ridge;
+	width: 90%;
 }
 
-#icing fieldset {
-	width: 82%;
-}
-
-#icing div {
+.IFilling {
 	overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;

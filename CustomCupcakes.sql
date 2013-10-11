@@ -85,7 +85,7 @@ CREATE  TABLE IF NOT EXISTS `CustomCupcakes`.`Cupcakes` (
   `cupcakeFlavor_ID` INT NOT NULL ,
   `cupcakeIcing_ID` INT NOT NULL ,
   `cupcakeFilling_ID` INT NOT NULL DEFAULT 0 ,
-  `cupcakeQuantity` INT NOT NULL DEFAULT 1 ,
+  `cupcakeQuantity` INT NULL DEFAULT 1 ,
   `order_ID` INT NULL ,
   PRIMARY KEY (`cupcake_ID`) ,
   INDEX `icingF_ID` (`cupcakeIcing_ID` ASC) ,

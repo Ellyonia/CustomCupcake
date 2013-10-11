@@ -32,40 +32,34 @@
 		</form>
 		<form id = 'flavor'>
 				<a>Cupcake Flavor</a>
-				<div class='testa'>
+				<div class='CFlavor'>
 					<ul>
 					</ul>
 				</div>
 		</form>
 		<form id = 'filling'>
-			<fieldset>
-				<legend>Filling</legend>
-				<div class="test">
+				<a>Filling</a>
+				<div class="CFilling">
 					<ul>
 					</ul>
 				</div>
-			</fieldset>
 		</form>
 		<form id = 'icing'>
-			<fieldset>
-				<legend>Icing</legend>
-				<div>
+				<a>Icing</a>
+				<div class='IFilling'>
 					<ul>
 					</ul>
 				</div>
-			</fieldset>
 		</form>
 		<form id = 'topping'>
-			<fieldset>
-				<legend>Toppings</legend>
-				<div>
+				<a>Toppings</a>
+				<div class='TFilling'>
 					<ul>
 					</ul>
 				</div>
 				<div class="toppingClear">
 					<input type="submit" value="Clear All Toppings" id="toppingClear" /> 
 				</div>
-			</fieldset>
 		</form>
 		
 		<div class="reset">
