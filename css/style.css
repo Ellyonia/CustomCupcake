@@ -136,6 +136,15 @@ fieldset{
 	white-space: nowrap;
 }
 */
+#filling {
+	position: relative; 
+	top: -350px;
+	left: 200px;
+	width: 82%;
+	display: inline;
+	white-space: nowrap;
+}
+
 #filling ul {
 	/*display: inline;*/
 	overflow-x: scroll;
