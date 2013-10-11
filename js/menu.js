@@ -1,3 +1,11 @@
+
+function addFavorite() {
+	var url = "../addUserFavorite.php";
+	var pass = "jsonArr=" + JSON.stringify(json);
+    request.open("POST", url, true);
+ 	request.send(pass);
+}
+
 $(document).ready( function() {
 	var mCurrentIndex = 0;
 var request = new XMLHttpRequest();
@@ -18,12 +26,7 @@ var json = {"flavor" : "Banana",
 
 
 
-function addFavorite() {
-	var url = "../addUserFavorite.php";
-	var pass = "jsonArr=" + JSON.stringify(json);
-    request.open("POST", url, true);
- 	request.send(pass);
-}
+
 
 	// var favs = document.getElementById("fav");
 
