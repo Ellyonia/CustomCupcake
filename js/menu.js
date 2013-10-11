@@ -24,7 +24,9 @@ request.onreadystatechange = function(e){
 				img.setAttribute("value", jsonData.menu.cakes[i].flavor);
 				//document.body.appendChild(img); //adds the image to the document
 				img.onclick = function(){
-					console.log("let's click")};
+					console.log("let's click")
+					$(this).addClass('selected');};
+
 				listitem.appendChild(img);
 				myCake.append(listitem);
 			
