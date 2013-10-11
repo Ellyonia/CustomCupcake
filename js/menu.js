@@ -126,7 +126,6 @@ request.onreadystatechange = function(e){
 				$('#' + myId).css('background-color', jsonData.menu.fillings[i].rgb);
 				//document.getElementById(myId).style.bgcolor=jsonData.menu.fillings[i].rgb;
 				
-			
 		}
 
 
@@ -141,6 +140,9 @@ request.onreadystatechange = function(e){
 				img.setAttribute("value", jsonData.menu.frosting[i].flavor);
 				//document.body.appendChild(img); //adds the image to the document
 				listitem.appendChild(img);
+				$(listitem).onclick = function(){
+					$(this).addClass("selected");
+				}
 				myCake.append(listitem);
 			
 		}
