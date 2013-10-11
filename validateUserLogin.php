@@ -37,12 +37,12 @@
       }
     }
 }
-if ($valid == 0)
-{
-  header("Location: index.php");
-}
-
+  if ($valid == 1)
+  {
   header("Location: order.php");
+  }
+  else
+      header("Location: index.php");
   mysql_close($con);
 
 ?>
