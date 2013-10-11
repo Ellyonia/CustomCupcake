@@ -11,7 +11,7 @@ Chris Linstromberg
   <?php
 
     session_start();
-    $_Session['ID'] = $_POST['email'];
+    $_SESSION['ID'] = $_POST['email'];
     echo $_Session;
 
 
