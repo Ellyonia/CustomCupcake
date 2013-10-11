@@ -260,7 +260,7 @@ var request = new XMLHttpRequest();
 			{
 		  	myAjax = new Ajax.Request(url, {
         	method: 'post',
-        	pass: "jsonArr=" + JSON.stringify(json);,
+        	data: "jsonArr=" + JSON.stringify(json),
         	contentType: 'application/x-www-form-urlencoded',
         	onComplete: function(e){
             if (200 == e.status) {
