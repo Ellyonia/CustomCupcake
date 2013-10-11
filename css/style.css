@@ -237,4 +237,6 @@ CSS FOR analytics.html
 
 #flavorLegend , #fillingLegend, #icingLegend {
 	float: right;
+	font-size: 12px;
+	display: inline;
 }
