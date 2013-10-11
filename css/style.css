@@ -75,7 +75,7 @@ fieldset {
 }
 
 .orderList {
-	max-height: 180px;
+	max-height: 150px;
 	overflow-x: hidden;
     overflow-y: auto;
     /*white-space: nowrap;*/
