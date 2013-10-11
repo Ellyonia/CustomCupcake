@@ -85,7 +85,7 @@ Chris Linstromberg
         <li>
             <input type="text" placeholder="Address" id="address" name = "address"required/>
         </li>
-            <input type="text" placeholder="City" id="city" required/>
+            <input type="text" placeholder="City" id="city" name = "City" required/>
 
         <li>
             <select name="state" id="state">

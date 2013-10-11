@@ -11,8 +11,6 @@
 	$zip = $_POST['zip'];
 	$ID = 0;
   session_start();
-  	echo $state;
-  	echo $zip;
 ?>
 
 <html>
@@ -41,10 +39,9 @@
     	}
 	}
 	$_SESSION['cID'] = $ID;
-	$sql2 = "INSERT INTO Customers VALUES ('$ID','$mailing','$fname','$lname','$address','$city','$state','$zip','$email','$pass','$phone')";
-	echo $sql2;
+	$sql2 = "INSERT INTO Customers VALUES ($ID,$mailing,'$fname','$lname','$address','$city','$state','$zip','$email','$pass','$phone')";
 	$result = mysql_query($sql) or die(mysql_error());
- 	//header("Location: order.php");
+ 	header("Location: order.php");
  	?>
  </body>
  </html>
