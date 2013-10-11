@@ -131,12 +131,3 @@ window.addEventListener('load', function() {
 	console.log('window loaded');
 }, false);
 
-
-
-
-$(document).ready(function(){
-
-
-
-
-});
