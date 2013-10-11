@@ -62,10 +62,15 @@ fieldset {
 #order div {
 	width: 500px;
 	height: 200px;
+	border: ridge;
 	float: right;
 	text-align: center;
 	top: 100px;
 }
+
+/*#order li {
+	display: block;
+}*/
 
 .submitOrder {
 	position: relative;
