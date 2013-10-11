@@ -125,6 +125,12 @@ window.addEventListener('load', function() {
 }, false);
 
 
+
+$('#flavor')
+    .css('background-color', '')
+    .css('background-color', 'blue');
+
+/*
 $('#flavor').css('background-color', 'blue');
 
 /*var flavors = $('flavor').find('li').css('background-color', 'blue');
