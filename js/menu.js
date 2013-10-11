@@ -1,7 +1,7 @@
 function init() {
 
 
-	var mCurrentIndex = 0;
+	
 
 
 	var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/menu.json';
@@ -30,7 +30,7 @@ function init() {
 	$(document).ready( function() {
 			var request = new XMLHttpRequest();
 	var mImages = new Array();
-
+	var mCurrentIndex = 0;
 		request.open("GET",path, true);
 		request.send();
 
