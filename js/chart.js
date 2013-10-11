@@ -6,7 +6,7 @@
 // // var myNewChart = new Chart(ctx);
 
 // // new Chart(ctx).PolarArea(data,options);
-$(document).ready(function()){
+$(document).ready(function() {
 
 
 var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/sales.json';
