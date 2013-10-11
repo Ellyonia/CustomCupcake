@@ -131,9 +131,6 @@ window.addEventListener('load', function() {
 }, false);
 
 
-		$("flavor").on("click", function() {
-		    $(this).css("background", "red");
-		})
 
 
 
