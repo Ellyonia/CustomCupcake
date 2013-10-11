@@ -142,6 +142,7 @@ request.onreadystatechange = function(e){
 				listitem.appendChild(img);
 				$(listitem).onclick = function(){
 					$(this).addClass("selected");
+					console.log("blajb");
 				}
 				myCake.append(listitem);
 			
