@@ -228,7 +228,7 @@ var request = new XMLHttpRequest();
 				console.log("NO MORE");
 		    	request.open("POST", url, true);
 				request.send(pass);
-				request.onreadystatechange = function(e){
+				request.onreadystatechange = function(){
 				if(request.readyState === 4 && request.status === 200){
 				//request.onreadystatechange = function(){
 				
@@ -246,5 +246,5 @@ var request = new XMLHttpRequest();
 			else{
 				alert(request.status);
 			}
-		//}
+		}
 		});
