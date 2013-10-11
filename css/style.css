@@ -80,15 +80,19 @@ fieldset{
 }
 
 #flavor {
-	position: absolute;
-	
-	top: 250px;
+	position: relative;
+	top: -400px;
 	left: 200px;
+	clear: both;
+	/*width: 200px;*/
+}
+
+#flavor fieldset {
 }
 
 #flavor div {
-	/*width: 600px;*/
-	margin-left: 20px
+	width: 1100px;
+	/*margin-right: -700px;*/
 	/*width: 1510px;*/
 	overflow-x: scroll;
     overflow-y: hidden;
@@ -110,11 +114,12 @@ fieldset{
 }
 
 #filling fieldset {
-	position: absolute;
+	position: relative;
 	top: 470px;
 	left: 200px;
+	width: 200px;
 	display: inline;
-	white-space:nowrap;
+	white-space: nowrap;
 }
 
 
@@ -127,7 +132,7 @@ fieldset{
 }
 
 #icing {
-	position: absolute;
+	position: relative;
 	top: 650px;
 	left: 200px;
 	white-space:nowrap;
@@ -142,11 +147,11 @@ fieldset{
 }
 
 #topping fieldset {
-	position: absolute;
+	position: relative;
 	top: 850px;
 	left: 200px;
 	right: 5px;
-	
+	width: 200px;
 }
 
 #topping li  {
