@@ -224,10 +224,11 @@ var request = new XMLHttpRequest();
 			//request.onreadystatechange = function(){
 				console.log("FUCK");
 				
-			if(request.readyState === 4 && request.status === 200){
+			
 				console.log("NO MORE");
 		    	request.open("POST", url, true);
 				request.send(pass);
+				if(request.readyState === 4 && request.status === 200){
 				//request.onreadystatechange = function(){
 				
 				// if(request.readyState === 4)
