@@ -248,20 +248,8 @@ var request = new XMLHttpRequest();
 */
 
 	$('#reset').click(function() {
-			var datastring = "lol";
-			$.ajax({
-  			type: "POST",
-  			dataType: "text",
-  			data: "test=" + datastring,
-  			url: 'addUserFavorite.php',
-  			success: function(e) {
-  				//var message = e.responseText;
-        		alert(e);
-    		},
-    		error: function(){
-        	alert("neigh");
-    }
-});
+			$(".boxes").attr('checked', false);
+			$(".selected").removeClass(".selected");
 });
 
 
