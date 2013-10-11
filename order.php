@@ -67,9 +67,9 @@
 		</div>
 		<form class="update">	
 			<input type="number" value="1" id="amount" /> 
-			<input type="submit" value="Update Order" id="update" /> 
+			<input type="button" value="Update Order" id="update" /> 
 		</form>
-			<input type="submit" value="Add To Favorites" id="addtoFav" />
+			<input type="button" value="Add To Favorites" id="addtoFav" />
 
 	</body>
 	<script type="text/javascript" src='js/menu.js'></script>
