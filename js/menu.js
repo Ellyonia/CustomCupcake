@@ -293,9 +293,10 @@ var request = new XMLHttpRequest();
 
 			var temp = $('#CFlavor').find('.selected');
 
-			temp = temp.getAttribute('value');
 
-			console.log(temp);
+			var temp2 = document.getElementById('CFlavor').getElementsByClassName('selected').getAttribute('value');
+
+			console.log(temp2);
 
 			console.log($('#CFlavor .selected').attr("value"));
 
