@@ -1,0 +1,260 @@
+{
+  "menu": {
+    "cakes": [
+      {
+        "flavor": "Banana",
+        "sales": "34"
+      },
+      {
+        "flavor": "Carrot",
+        "sales": "2"
+      },
+      {
+        "flavor": "Chocolate",
+        "sales": "12"
+      },
+      {
+        "flavor": "Coconut",
+        "sales": "34"
+      },
+      {
+        "flavor": "Cranberry",
+        "sales": "3"
+      },
+      {
+        "flavor": "Dark Chocolate",
+        "sales": "12"
+      },
+      {
+        "flavor": "Grape",
+        "sales": "43"
+      },
+      {
+        "flavor": "Kiwi",
+        "sales": "32"
+      },
+      {
+        "flavor": "Lemon",
+        "sales": "23"
+      },
+      {
+        "flavor": "Milk Chocolate",
+        "sales": "23"
+      },
+      {
+        "flavor": "Orange Peel",
+        "sales": "6"
+      },
+      {
+        "flavor": "Pineapple",
+        "sales": "4"
+      },
+      {
+        "flavor": "Red Velvet",
+        "sales": "3"
+      },
+      {
+        "flavor": "Vanilla",
+        "sales": "75"
+      }
+    ],
+    "frosting": [
+      {
+        "flavor": "Vanilla",
+        "sales": "4"
+      },
+      {
+        "flavor": "Chocolate",
+        "sales": "6"
+      },
+      {
+        "flavor": "Creme Cheese",
+        "sales": "76"
+      },
+      {
+        "flavor": "Lemon`",
+        "sales": "87"
+      },
+      {
+        "flavor": "Honey & Rosemary",
+        "sales": "43"
+      },
+      {
+        "flavor": "Vegan Vanilla",
+        "sales": "1"
+      },
+      {
+        "flavor": "Salted Caramel",
+        "sales": "4"
+      },
+      {
+        "flavor": "Vanilla Rose",
+        "sales": "54"
+      },
+      {
+        "flavor": "Buttered Popcorn",
+        "sales": "45"
+      },
+      {
+        "flavor": "Cinnamon Toast",
+        "sales": "65"
+      },
+      {
+        "flavor": "Lavender Caramel",
+        "sales": "34"
+      },
+      {
+        "flavor": "Cookie Dough",
+        "sales": "86"
+      },
+      {
+        "flavor": "Raspberry Ripple",
+        "sales": "23"
+      },
+      {
+        "flavor": "Raspberry White Chocolate",
+        "sales": "43"
+      },
+      {
+        "flavor": "Caramel Mudslide",
+        "sales": "75"
+      },
+      {
+        "flavor": "Earl Grey",
+        "sales": "11"
+      },
+      {
+        "flavor": "Lemon Poppyseed",
+        "sales": "32"
+      },
+      {
+        "flavor": "Chocolate Orange",
+        "sales": "44"
+      },
+      {
+        "flavor": "Strawberry Cremem",
+        "sales": "12"
+      },
+      {
+        "flavor": "Toffe Apple",
+        "sales": "4"
+      },
+      {
+        "flavor": "Chocolate Hazlenut",
+        "sales": "6"
+      },
+      {
+        "flavor": "Chai Latte",
+        "sales": "98"
+      },
+      {
+        "flavor": "Banana Pie",
+        "sales": "9"
+      },
+      {
+        "flavor": "Blueberry Cheesecake",
+        "sales": "12"
+      }
+    ],
+    "fillings": [
+      {
+        "flavor": "No Filling",
+        "sales": "34"
+      },
+      {
+        "flavor": "Blueberry",
+        "sales": "1"
+      },
+      {
+        "flavor": "Blackberry",
+        "sales": "23"
+      },
+      {
+        "flavor": "Lemon Meringue",
+        "sales": "534"
+      },
+      {
+        "flavor": "Strawbery",
+        "sales": "32"
+      },
+      {
+        "flavor": "Plum",
+        "sales": "4"
+      },
+      {
+        "flavor": "Pomegranite",
+        "sales": "6"
+      },
+      {
+        "flavor": "Chocolate Ganache",
+        "sales": "23"
+      },
+      {
+        "flavor": "Vanilla",
+        "sales": "54"
+      }
+    ],
+    "Toppings": [
+    {
+      "flavor": "434",
+      "sales": "33"
+    },
+    {
+      "flavor": "Mini Chocolate Chips",
+      "sales": "33"
+      },
+    {
+      "flavor": "Mini Marshmellows",
+      "sales": "33"
+      },
+    {
+      "flavor": "Bacon",
+      "sales": "33"
+      },
+    {
+      "flavor": "Oreo Bits",
+      "sales": "33"
+      },
+    {
+      "flavor": "Twix Bits",
+      "sales": "33"
+      },
+    {
+      "flavor": "M&M's",
+      "sales": "33"
+      },
+    {
+      "flavor": "Reese's Pieces",
+      "sales": "33"
+      },
+    {
+      "flavor": "Butterfinger Bits",
+      "sales": "33"
+      },
+    {
+      "flavor": "Snicker Bits",
+      "sales": "33"
+      },
+    {
+      "flavor": "Skittles",
+      "sales": "33"
+      },
+    {
+      "flavor": "Craisins",
+      "sales": "33"
+      },
+    {
+      "flavor": "Maraschino Cherries",
+      "sales": "33"
+      },
+    {
+      "flavor": "Gummy Bears",
+      "sales": "33"
+      },
+    {
+      "flavor": "Pop Rocks",
+      "sales": "33"
+      }
+    ]
+  }
+}
