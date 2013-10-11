@@ -15,15 +15,19 @@ request.onreadystatechange = function(e) {
         var ctx = document.getElementById("myChart").getContext("2d");
  
         //The options we are going to pass to the chart
-        options = {
+        options1 = {
             barDatasetSpacing : 15,
             barValueSpacing: 10,
             barStrokeWidth: 20
         };
 
+        // options2 = {
+
+        // };
+
         //Create the chart
-        new Chart(ctx).Bar(toppingsChart, options);
-        new Chart(ctx).Pie(flavorChart,options);
+        new Chart(ctx).Bar(toppingsChart, options1);
+        // new Chart(ctx).Pie(flavorChart, options2);
         }
 
 	}
