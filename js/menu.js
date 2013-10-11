@@ -212,7 +212,7 @@ var request = new XMLHttpRequest();
 	window.addEventListener('load', function(e) {
 		console.log('window loaded');
 	}, false);
-
+/*
 	$('#reset').click(function() {
 
 			console.log("HI");
@@ -244,6 +244,7 @@ var request = new XMLHttpRequest();
 			}
 		}
 		});
+*/
 
 	$('#reset').click(function() {
 
@@ -257,7 +258,13 @@ var request = new XMLHttpRequest();
 				
 			if(request.readyState === 4)
 			{
-		  		$.post("addUserFavorite.php", { 'jsonArr' : "John" } );
+		  	$.ajax({
+  			type: "POST",
+  			url: url,
+  			data: data,
+  			success: success,
+ 			dataType: dataType
+			});
 			}
 		}
 		});
