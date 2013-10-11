@@ -242,7 +242,7 @@ var request = new XMLHttpRequest();
 
 			}
 			else{
-				alert(request.statusText);
+				alert(request.status);
 			}
 		//}
 		});
