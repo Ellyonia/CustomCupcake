@@ -247,7 +247,7 @@ var request = new XMLHttpRequest();
 */
 
 	$('#reset').click(function() {
-			//var datastring = "lol";
+			var datastring = "lol";
 			$.ajax({
   			type: "POST",
   			dataType: "text",
