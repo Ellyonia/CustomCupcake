@@ -128,10 +128,10 @@ window.addEventListener('load', function() {
 }, false);
 
 
-	$(document).ready(fcuntion(){
+	$(document).ready(function(){
 				$("flavor").on("click", function() {
 			    $(this).css("background", "red");
-				})
+				});
 	});
 
 
