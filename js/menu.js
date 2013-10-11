@@ -31,7 +31,8 @@ request.onreadystatechange = function(e){
 				
 				$(div).addClass("test");
 				div.onclick = function(){
-					$(".div").removeClass("selected");
+					$(".selected").removeClass("selected");
+					//$(".div").removeClass("selected");
 					$(this).addClass("selected");
 				};
 				// // img.onclick = function(){
