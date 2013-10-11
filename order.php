@@ -1,3 +1,13 @@
+<?
+	session_start();
+	if (!$_SESSION['cID'])
+	{
+		header("Location: index.php");
+	}
+	$sql = "SELECT * from Cupcakes WHERE customer_ID = '$_SESSION[cID]'"
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
