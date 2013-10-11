@@ -183,6 +183,7 @@ var request = new XMLHttpRequest();
 						checkbox.type = "checkbox";
 						checkbox.value = top;
 						checkbox.text = top;
+						$(checkbox).addClass('boxes');
 						pitem.innerHTML = top;
 						listitem.appendChild(divitem);
 						divitem.appendChild(checkbox);
@@ -261,4 +262,63 @@ var request = new XMLHttpRequest();
         	alert("neigh");
     }
 });
-		});
+});
+
+
+	$('#toppingClear').click(function() {
+			$(".boxes").attr('checked', false);
+});
+
+
+	$('#amount').click(function() {
+			var datastring = "lol";
+			$.ajax({
+  			type: "POST",
+  			dataType: "text",
+  			data: "test=" + datastring,
+  			url: 'addUserFavorite.php',
+  			success: function(e) {
+  				//var message = e.responseText;
+        		alert(e);
+    		},
+    		error: function(){
+        	alert("neigh");
+    }
+});
+});
+
+
+	$('#update').click(function() {
+			var datastring = "lol";
+			$.ajax({
+  			type: "POST",
+  			dataType: "text",
+  			data: "test=" + datastring,
+  			url: 'addUserFavorite.php',
+  			success: function(e) {
+  				//var message = e.responseText;
+        		alert(e);
+    		},
+    		error: function(){
+        	alert("neigh");
+    }
+});
+});
+
+
+	$('#addtoFav').click(function() {
+			var datastring = "lol";
+			$.ajax({
+  			type: "POST",
+  			dataType: "text",
+  			data: "test=" + datastring,
+  			url: 'addUserFavorite.php',
+  			success: function(e) {
+  				//var message = e.responseText;
+        		alert(e);
+    		},
+    		error: function(){
+        	alert("neigh");
+    }
+});
+});
