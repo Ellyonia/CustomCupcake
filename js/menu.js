@@ -258,13 +258,17 @@ var request = new XMLHttpRequest();
 				
 			if(request.readyState === 4)
 			{
-		  	$.ajax({
-  			type: "POST",
-  			url: url,
-  			data: pass,
-  			success: success,
- 			dataType: dataType
-			});
+		  	myAjax = new Ajax.Request(url, {
+        	method: 'post',
+        	pass: "jsonArr=" + JSON.stringify(json);,
+        	contentType: 'application/x-www-form-urlencoded',
+        	onComplete: function(e){
+            if (200 == e.status) {
+                result = e.responseText;
+                console.log(result);
+            }
+        }
+    });
 			}
 		}
 		});
