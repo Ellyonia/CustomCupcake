@@ -87,7 +87,7 @@ fieldset{
 }
 
 #flavor fieldset {
-	width: 85%;
+	width: 82%;
 }
 
 #flavor li div {
@@ -146,7 +146,7 @@ fieldset{
 }
 
 #icing fieldset {
-	width: 80%;
+	width: 82%;
 }
 
 #icing div {
@@ -164,7 +164,7 @@ fieldset{
 
 #topping fieldset {
 	position: relative;
-	width: 80%;
+	width: 82%;
 	top: -250px;
 	left: 200px;
 	/*right: 5px;*/
