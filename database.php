@@ -3,7 +3,7 @@
 function getFavoritesFromDB($customerID)
 {
 
-	$con = mysql_connect("localhost", "phpuser", "weLoveCupcakes666");
+	$con = mysql_connect("localhost", "DBandGUI", "narwhal");
 	if(!$con) { die('Could not connect: ' . mysql_error()); }
 
 	mysql_select_db("CustomCupcakes",$con) or die("Unable to select database: " . mysql_error());
@@ -31,7 +31,7 @@ function getFavoritesFromDB($customerID)
 
 function addFavoriteToDB($arrToAdd, $customerID)
 {
-	$con = mysql_connect("localhost", "phpuser", "weLoveCupcakes666");
+	$con = mysql_connect("localhost", "DBandGUI", "narwhal");
 
 	if(!$con) { die('Could not connect: ' . mysql_error()); }
 
@@ -58,7 +58,7 @@ function addFavoriteToDB($arrToAdd, $customerID)
 
 function getFlavorsSalesFromDB()
 {
-	$con = mysql_connect("localhost", "phpuser", "weLoveCupcakes666");
+	$con = mysql_connect("localhost", "DBandGUI", "narwhal");
 
 	if(!$con) { die('Could not connect: ' . mysql_error()); }
 
@@ -82,7 +82,7 @@ function getFlavorsSalesFromDB()
 
 function getIcingsSalesFromDB()
 {
-	$con = mysql_connect("localhost", "phpuser", "weLoveCupcakes666");
+	$con = mysql_connect("localhost", "DBandGUI", "narwhal");
 
 	if(!$con) { die('Could not connect: ' . mysql_error()); }
 
@@ -106,7 +106,7 @@ function getIcingsSalesFromDB()
 
 function getToppingsSalesFromDB()
 {
-	$con = mysql_connect("localhost", "phpuser", "weLoveCupcakes666");
+	$con = mysql_connect("localhost", "DBandGUI", "narwhal");
 
 	if(!$con) { die('Could not connect: ' . mysql_error()); }
 
@@ -130,7 +130,7 @@ function getToppingsSalesFromDB()
 
 function getFillingsSalesFromDB()
 {
-	$con = mysql_connect("localhost", "phpuser", "weLoveCupcakes666");
+	$con = mysql_connect("localhost", "DBandGUI", "narwhal");
 
 	if(!$con) { die('Could not connect: ' . mysql_error()); }
 
@@ -161,7 +161,7 @@ function updateSaleToDB($arrOfInfo)
 	$filling = $arrOfInfo['cupcakeFilling_ID'];
 	$quantity = $arrOfInfo['cupcakeQuantity'];
 
-	$con = mysql_connect("localhost", "phpuser", "weLoveCupcakes666");
+	$con = mysql_connect("localhost", "DBandGUI", "narwhal");
 
 	if(!$con) { die('Could not connect: ' . mysql_error()); }
 
@@ -203,6 +203,34 @@ function updateSaleToDB($arrOfInfo)
 	mysql_query($query);
 
 	mysql_close($con);
+}
+
+function getCustomerOrdersFromDB($customerID)
+{
+	$con = mysql_connect("localhost", "DBandGUI", "narwhal");
+
+	if(!$con) { die('Could not connect: ' . mysql_error()); }
+
+	mysql_select_db("CustomCupcakes", $con) or die('Could not select db: ' . mysql_error());
+
+	$query = "SELECT order_ID,cupcakeFlavor_ID,cupcakeIcing_ID,cupcakeTopping_ID,cupcakeFilling_ID,cupcakeQuantity" .
+		" FROM Orders WHERE customer_ID=" . $customerID . ";";
+
+	$result = mysql_query($query);
+
+	$resultArr = array();
+
+	while($row = mysql_fetch_array($result))
+	{
+		$resultArr['order_ID'] => array("cupcakeFlavor_ID" => $row['cupcakeFlavor_ID'],
+			"cupcakeIcing_ID" => $row['cupcakeIcing_ID'],
+			"cupcakeTopping_ID" => $row['cupcakeTopping_ID'],
+			"cupcakeFilling_ID" => $row['cupcakeFilling_ID'],
+			"cupcakeQuantity" => $row['cupcakeQuantity']);
+	}
+
+	mysql_close($con);
+	return $resultArr;
 }
 
 ?>
