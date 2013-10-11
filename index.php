@@ -1,11 +1,3 @@
-<?php
-
-session_start();
-$_Session['ID'] = $_POST['email'];
-
-
-?>
-
 <!-- Team 6
 Ryan Tanner
 Robert Stewart
@@ -14,6 +6,17 @@ Nick Morris
 Cameron Keith
 Chris Linstromberg 
   Custom Cupcakes -->
+
+
+  <?php
+
+    session_start();
+    $_Session['ID'] = $_POST['email'];
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
