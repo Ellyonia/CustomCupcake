@@ -129,8 +129,8 @@ window.addEventListener('load', function() {
 
 
 /*$(document).ready(function(){*/
-			$("#flavor").on("click", function() {
-		    $('#flavor').css("background", "red");
+			$("#flavor").live("click", function() {
+		    $('#flavor').css("background-color", "red");
 			});
 /*});*/
 
