@@ -71,7 +71,8 @@ fieldset {
 .submitOrder {
 	position: relative;
 	text-align: center;
-	top: 70%;
+	top: 10%;
+	margin-top: 
 }
 
 .orderList {
