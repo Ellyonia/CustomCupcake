@@ -48,7 +48,8 @@ function flavChart() {
             var ctx = document.getElementById("flavorChart").getContext("2d");
 
             options = {
-                animation : false
+                animation : false,
+                showTooltips: true
             };
 
             new Chart(ctx).Pie(data, options);
