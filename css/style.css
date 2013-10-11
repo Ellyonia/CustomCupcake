@@ -120,13 +120,13 @@ fieldset{
 }
 
 .CFilling {
-	display: inline;
 	overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
 }
 
 #filling li {
+	display: inline;
 	float: left;
 	padding-left: 20px;
 	padding-right: 20px;
