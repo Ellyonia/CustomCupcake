@@ -102,7 +102,7 @@ function iChart() {
             var ctx = document.getElementById("icingChart").getContext("2d");
 
             options = {
-                animation : false;
+                animation : false
             };
 
             new Chart(ctx).Pie(data, options);
