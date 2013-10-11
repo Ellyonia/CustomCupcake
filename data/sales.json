@@ -30,16 +30,22 @@
     "value" : 30,
     "color" : "#F38630",
     "label" : "Chocolate",
-    "labelColor" : "white",
+    "labelColor" : "black",
     "labelFontSize" : "16px"
   },
   {
     "value" : 50,
-    "color" : "#E0E4CC"
+    "color" : "#E0E4CC",
+    "label" : "Chocolate",
+    "labelColor" : "black",
+    "labelFontSize" : "16px"
   },
   {
     "value" : 100,
-    "color" : "#69D2E7"
+    "color" : "#69D2E7",
+    "label" : "Chocolate",
+    "labelColor" : "black",
+    "labelFontSize" : "16px"
   }],
 
   "salesFilling" : [
