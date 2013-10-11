@@ -194,7 +194,13 @@ li {
 .update {
 	position: relative;
 	left: 75%;
-	top: -260px;
+	top: -270px;
+}
+
+.add {
+	position: relative;
+	left: 50%;
+	top: -200px;
 }
 
 .selected {
