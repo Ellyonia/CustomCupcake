@@ -1,7 +1,6 @@
 function init() {
 
-	var request = new XMLHttpRequest();
-	var mImages = new Array();
+
 	var mCurrentIndex = 0;
 
 
@@ -29,6 +28,8 @@ function init() {
 
 
 	$(document).ready( function() {
+			var request = new XMLHttpRequest();
+	var mImages = new Array();
 
 		request.open("GET",path, true);
 		request.send();
