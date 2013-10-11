@@ -225,9 +225,10 @@ var request = new XMLHttpRequest();
 				
 			if(request.readyState === 4)
 			{
-		    request.open("POST", url, true);
-			request.send(pass);
-			//request.onreadystatechange = function(){
+				console.log("NO MORE");
+		    	request.open("POST", url, true);
+				request.send(pass);
+				//request.onreadystatechange = function(){
 				
 				// if(request.readyState === 4)
 				// {
