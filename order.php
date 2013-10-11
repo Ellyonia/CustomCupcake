@@ -11,7 +11,7 @@
 	<body>
 		<form id = 'order'>
 				<legend>Order</legend>
-				<div>
+				<div class="orderForm">
 					<ul class = "orderList">
 
 					</ul>

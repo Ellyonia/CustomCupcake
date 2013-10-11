@@ -60,6 +60,10 @@ fieldset {
 }
 
 #order div {
+	
+}
+
+.orderForm {
 	width: 500px;
 	height: 200px;
 	border: ridge;
@@ -67,7 +71,6 @@ fieldset {
 	text-align: center;
 	top: 100px;
 }
-
 /*#order li {
 	display: block;
 }*/
