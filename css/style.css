@@ -149,10 +149,16 @@ fieldset{
 }
 
 #icing div {
-	
 	overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+}
+
+#icing li {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
 }
 
 #topping fieldset {
