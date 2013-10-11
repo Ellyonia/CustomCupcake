@@ -186,9 +186,9 @@ li {
 }
 
 .reset {
-	position: absolute;
-	left: 30%;
-	top: 0px;
+	position: relative;
+	left: 25%;
+	top: -200px;
 }
 
 .update {
