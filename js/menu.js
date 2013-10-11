@@ -77,18 +77,18 @@ request.onreadystatechange = function(e){
 
 		for (var i = 0, len = jsonData.menu.cakes.length; i < len; i++){
 				var listitem = document.createElement("li");
-				var div = document.createElement("div");
+				var container = document.createElement("div");
 				var flavorflav = document.createElement("a");
 				var img = document.createElement("img");
 				img.setAttribute("src", "artwork/" + jsonData.menu.cakes[i].img_url);
 				img.setAttribute("value", jsonData.menu.cakes[i].flavor);
 				flavorflav.innerHTML = jsonData.menu.cakes[i].flavor;
 				//document.body.appendChild(img); //adds the image to the document
-				div.appendChild(img);
-				div.appendChild(flavorflav);
+				container.appendChild(img);
+				container.appendChild(flavorflav);
 				
-				$(div).addClass("member");
-				div.onclick = function(){
+				$(container).addClass("member");
+				container.onclick = function(){
 					$(".selected").removeClass("selected");
 					$(this).addClass("selected");
 				};
@@ -96,7 +96,7 @@ request.onreadystatechange = function(e){
 				// // 	console.log("let's click");
 				// // 	$(this).fadeOut("slow")};
 				// listitem.appendChild(img);
-				listitem.appendChild(div);
+				listitem.appendChild(container);
 				myCake.append(listitem);
 			
 		}
@@ -121,6 +121,11 @@ request.onreadystatechange = function(e){
 				circle.setAttribute("id", myId);
 				container.appendChild(circle);
 				container.appendChild(par);
+				$(container).addClass("member");
+				container.onclick = function(){
+					$(".selected").removeClass("selected");
+					$(this).addClass("selected");
+				};
 				listitem.appendChild(container);
 				myCake.append(listitem);
 				$('#' + myId).css('background-color', jsonData.menu.fillings[i].rgb);
