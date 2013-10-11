@@ -220,7 +220,7 @@ var request = new XMLHttpRequest();
 			var url = "addUserFavorite.php";
 			var pass = "jsonArr=" + JSON.stringify(json);
 			console.log(pass);
-
+			alert("FUCK THIS SHIT");
 			request.onreadystatechange = function(){
 				
 			if(request.readyState === 4)
