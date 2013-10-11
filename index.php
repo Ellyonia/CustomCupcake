@@ -14,8 +14,7 @@ Chris Linstromberg
 
     if(isset($_POST['signIn'])){
          $_SESSION['ID'] = $_POST['email'];
-         echo $_SESSION['ID'];
-         echo "Number = ". $_SESSION['email'];
+         echo "Number = ". $_SESSION['id'];
 
     }
 
