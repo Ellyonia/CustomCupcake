@@ -33,8 +33,8 @@
 		<form id = 'flavor'>
 			<fieldset>
 				<legend>Cupcake Flavor</legend>
-				<div>
-					<ul id = "test">
+				<div class='test'>
+					<ul>
 					</ul>
 				</div>
 			</fieldset>
