@@ -143,11 +143,14 @@ request.onreadystatechange = function(e){
 		for (var i = 0, len = jsonData.menu.frosting.length; i < len; i++){
 				var listitem = document.createElement("li");
 				var img = document.createElement("img");
+				var aitem = document.createElement("a");
 				img.setAttribute("src", "artwork/" + jsonData.menu.frosting[i].img_url);
 				img.setAttribute("value", jsonData.menu.frosting[i].flavor);
 				listitem.setAttribute("value", jsonData.menu.frosting[i].flavor);
+				aitem = listitem.value;
 				//document.body.appendChild(img); //adds the image to the document
 				listitem.appendChild(img);
+				listitem.appendChild(aitem);
 				listitem.onclick = function(){
 					$("#icing .selected").removeClass("selected");
 					$(this).addClass("selected");
