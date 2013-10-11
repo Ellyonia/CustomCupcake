@@ -44,7 +44,7 @@ function FChart() {
      
             var jsonData = JSON.parse(request.responseText);
             console.log(jsonData);
-            var data = var data = [
+            var data = [
     {
         value: 30,
         color:"#F38630"
