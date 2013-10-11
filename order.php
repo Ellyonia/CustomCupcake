@@ -9,73 +9,72 @@
 
 	</head>
 	<body>
-<<<<<<< HEAD
-		<form id = 'order'>
-				<a>Order</a>
-				<div class="orderForm">
-					<ul class = "orderList">
-=======
-		<form id = "orderForm">
-			<div id = 'order'>
+			<form id = "orderForm">
 					<a>Order</a>
-					<div>
+					<div class="orderForm">
 						<ul class = "orderList">
->>>>>>> forms to div
 
-						</ul>
-					</div>
-					<div class = "submitOrder">
-						<input type="submit" value="Order" id="submitOrder" /> 
-					</div>
-			</div>
-			<div id = 'fav'>
-				<fieldset>
-					<legend>Favorites</legend>
-					<div>
-						<ul></ul>
-					</div>
-				</fieldset>
-			</div>
-			<form id = 'flavor'>
-					<a>Cupcake Flavor</a>
-					<div class='CFlavor'>
-						<ul>
-						</ul>
-					</div>
-			</div>
-			<div id = 'filling'>
-					<a>Filling</a>
-					<div class="CFilling">
-						<ul>
-						</ul>
-					</div>
-			</div>
-			<div id = 'icing'>
-					<a>Icing</a>
-					<div class='CIcing'>
-						<ul>
-						</ul>
-					</div>
-			</div>
-			<div id = 'topping'>
-					<a>Toppings</a>
-					<div class='CTopping'>
-						<ul>
-						</ul>
-					</div>
-					<div class="toppingClear">
-						<input type="button" value="Clear All Toppings" id="toppingClear" /> 
-					</div>
-			</div>
-			
-			<div class="reset">
-					<input type="submit" value="Reset Cupcake" id="reset" action = "" method = "post" name="reset"/> 
-			</div>
-			<div class="update">	
-				<input type="number" value="1" id="amount" /> 
-				<input type="button" value="Update Order" id="update" /> 
-			</div>
-				<input type="button" value="Add To Favorites" id="addtoFav" />
+
+				<div id = 'order'>
+						<a>Order</a>
+						<div>
+							<ul class = "orderList">
+
+
+							</ul>
+						</div>
+						<div class = "submitOrder">
+							<input type="submit" value="Order" id="submitOrder" /> 
+						</div>
+				</div>
+				<div id = 'fav'>
+					<fieldset>
+						<legend>Favorites</legend>
+						<div>
+							<ul></ul>
+						</div>
+					</fieldset>
+				</div>
+				<form id = 'flavor'>
+						<a>Cupcake Flavor</a>
+						<div class='CFlavor'>
+							<ul>
+							</ul>
+						</div>
+				</div>
+				<div id = 'filling'>
+						<a>Filling</a>
+						<div class="CFilling">
+							<ul>
+							</ul>
+						</div>
+				</div>
+				<div id = 'icing'>
+						<a>Icing</a>
+						<div class='CIcing'>
+							<ul>
+							</ul>
+						</div>
+				</div>
+				<div id = 'topping'>
+						<a>Toppings</a>
+						<div class='CTopping'>
+							<ul>
+							</ul>
+						</div>
+						<div class="toppingClear">
+							<input type="button" value="Clear All Toppings" id="toppingClear" /> 
+						</div>
+				</div>
+				
+				<div class="reset">
+						<input type="submit" value="Reset Cupcake" id="reset" action = "" method = "post" name="reset"/> 
+				</div>
+				<div class="update">	
+					<input type="number" value="1" id="amount" /> 
+					<input type="button" value="Update Order" id="update" /> 
+				</div>
+					<input type="button" value="Add To Favorites" id="addtoFav" />
 		</form>
 	</body>
 	<script type="text/javascript" src='js/menu.js'></script>
