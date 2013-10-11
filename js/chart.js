@@ -21,10 +21,6 @@ function tChart() {
                 barStrokeWidth: 15
             };
 
-            // options2 = {
-
-            // };
-
             //Create the chart
             new Chart(ctx).Bar(data, options);
             legend(document.getElementById("toppingLegend"), data);   
@@ -46,14 +42,6 @@ function flavChart() {
             // console.log(jsonData);
             var data = jsonData.salesFlavor;
             var ctx = document.getElementById("flavorChart").getContext("2d");
-
-            // options = {
-            //     animation : false,
-            //     showLabels : true,
-            //     resizeLabels : false,
-            //     hoveredColor : "pink",
-            //     type: 'stacked'
-            // };
 
             new Chart(ctx).Pie(data);
             legend(document.getElementById("flavorLegend"), data);
