@@ -207,6 +207,10 @@ li {
 	background-color: orange;
 }
 
+#order div ul {
+	ul.cirlce;
+}
+
 /*****************
 CSS FOR analytics.html
 ******************/
@@ -217,12 +221,14 @@ CSS FOR analytics.html
 	margin-bottom: 20px;
 }
 
-#flavorLengend {
+#flavorLegand , #fillingLengend, #icingLegend {
 	float: right;
 }
-#fillingLengend {
+
+/*#fillingLengend {
 	float: right;
 }
+
 #icingLegend {
 	float: right;
-}
+}*/
