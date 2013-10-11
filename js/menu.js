@@ -18,7 +18,7 @@ var json = {"flavor" : "Banana",
 
 
 function addFavorite() {
-	var url = "addUserFavorite.php";
+	var url = "../addUserFavorite.php";
 	var pass = "jsonArr=" + JSON.stringify(json);
     request.open("POST", url, true);
  	request.send(pass);
