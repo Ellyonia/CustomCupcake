@@ -35,6 +35,7 @@
     	{
     		if ($cname == "max")
     		{
+    			echo $cvalue;
     			$ID = $cvalue + 1;
     		}
     	}
