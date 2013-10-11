@@ -12,6 +12,7 @@ CREATE  TABLE IF NOT EXISTS `CustomCupcakes`.`CupcakeIcing` (
   `cupcakeIcing_ID` INT NOT NULL ,
   `icing_Name` VARCHAR(20) NOT NULL ,
   `purchase_Amount` INT NOT NULL ,
+  `pic_ID` VARCHAR(45) NOT NULL ,
   PRIMARY KEY (`cupcakeIcing_ID`) )
 ENGINE = InnoDB;
 
@@ -23,6 +24,7 @@ CREATE  TABLE IF NOT EXISTS `CustomCupcakes`.`CupcakeFlavor` (
   `cupcakeFlavor_ID` INT NOT NULL ,
   `flavor_Name` VARCHAR(20) NOT NULL ,
   `purchase_Amount` INT NOT NULL ,
+  `pic_ID` VARCHAR(45) NOT NULL ,
   PRIMARY KEY (`cupcakeFlavor_ID`) )
 ENGINE = InnoDB;
 
@@ -34,6 +36,7 @@ CREATE  TABLE IF NOT EXISTS `CustomCupcakes`.`CupcakeFilling` (
   `cupcakeFilling_ID` INT NOT NULL ,
   `filling_Name` VARCHAR(20) NOT NULL ,
   `purchase_Amount` INT NOT NULL ,
+  `rgb_ID` VARCHAR(15) NOT NULL ,
   PRIMARY KEY (`cupcakeFilling_ID`) )
 ENGINE = InnoDB;
 
@@ -83,7 +86,7 @@ CREATE  TABLE IF NOT EXISTS `CustomCupcakes`.`Cupcakes` (
   `cupcakeIcing_ID` INT NOT NULL ,
   `cupcakeFilling_ID` INT NOT NULL DEFAULT 0 ,
   `cupcakeQuantity` INT NOT NULL DEFAULT 1 ,
-  `order_ID` INT NOT NULL ,
+  `order_ID` INT NULL ,
   PRIMARY KEY (`cupcake_ID`) ,
   INDEX `icingF_ID` (`cupcakeIcing_ID` ASC) ,
   INDEX `flavorF_ID` (`cupcakeFlavor_ID` ASC) ,
