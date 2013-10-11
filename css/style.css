@@ -191,6 +191,8 @@ li {
 
 .update {
 	position: absolute;
+	text-align: center;
+	top: 20%;
 }
 
 .selected {
