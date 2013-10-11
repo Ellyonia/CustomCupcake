@@ -222,8 +222,8 @@ CSS FOR analytics.html
 }
 
 #flavorLegend , #fillingLegend, #icingLegend {
-	position: relative;
-	right: 33%;
+	float: right;
+	margin-left: 10%;
 }
 
 /*#fillingLengend {
