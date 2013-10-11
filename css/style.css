@@ -59,11 +59,7 @@ fieldset {
     float: left;
 }
 
-#order div {
-	
-}
-
-.orderForm {
+#order {
 	width: 500px;
 	height: 200px;
 	border: ridge;
@@ -71,6 +67,15 @@ fieldset {
 	text-align: center;
 	top: 100px;
 }
+
+
+#order div {
+	
+}
+
+.orderForm {
+}
+	
 /*#order li {
 	display: block;
 }*/

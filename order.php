@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<form id = 'order'>
-				<legend>Order</legend>
+				<a>Order</a>
 				<div class="orderForm">
 					<ul class = "orderList">
 
