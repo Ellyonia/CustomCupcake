@@ -12,7 +12,7 @@ Chris Linstromberg
 
     session_start();
     $_SESSION['ID'] = $_POST['email'];
-    echo $_Session;
+    echo $_SESSION['ID'];
 
 
 ?>
