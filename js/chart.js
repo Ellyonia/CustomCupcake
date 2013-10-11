@@ -44,7 +44,7 @@ function FChart() {
      
             var jsonData = JSON.parse(request.responseText);
             console.log(jsonData);
-            var data = jsonData.test;
+            var data = jsonData;
             console.log(data);
             var ctx = document.getElementById("myChart2").getContext("2d");
 
