@@ -128,11 +128,11 @@ window.addEventListener('load', function() {
 }, false);
 
 
-	$(document).ready(function(){
-				$("#flavor").on("click", function() {
-			    $(this).css("background", "red");
-				});
-	});
+/*$(document).ready(function(){*/
+			$("#flavor").on("click", function() {
+		    $(this).css("background", "red");
+			});
+/*});*/
 
 
 /*
