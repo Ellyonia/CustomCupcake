@@ -247,11 +247,11 @@ var request = new XMLHttpRequest();
 */
 
 	$('#reset').click(function() {
-			var datastring = "lol";
+			//var datastring = "lol";
 			$.ajax({
   			type: "POST",
   			dataType: "text",
-  			data: "test=" datastring,
+  			data: "test=" + datastring,
   			url: 'addUserFavorite.php',
   			success: function(data) {
     		alert(data);
