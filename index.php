@@ -11,9 +11,15 @@ Chris Linstromberg
 <?php
 
     session_start();
-    $_SESSION['ID'] = $_POST['email'];
-    echo $_SESSION['ID'];
-    echo "Number = ". $_SESSION['email'];
+
+    if(isset($_POST['signIn'])){
+         $_SESSION['ID'] = $_POST['email'];
+         echo $_SESSION['ID'];
+         echo "email = ". $_SESSION['ID'];
+         echo "Number = ". $_SESSION['email'];
+
+    }
+
 
 
 ?>
@@ -30,12 +36,12 @@ Chris Linstromberg
     <form id="login" action = "" method = "post">
         <div class="logEmail">
             <label>Email: </label>
-            <input type="email" id="email" required placeholder="email@example.com" oninvalid="setCustomValidity('Please eneter a valid email address')" onchange="try{setCustomValidity('')}catch(e){}"/>
+            <input type="email" name = "email" id="email" required placeholder="email@example.com" oninvalid="setCustomValidity('Please eneter a valid email address')" onchange="try{setCustomValidity('')}catch(e){}"/>
         </div>
         <div class="logPass"> 
             <label>Password: </label>
             <input type="password" id="logPass" name = "password" pattern = "[a-zA-Z0-9:.,?!@]{8,}" placeholder = "Password" oninvalid="setCustomValidity('Password must be greater than 8 characters')" onchange="try{setCustomValidity('')}catch(e){}" required/>
-            <input type="submit" value="Login" id="signIn" /> 
+            <input type="submit" value="Login" name="signIn" id="signIn" /> 
         </div>
     </form>
 
