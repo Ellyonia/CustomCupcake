@@ -291,7 +291,7 @@ var request = new XMLHttpRequest();
 	$('#update').click(function() {
 			var datastring = "lol"; //create json of the attributes (see ccAPI line#72 for formatting) and stringify it
 
-			var temp = $('.CFlavor').find('.selected');
+			var temp = $('.CFlavor').find('.selected').attr('value');
 
 
 			// var temp2 = document.getElementById('CFlavor').getElementsByClassName('selected').getAttribute('value');
