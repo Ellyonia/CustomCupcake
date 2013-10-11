@@ -29,6 +29,10 @@ request.onreadystatechange = function(e){
 				div.appendChild(img);
 				div.appendChild(flavorflav);
 				div.onclick = function(){
+					$(#flavorflav div ul div).removeClass("selected");
+					// for (var j = 0, len = jsonData.menu.cakes.length; j < len; j++){
+					// 	if()
+					// }
 					$(this).addClass("selected");
 				};
 				// // img.onclick = function(){
