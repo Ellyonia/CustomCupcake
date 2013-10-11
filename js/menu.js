@@ -258,6 +258,7 @@ var request = new XMLHttpRequest();
 				
 			if(request.readyState === 4)
 			{
+				console.log('blah');
 		  	$.ajax({
   			type: "POST",
   			dataType: "json",
