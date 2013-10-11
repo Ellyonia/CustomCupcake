@@ -139,6 +139,6 @@ window.addEventListener('load', function() {
    		}
 		this.className = "selected";
 		return false;
-
+	};}
 }, false);
 
