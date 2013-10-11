@@ -127,18 +127,11 @@ function onMouseDown(e){
     }
 }
 
-window.addEventListener('load', function() {
-	console.log('window loaded');
+function addSelected(e){
+	$(this).addClass('selected');
+};
 
-	var imgs = document.body.getElementsByTagName("img");
-		for (var i=0; i<4; i++) {
-   			imgs[i].onclick = function (e) {
-   		var temps = document.body.getElementsByTagName("img");
-   		for (var i = 0; i<4; i++) {
-   			temps[i].className = "";
-   		}
-		this.className = "selected";
-		return false;
-	};}
+window.addEventListener('load', function(e) {
+	console.log('window loaded');
 }, false);
 
