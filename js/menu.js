@@ -251,7 +251,7 @@ var request = new XMLHttpRequest();
 			$.ajax({
   			type: "POST",
   			dataType: "json",
-  			data: {test : worked},
+  			data: {test : 'worked'},
   			url: 'addUserFavorite.php',
   			success: function(data) {
     		alert(data);
