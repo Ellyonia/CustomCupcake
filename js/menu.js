@@ -96,7 +96,7 @@ request.onreadystatechange = function(e){
 		    $(this).css("background", "red");
 		})
 
-		$('#flavor').click().css('background-color', '').css('background-color', 'blue');
+		/*$('#flavor').click().css('background-color', '').css('background-color', 'blue');*/
 	}
 
 }
@@ -131,6 +131,9 @@ window.addEventListener('load', function() {
 }, false);
 
 
+		$("flavor").on("click", function() {
+		    $(this).css("background", "red");
+		})
 
 
 
