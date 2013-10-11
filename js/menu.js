@@ -129,5 +129,23 @@ function onMouseDown(e){
 
 window.addEventListener('load', function() {
 	console.log('window loaded');
+
+	var myimgs = document.body.getElementsByTagName("img");
+		for (var i=0; i<myimgs.length; i++) {
+   			myimgs[i].onclick = function (e) {
+   		var temps = document.body.getElementsByTagName("img");
+   		// for (var i = 0; i<4; i++) {
+   		// 	temps[i].className = "";
+   		// }
+		this.className = "selected";
+		return false;
+   	};
+
+	}, false);
+	
+}, false);
+
+window.addEventListener('load', function() {
+	console.log('window loaded');
 }, false);
 
