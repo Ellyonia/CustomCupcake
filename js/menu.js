@@ -130,7 +130,7 @@ window.addEventListener('load', function() {
 
 /*$(document).ready(function(){*/
 			$("#flavor").on("click", function() {
-		    $(this).css("background", "red");
+		    $('#flavor').css("background", "red");
 			});
 /*});*/
 
