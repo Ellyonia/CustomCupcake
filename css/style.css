@@ -99,7 +99,7 @@ fieldset {
 
 #flavor {
 	position: relative;
-	top: -340px;
+	top: 0px;
 	left: 200px;
 	clear: both;
 	border: ridge;
