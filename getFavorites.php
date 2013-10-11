@@ -1,6 +1,6 @@
 <?
     include "ccAPI.php";
 
-    $phpInit = new ccAPI();
-    echo($phpInit->getUserFavorites());
+    $start = new ccAPI();
+    echo($start->getUserFavorites());
 ?>

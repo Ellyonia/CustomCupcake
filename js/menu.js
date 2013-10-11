@@ -9,6 +9,10 @@ request.open("GET",path, true);
 request.send();
 
 
+
+
+
+
 	// var favs = document.getElementById("fav");
 
 	// //getUserID()
