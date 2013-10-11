@@ -248,18 +248,7 @@ var request = new XMLHttpRequest();
 
 	$('#reset').click(function() {
 
-			console.log("HI");
-			
-			var url = "addUserFavorite.php";
-			var pass = "jsonArr=" + JSON.stringify(json);
-			//console.log(pass);
-
-			request.onreadystatechange = function(e){
-				
-			if(request.readyState === 4)
-			{
-				console.log('blah');
-		  	$.ajax({
+			$.ajax({
   			type: "POST",
   			dataType: "json",
   			data: {test : worked},
@@ -268,6 +257,4 @@ var request = new XMLHttpRequest();
     		alert(data);
   }
 });
-			}
-		}
 		});
