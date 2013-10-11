@@ -29,7 +29,7 @@ request.onreadystatechange = function(e){
 				div.appendChild(img);
 				div.appendChild(flavorflav);
 				
-				$(div).addClass("test");
+				$(div).addClass("member");
 				div.onclick = function(){
 					$(".selected").removeClass("selected");
 					$(this).addClass("selected");

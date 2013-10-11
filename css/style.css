@@ -98,13 +98,13 @@ fieldset{
 >>>>>>> 6b9d840bc7a4bd3161be70f0870433ea547f127e
 }
 
-.testa {
+.CFlavor {
 	overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
 }
 
-.test {
+.member {
 	display: inline;
 }
 
