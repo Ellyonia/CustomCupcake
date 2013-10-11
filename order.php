@@ -34,7 +34,7 @@
 			<fieldset>
 				<legend>Cupcake Flavor</legend>
 				<div>
-					<ul>
+					<ul id = "test">
 					</ul>
 				</div>
 			</fieldset>
