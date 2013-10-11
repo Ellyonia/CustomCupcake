@@ -146,9 +146,9 @@ request.onreadystatechange = function(e){
 				//document.body.appendChild(img); //adds the image to the document
 				listitem.appendChild(img);
 				listitem.onclick = function(){
-				$("#icing .selected").removeClass("selected");
-				$(this).addClass("selected");
-				console.log("blajb");
+					$("#icing .selected").removeClass("selected");
+					$(this).addClass("selected");
+					console.log("blajb");
 				}
 				myCake.append(listitem);
 			
