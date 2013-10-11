@@ -31,7 +31,7 @@
 			</fieldset>
 		</form>
 		<form id = 'flavor'>
-				<p>Cupcake Flavor</p>
+				<a>Cupcake Flavor</a>
 				<div class='testa'>
 					<ul>
 					</ul>
