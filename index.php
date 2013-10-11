@@ -11,6 +11,7 @@ Chris Linstromberg
 <?php
 
     session_start();
+    session_register ("email");
     $_SESSION['ID'] = $_POST['email'];
     echo $_SESSION['ID'];
     echo "Number = ". $_SESSION['email'];
