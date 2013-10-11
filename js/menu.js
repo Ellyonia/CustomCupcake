@@ -93,9 +93,7 @@ request.onreadystatechange = function(e){
 		}
 
 
-		$('#flavor')
-    .css('background-color', '')
-    .css('background-color', 'blue');
+		$('#flavor').click().css('background-color', '').css('background-color', 'blue');
 	}
 
 }
