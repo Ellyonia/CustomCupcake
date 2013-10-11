@@ -11,8 +11,10 @@
 
 	</head>
 	<body>
-		<canvas id="myChart" width="700" height="400"></canvas>
-        <canvas id="myChart2" width="700" height="400"></canvas>
+		<canvas id="flavorChart" width="700" height="400"></canvas>
+        <canvas id="fillingChart" width="700" height="400"></canvas>
+        <canvas id="icingChart" width="700" height="400"></canvas>
+        <canvas id="toppingChart" width="700" height="400"></canvas>
 		<header>stuff</header>
 	</body>
 </html>
