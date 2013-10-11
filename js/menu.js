@@ -231,7 +231,7 @@ var request = new XMLHttpRequest();
 				
 				if(request.readyState === 4)
 				{
-					var string = request.response();
+					var string = request.responseText;
 					console.log(string);
 				}
 			}
