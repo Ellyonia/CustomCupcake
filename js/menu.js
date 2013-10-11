@@ -248,27 +248,13 @@ var request = new XMLHttpRequest();
 
 	$('#reset').click(function() {
 
-			console.log("HI");
-			
-			var url = "addUserFavorite.php";
-			var pass = "jsonArr=" + JSON.stringify(json);
-			//console.log(pass);
-
-			request.onreadystatechange = function(e){
-				
-			if(request.readyState === 4)
-			{
-		  	myAjax = new Ajax.Request(url, {
-        	method: 'post',
-        	data: "jsonArr=" + JSON.stringify(json),
-        	contentType: 'application/x-www-form-urlencoded',
-        	onComplete: function(e){
-            if (200 == e.status) {
-                result = e.responseText;
-                console.log(result);
-            }
-        }
-    });
-			}
-		}
+			$.ajax({
+  			type: "POST",
+  			dataType: "json",
+  			data: {test : worked},
+  			url: 'addUserFavorite.php',
+  			success: function(data) {
+    		alert(data);
+  }
+});
 		});
