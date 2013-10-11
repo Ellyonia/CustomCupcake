@@ -39,21 +39,21 @@
 		</form>
 		<form id = 'filling'>
 				<a>Filling</a>
-				<div class="Cfilling">
+				<div class="CFilling">
 					<ul>
 					</ul>
 				</div>
 		</form>
 		<form id = 'icing'>
 				<a>Icing</a>
-				<div>
+				<div class='IFilling'>
 					<ul>
 					</ul>
 				</div>
 		</form>
 		<form id = 'topping'>
 				<a>Toppings</a>
-				<div>
+				<div class='TFilling'>
 					<ul>
 					</ul>
 				</div>

@@ -160,11 +160,7 @@ fieldset{
 	white-space:nowrap;
 }
 
-#icing fieldset {
-	width: 82%;
-}
-
-#icing div {
+.IFilling {
 	overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
