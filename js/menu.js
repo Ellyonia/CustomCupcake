@@ -242,3 +242,4 @@ window.addEventListener('load', function(e) {
 	addFavorite();
 }, false);
 
+$('#reset').click(addFavorite());
