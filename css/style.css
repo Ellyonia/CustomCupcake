@@ -68,22 +68,17 @@ fieldset {
 	top: 100px;
 }
 
-
-#order div {
-	
-}
-
-.orderForm {
-}
-	
-/*#order li {
-	display: block;
-}*/
-
 .submitOrder {
 	position: relative;
 	text-align: center;
 	top: 70%;
+}
+
+.orderList {
+	max-height: 300px;
+	overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
 #fav fieldset {
