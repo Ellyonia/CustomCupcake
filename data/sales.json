@@ -36,14 +36,14 @@
   {
     "value" : 50,
     "color" : "#E0E4CC",
-    "label" : "Chocolate",
+    "label" : "Vanilla",
     "labelColor" : "black",
     "labelFontSize" : "16px"
   },
   {
     "value" : 100,
     "color" : "#69D2E7",
-    "label" : "Chocolate",
+    "label" : "strawb",
     "labelColor" : "black",
     "labelFontSize" : "16px"
   }],
