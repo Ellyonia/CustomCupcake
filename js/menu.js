@@ -293,8 +293,8 @@ var request = new XMLHttpRequest();
 			$.ajax({
   			type: "POST",
   			data: "jsonArr=" + datastring,
-  			url: 'newOrder.php';
-    }
+  			url: 'newOrder.php'
+   )};
 });
 });
 
