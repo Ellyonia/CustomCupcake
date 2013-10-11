@@ -15,7 +15,7 @@ function getFavoritesFromDB($customerID)
 
 	mysql_select_db("CustomCupcakes",$con) or die("Unable to select database: " . mysql_error());
 
-	$query = "SELECT * FROM Favorites WHERE customer_ID='" . $customerID . "';";
+	$query = "SELECT favorite_ID,cupcakeFlavor_ID,cupcakeIcing_ID,cupcakeFilling_ID,topping_ID FROM Favorites NATURAL JOIN Cupcakes NATURAL JOIN CupcakeToppings WHERE customer_ID='" . $customerID . "';";
 
 	$result = mysql_query($query);
 
@@ -27,7 +27,7 @@ function getFavoritesFromDB($customerID)
 		$resultArr[$row['favorite_ID']] = array(
 			"flavor" => $row['cupcakeFlavor_ID'],
 			"icing" => $row['cupcakeIcing_ID'],
-			"topping" => $row['cupcakeTopping_ID'],
+			"topping" => $row['topping_ID'],
 			"filling" => $row['cupcakeFilling_ID']
 		);
 	}
