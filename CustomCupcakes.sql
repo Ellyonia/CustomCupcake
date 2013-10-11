@@ -46,16 +46,16 @@ CREATE TABLE IF NOT EXISTS CustomCupcakes.CupcakeFilling (
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS CustomCupcakes.Customers (
     customer_ID INT NOT NULL,
+    mailingList TINYINT(1) NOT NULL DEFAULT FALSE,
     firstName VARCHAR(20) NOT NULL,
     lastName VARCHAR(20) NOT NULL,
     address VARCHAR(30) NOT NULL,
-    telephoneNumber INT NOT NULL,
-    email VARCHAR(30) NOT NULL,
-    password VARCHAR(15) NOT NULL,
     city VARCHAR(15) NOT NULL,
     state VARCHAR(15) NOT NULL,
     zipCode INT NOT NULL,
-    mailingList TINYINT(1) NOT NULL DEFAULT FALSE,
+    email VARCHAR(30) NOT NULL,
+    password VARCHAR(15) NOT NULL,
+    telephoneNumber INT NOT NULL,
     PRIMARY KEY (customer_ID)
 )  ENGINE=InnoDB COMMENT='This table is for storing the information on the frequent cu' /* comment truncated */;
 
@@ -140,9 +140,9 @@ CREATE TABLE IF NOT EXISTS CustomCupcakes.Toppings (
 -- Table `CustomCupcakes`.`CupcakeToppings`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS CustomCupcakes.CupcakeToppings (
+    Rn_ID INT NOT NULL,
     cupcake_ID INT NOT NULL,
     topping_ID INT NOT NULL,
-    Rn_ID INT NOT NULL,
     PRIMARY KEY (Rn_ID),
     INDEX cupcakeF_ID (cupcake_ID ASC),
     INDEX toppingF_ID (topping_ID ASC),
