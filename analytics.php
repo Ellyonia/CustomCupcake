@@ -12,6 +12,7 @@
 	</head>
 	<body>
 		<canvas id="myChart" width="700" height="400"></canvas>
+        <canvas id="myChart2" width="700" height="400"></canvas>
 		<header>stuff</header>
 	</body>
 </html>

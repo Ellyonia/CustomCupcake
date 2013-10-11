@@ -45,7 +45,7 @@ function FChart() {
             var jsonData = JSON.parse(request.responseText);
             console.log(jsonData);
             var data = jsonData.salesFlavor;
-            var ctx = document.getElementById("myChart").getContext("2d");
+            var ctx = document.getElementById("myChart2").getContext("2d");
 
             new Chart(ctx).Pie(data);
 
