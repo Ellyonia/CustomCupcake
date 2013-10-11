@@ -221,7 +221,7 @@ var request = new XMLHttpRequest();
 			var pass = "jsonArr=" + JSON.stringify(json);
 			console.log(pass);
 			//alert("FUCK THIS SHIT");
-			request.onreadystatechange = function(){
+			//request.onreadystatechange = function(){
 				console.log("FUCK");
 				
 			if(request.readyState === 4 && request.status === 200){
@@ -244,5 +244,5 @@ var request = new XMLHttpRequest();
 			else{
 				alert(request.statusText);
 			}
-		}
+		//}
 		});
