@@ -145,12 +145,7 @@ request.onreadystatechange = function(e){
 				img.setAttribute("value", jsonData.menu.frosting[i].flavor);
 				//document.body.appendChild(img); //adds the image to the document
 				listitem.appendChild(img);
-				// listitem.onclick = function(){
-				// 	$("#icing .selected").removeClass("selected");
-				// 	$(this).addClass("selected");
-				// 	console.log("blajb");
-				// }
-				$("li").onclick = function(){
+				listitem.onclick = function(){
 				$("#icing .selected").removeClass("selected");
 				$(this).addClass("selected");
 				console.log("blajb");
