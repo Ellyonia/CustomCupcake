@@ -134,29 +134,9 @@ window.addEventListener('load', function() {
 
 $(document).ready(function(){
 
-//The .on function will attach the event to all current
-// elements that match the selector and all future elements
-// that will match the selector
-			$('#flavor').on("click", function() {
-		    $('#flavor').css("background-color", "red");
+
+			$('#test li').on("click", function() {
+		    $('#test li').css("background-color", "red");
 			});
-/*
-	$(document).on('[EVENT]', '[SELECTOR]', function(){
-	//Do Stuff
-	});
-*/
+
 });
-/*});*/
-
-
-/*
-$('#flavor').css('background-color', 'blue');
-
-/*var flavors = $('flavor').find('li').css('background-color', 'blue');
-*/
-/*
-
-for(var i = 0, len = flavors.length; i < len; i++){
-
-	flavors[i].addEventListener('mousedown', onMouseDown, false);
-}*/
