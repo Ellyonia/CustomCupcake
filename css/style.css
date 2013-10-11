@@ -208,9 +208,9 @@ li {
 }
 
 /*****************
-CSS FOR order.html
+CSS FOR analytics.html
 ******************/
-#flavChart {
+#charts {
 	position: relative;
 	text-align: center;
 }

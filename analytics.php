@@ -11,12 +11,15 @@
 
 	</head>
 	<body>
-        <div id="flavChart">
-            <header>Flavor flav!</header>
+        <div id="charts">
+            <header>Popular Flavors</header>
 		    <canvas id="flavorChart" width="700" height="400"></canvas>
+            <header>Popular Fillings</header>
+            <canvas id="fillingChart" width="700" height="400"></canvas>
+            <header>Popular Icings</header>
+            <canvas id="icingChart" width="700" height="400"></canvas>
+            <header>Popular Toppings</header>
+            <canvas id="toppingChart" width="700" height="400"></canvas>
         </div>
-        <canvas id="fillingChart" width="700" height="400"></canvas>
-        <canvas id="icingChart" width="700" height="400"></canvas>
-        <canvas id="toppingChart" width="700" height="400"></canvas>
 	</body>
 </html>
