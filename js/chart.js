@@ -43,7 +43,7 @@ function flavChart() {
         if(request.readyState === 4) {
      
             var jsonData = JSON.parse(request.responseText);
-            console.log(jsonData);
+            // console.log(jsonData);
             var data = jsonData.salesFlavor;
             var ctx = document.getElementById("flavorChart").getContext("2d");
 
@@ -57,7 +57,7 @@ function flavChart() {
 
             new Chart(ctx).Pie(data, options);
             legend(document.getElementById("pieLegend"), data);
-
+            console.log(legend);
         }
     }
     request.send();
