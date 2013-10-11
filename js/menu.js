@@ -37,7 +37,7 @@
 
 
 
-
+		$('#reset').click(addFavorite());
 
 
 
@@ -253,5 +253,5 @@
 		console.log('window loaded');
 	}, false);
 
-	$('#reset').click(addFavorite());
+	
 //}
