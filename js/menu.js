@@ -9,24 +9,6 @@ var request = new XMLHttpRequest();
 						"1" : "Sprinkles", "2" : "Craisins"
 					}};
 
-		function addFavorite() {
-
-			console.log("HI");
-			var url = "addUserFavorite.php";
-			var pass = "jsonArr=" + JSON.stringify(json);
-
-			request.onreadystatechange = function(e){
-				
-			if(request.readyState === 4)
-			{
-		    request.open("POST", url, true);
-		    //if(request.readyState === 4)
-				request.send(pass);
-
-
-			}
-		}
-		}
 
 
 
@@ -252,4 +234,21 @@ var request = new XMLHttpRequest();
 		console.log('window loaded');
 	}, false);
 
-	$('#reset').click(addFavorite());
+	$('#reset').click(function addFavorite() {
+
+			console.log("HI");
+			var url = "addUserFavorite.php";
+			var pass = "jsonArr=" + JSON.stringify(json);
+
+			request.onreadystatechange = function(e){
+				
+			if(request.readyState === 4)
+			{
+		    request.open("POST", url, true);
+		    //if(request.readyState === 4)
+				request.send(pass);
+
+
+			}
+		}
+		});
