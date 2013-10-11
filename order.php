@@ -10,7 +10,6 @@
 	</head>
 	<body>
 		<form id = 'order'>
-			<fieldset>
 				<legend>Order</legend>
 				<div>
 					<ul class = "orderList">
@@ -20,7 +19,6 @@
 				<div class = "submitOrder">
 					<input type="submit" value="Order" id="submitOrder" /> 
 				</div>
-			</fieldset>
 		</form>
 		<form id = 'fav'>
 			<fieldset>
