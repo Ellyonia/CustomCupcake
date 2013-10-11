@@ -19,6 +19,7 @@ var request = new XMLHttpRequest();
 		    request.open("POST", url, true);
 		    //if(request.readyState === 4)
 				request.send(pass);
+				console.log("HI");
 
 			}
 		}
