@@ -174,13 +174,31 @@ fieldset{
 	margin-left: 5px;
 }
 
-#topping fieldset {
+#topping {
+	position: relative;
+	top: -250px;
+	left: 200px;
+	border: ridge;
+	width: 80%;
+}
+
+.CTopping {
+	overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#topping li {
+
+}
+
+/*#topping fieldset {
 	position: relative;
 	width: 82%;
 	top: -250px;
 	left: 200px;
-	/*right: 5px;*/
-}
+	/*right: 5px;
+}*/
 
 #topping li  {
 	float: left;
