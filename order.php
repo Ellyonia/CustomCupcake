@@ -14,8 +14,7 @@
 				<div class="orderForm">
 					<div id = 'order'>
 						<a>Order</a>
-							<div>
-							</ul>
+							<ul></ul>
 					</div>
 					<div class = "submitOrder">
 						<input type="submit" value="Order" id="submitOrder" /> 
