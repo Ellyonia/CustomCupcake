@@ -93,7 +93,6 @@ fieldset{
 }
 
 #flavor div {
-	width: 90%;
 	overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -116,7 +115,7 @@ fieldset{
 	position: relative;
 	top: -350px;
 	left: 200px;
-	width: 80%;
+	width: 82%;
 	/*display: inline;*/
 	white-space: nowrap;
 }
