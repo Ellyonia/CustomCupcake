@@ -22,8 +22,7 @@ function tChart() {
             };
 
             //Create the chart
-            new Chart(ctx).Bar(data, options);
-            legend(document.getElementById("toppingLegend"), data);   
+            new Chart(ctx).Bar(data, options); 
         }
     }
     request.send();
