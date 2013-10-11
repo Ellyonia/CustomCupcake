@@ -84,8 +84,12 @@ fieldset{
 	top: -400px;
 	left: 200px;
 	clear: both;
-	width: 90%;
+	
 	/*width: 200px;*/
+}
+
+#flavor fieldset {
+	width: 90%;
 }
 
 #flavor div {
