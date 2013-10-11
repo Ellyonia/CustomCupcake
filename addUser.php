@@ -11,8 +11,6 @@
 	$zip = $_POST['zip'];
 	$ID = 0;
   session_start();
-  	echo '$state';
-  	echo '$zip';
 ?>
 
 <html>
