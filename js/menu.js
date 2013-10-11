@@ -221,7 +221,7 @@ var request = new XMLHttpRequest();
 			var pass = "jsonArr=" + JSON.stringify(json);
 			console.log(pass);
 
-			request.onreadystatechange = function(e){
+			request.onreadystatechange = function(){
 				
 			if(request.readyState === 4)
 			{
