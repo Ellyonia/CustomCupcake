@@ -182,11 +182,11 @@ fieldset{
 	width: 80%;
 }
 
-.CTopping {
+/*.CTopping {
 	overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-}
+}*/
 
 #topping li {
 
