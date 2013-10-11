@@ -25,8 +25,8 @@
 		function addFavorite() {
 			var url = "../addUserFavorite.php";
 			var pass = "jsonArr=" + JSON.stringify(json);
-		    request1.open("POST", url, true);
-		 	request1.send(pass);
+		    request.open("POST", url, true);
+		 	request.send(pass);
 		}
 
 
