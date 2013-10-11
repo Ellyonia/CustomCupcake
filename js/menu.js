@@ -249,7 +249,7 @@ var request = new XMLHttpRequest();
 
 	$('#reset').click(function() {
 			$(".boxes").attr('checked', false);
-			$('.selected').removeClass('.selected');
+			$(".selected").removeClass(".selected");
 });
 
 
@@ -281,13 +281,7 @@ var request = new XMLHttpRequest();
 
 			var temp = $('.CFlavor').find('.selected').attr('value');
 
-
-
-
-
 			var orders = $("#order div ul");
-
-
 
 			var listitem = document.createElement("li");
 
