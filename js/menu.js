@@ -311,7 +311,7 @@ var request = new XMLHttpRequest();
 			$.ajax({
   			type: "POST",
   			dataType: "text",
-  			data: "test=" + datastring,
+  			data: "jsonArr=" + json,
   			url: 'addUserFavorite.php',
   			success: function(e) {
   				//var message = e.responseText;
