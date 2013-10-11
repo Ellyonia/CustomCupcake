@@ -136,16 +136,16 @@ fieldset{
 	white-space: nowrap;
 }
 
-#filling ul {
-	/*display: inline;*/
+/*#filling ul {
+	/*display: inline;
 	overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-}
+}*/
 
 
 #filling li {
-	float: left;
+	/*float: left;*/
 	padding-left: 20px;
 	padding-right: 20px;
 	margin-right: 20px;
