@@ -207,7 +207,7 @@ li {
 	background-color: orange;
 }
 
-#order fieldset div ul {
+.orderList {
 	list-style-type: circle;
 }
 
