@@ -94,15 +94,15 @@ fieldset{
     white-space: nowrap;
 }
 
-.member {
-	display: inline;
-}
-
 #flavor li {
 	padding-left: 5px;
 	padding-right: 5px;
 	margin-right: 5px;
 	margin-left: 5px;
+}
+
+.member {
+	display: inline;
 }
 
 .circle {
@@ -111,10 +111,25 @@ fieldset{
 	border-radius: 50%;
 }
 
+#filling {
+	position: relative; 
+	top: -350px;
+	left: 200px;
+	border: ridge;
+	width: 90%;
+}
+
 .CFilling {
 	overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+}
+
+#filling li {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
 }
 
 /*#filling fieldset {
@@ -126,15 +141,7 @@ fieldset{
 	white-space: nowrap;
 }
 */
-#filling {
-	position: relative; 
-	top: -350px;
-	left: 200px;
-	width: 90%;
-	border: ridge;
-	display: inline;
-	white-space: nowrap;
-}
+
 
 /*#filling ul {
 	/*display: inline;
@@ -144,13 +151,7 @@ fieldset{
 }*/
 
 
-#filling li {
-	/*float: left;*/
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-right: 20px;
-	margin-left: 20px;
-}
+
 
 #icing {
 	position: relative;
