@@ -217,27 +217,30 @@ var request = new XMLHttpRequest();
 
 			console.log("HI");
 			
-			var url = "addUserFavorite.php";
+			var url = "http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/addUserFavorite.php";
 			var pass = "jsonArr=" + JSON.stringify(json);
 			console.log(pass);
-
-			request.onreadystatechange = function(e){
+			//alert("FUCK THIS SHIT");
+			//request.onreadystatechange = function(){
+				console.log("FUCK");
 				
-			if(request.readyState === 4)
-			{
-		    request.open("POST", url, true);
-		    //if(request.readyState === 4)
-			request.send(pass);
-			//request.onreadystatechange = function(e){
-				
-				//if(request.readyState === 4)
-				//{
+			
+				console.log("NO MORE");
+		    	request.open("POST", url, false);
+				request.send(pass);
+				request.onreadystatechange = function(){
+					
+				if(request.readyState === 4){
+					
 					var string = request.responseText;
+					alert("FUCK THIS SHIT");
+					//alert(request.responseText);
 					console.log(string);
-				//}
-			//}
 
 
+			}
+			else{
+				alert(request.status);
 			}
 		}
 		});

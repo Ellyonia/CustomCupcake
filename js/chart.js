@@ -6,7 +6,9 @@
 // // var myNewChart = new Chart(ctx);
 
 // // new Chart(ctx).PolarArea(data,options);
+$(document).ready(function() {
 
+var request = new XMLHttpRequest();
 var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/sales.json';
 request.open("GET",path, true);
 request.send();
@@ -27,7 +29,7 @@ request.onreadystatechange = function(e) {
 //var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/sales.json';
 		var jsonData = JSON.parse(request.responseText);
 		console.log(jsonData);
-		var data = jsonData.sales.cakes;
+		var data = jsonData.sales;
 //Get the context of the canvas element we want to select
             var ctx = document.getElementById("myChart").getContext("2d");
  
@@ -53,14 +55,16 @@ request.onreadystatechange = function(e) {
             //The options we are going to pass to the chart
             options = {
                 barDatasetSpacing : 15,
-                barValueSpacing: 10
+                barValueSpacing: 10,
+                barStrokeWidth: 5
             };
  
             //Create the chart
             new Chart(ctx).Bar(data, options);
         }
 
-	};
+	}
+	});
 // 		new Chart(ctx).PolarArea(data,{
 // 	//Boolean - Whether we should show a stroke on each segment
 // 	segmentShowStroke : true,

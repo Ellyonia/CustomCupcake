@@ -1,4 +1,4 @@
-<html> <body>
+
 <?php
     include "ccAPI.php";
 
@@ -7,8 +7,3 @@
     //echo($start->addFavorites());
 
 ?>
-
-
-<p> hi </p>
-</body>
-</html>
