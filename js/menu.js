@@ -301,7 +301,7 @@ var request = new XMLHttpRequest();
 
 			var listitem = document.createElement("li");
 
-			listitem..appendChild(document.createTextNode(temp));
+			listitem.appendChild(document.createTextNode(temp));
 
 			orders.append(listitem);
 
