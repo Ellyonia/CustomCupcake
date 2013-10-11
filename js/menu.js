@@ -217,18 +217,18 @@ var request = new XMLHttpRequest();
 
 			console.log("HI");
 			
-		// 	var url = "addUserFavorite.php";
-		// 	var pass = "jsonArr=" + JSON.stringify(json);
+			var url = "addUserFavorite.php";
+			var pass = "jsonArr=" + JSON.stringify(json);
 
-		// 	request.onreadystatechange = function(e){
+			request.onreadystatechange = function(e){
 				
-		// 	if(request.readyState === 4)
-		// 	{
-		//     request.open("POST", url, true);
-		//     //if(request.readyState === 4)
-		// 		request.send(pass);
+			if(request.readyState === 4)
+			{
+		    request.open("POST", url, true);
+		    //if(request.readyState === 4)
+				request.send(pass);
 
 
-		// 	}
-		// }
+			}
+		}
 		});
