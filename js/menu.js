@@ -254,7 +254,11 @@ var request = new XMLHttpRequest();
   			data: "test=" + datastring,
   			url: 'addUserFavorite.php',
   			success: function(data) {
-    		alert(data);
+        		alert(data.d);
+    		},
+    		error: function(data){
+        	alert("fail");
+    }
   }
 });
 		});
