@@ -91,7 +91,7 @@ request.onreadystatechange = function(e){
 				div.appendChild(img);
 				div.appendChild(flavorflav);
 				$(div).addClass("member");
-				$(".member").onclick = function(){
+				div.onclick = function(){
 					$("#flavor .selected").removeClass("selected");
 					$(this).addClass("selected");
 				};
@@ -123,7 +123,7 @@ request.onreadystatechange = function(e){
 				div.appendChild(par);
 				$(div).addClass("member");
 				listitem.appendChild(div);
-				div.onclick = function(){
+				listitem.onclick = function(){
 					$("#filling .selected").removeClass("selected");
 					$(this).addClass("selected");
 				};
