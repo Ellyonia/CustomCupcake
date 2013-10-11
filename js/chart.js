@@ -49,9 +49,9 @@ function flavChart() {
 
             options = {
                 animation : false,
-                showLabels: true,
-                resizeLabels: false,
-                hoveredColor: "pink"
+                showLabels : true,
+                resizeLabels : false,
+                hoveredColor : "pink",
                 type: 'stacked'
             };
 
