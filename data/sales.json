@@ -23,10 +23,7 @@
       "pointStrokeColor" : "#fff",
       "data" : [65,59,90,81,56,55,40,53,75,25,85,65,54,92,45]
     }]
-  }
-}
-
-{
+  },
   "salesFlavor" : {
   "labels" : ["Sprinkles",
               "Mini Chocolate Chips",
