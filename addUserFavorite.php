@@ -1,10 +1,10 @@
 
 <?php
    include 'ccAPI.php';
-   $start = ccAPI();
+   ccAPI();
     echo "adlfkjad;lfj";
     echo $_POST['test'];
     echo "adlfja;ldsjf";
-    echo($start->addFavorites());
+    echo(addFavorites());
 
 ?>
