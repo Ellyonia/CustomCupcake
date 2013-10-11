@@ -1,32 +1,36 @@
 function init() {
-	var json;
-	var request1 = new XMLHttpRequest();
 
-	var json = {"flavor" : "Banana",
-				"frosting" : "chocolate_frosting",
-				"filling" : "Blueberry",
-				"toppings" : 
-				{
-					"1" : "Sprinkles", "2" : "Craisins"
-				}};
-
-	function addFavorite() {
-		var url = "../addUserFavorite.php";
-		var pass = "jsonArr=" + JSON.stringify(json);
-	    request1.open("POST", url, true);
-	 	request1.send(pass);
-	}
 
 
 
 	$(document).ready( function() {
 
-			var request = new XMLHttpRequest();
+				var request = new XMLHttpRequest();
 		var mImages = new Array();
 		var mCurrentIndex = 0;
 
 	
 		var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/menu.json';
+
+		var json;
+
+		var json = {"flavor" : "Banana",
+					"frosting" : "chocolate_frosting",
+					"filling" : "Blueberry",
+					"toppings" : 
+					{
+						"1" : "Sprinkles", "2" : "Craisins"
+					}};
+
+		function addFavorite() {
+			var url = "../addUserFavorite.php";
+			var pass = "jsonArr=" + JSON.stringify(json);
+		    request1.open("POST", url, true);
+		 	request1.send(pass);
+		}
+
+
+
 
 		request.open("GET",path, true);
 		request.send();
