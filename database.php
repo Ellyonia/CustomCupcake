@@ -1,6 +1,5 @@
 <?php
 
-
 function getFavoritesFromDB($customerID)
 {
 
@@ -153,6 +152,58 @@ function getFillingsSalesFromDB()
 	return $finalArr;
 }
 
+function updateSaleToDB($arrOfInfo)
+{
+	$customerID = $arrOfInfo['customerID'];
+	$flavor = $arrOfInfo['cupcakeFlavor_ID'];
+	$icing = $arrOfInfo['cupcakeIcing_ID'];
+	$topping = $arrOfInfo['cupcakeTopping_ID'];
+	$filling = $arrOfInfo['cupcakeFilling_ID'];
+	$quantity = $arrOfInfo['cupcakeQuantity'];
+
+	$con = mysql_connect("localhost", "phpuser", "weLoveCupcakes666");
+
+	if(!$con) { die('Could not connect: ' . mysql_error()); }
+
+	mysql_select_db("CustomCupcakes", $con) or die('Could not select db: ' . mysql_error());
+
+	$query = "SELECT order_ID FROM Orders ORDER BY order_ID DESC";
+
+	$result = mysql_query($query);
+
+	$newSalesID = mysql_fetch_array($result)['order_ID'] + 1;
+
+	$query = "INSERT INTO Orders VALUES ('" .
+		$newSalesID . "','" .
+		$customerID . "','" .
+		$flavor . "','" .
+		$icing . "','" .
+		$topping . "','" .
+		$filling . "','" .
+		$quantity . "');";
+
+	mysql_query($query);
+
+	$query = "UPDATE CupcakeFlavor SET purchase_Amount=purchase_Amount+" . $quantity .
+		" WHERE  cupcakeFlavor_ID=" . $flavor . ";";
+
+	mysql_query($query);
+
+		$query = "UPDATE CupcakeIcing SET purchase_Amount=purchase_Amount+" . $quantity .
+		" WHERE  cupcakeIcing_ID=" . $icing . ";";
+
+	mysql_query($query);
+	$query = "UPDATE CupcakeTopping SET purchase_Amount=purchase_Amount+" . $quantity .
+		" WHERE  cupcakeTopping_ID=" . $topping . ";";
+
+	mysql_query($query);
+	$query = "UPDATE CupcakeFilling SET purchase_Amount=purchase_Amount+" . $quantity .
+		" WHERE  cupcakeFilling_ID=" . $filling . ";";
+
+	mysql_query($query);
+
+	mysql_close($con);
+}
 
 ?>
 
