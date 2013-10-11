@@ -141,8 +141,6 @@ window.addEventListener('load', function() {
 		return false;
    	};
 
-, false);
-	
 }, false);
 
 window.addEventListener('load', function() {
