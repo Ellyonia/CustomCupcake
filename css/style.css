@@ -188,7 +188,7 @@ li {
 .reset {
 	position: absolute;
 	left: 30%;
-	top: -225px;
+	top: 0px;
 }
 
 .update {
