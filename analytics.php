@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title>Analytics</title>
@@ -14,9 +14,9 @@
 		<canvas id="myChart" width="700" height="400"></canvas>
 		<header>stuff</header>
 	</body>
-</html> -->
+</html>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <title>Chart JS Demo</title>
@@ -59,4 +59,4 @@
     <body onload="createChart();">
         <canvas id="myChart" width="700" height="400"></canvas>
     </body>
-</html>
+</html> -->
