@@ -29,7 +29,7 @@ request.onreadystatechange = function(e) {
 //var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/sales.json';
 		var jsonData = JSON.parse(request.responseText);
 		console.log(jsonData);
-		var data = jsonData.sales.cakes;
+		var data = jsonData.sales;
 //Get the context of the canvas element we want to select
             var ctx = document.getElementById("myChart").getContext("2d");
  
