@@ -14,7 +14,10 @@ Chris Linstromberg
 
     if(isset($_POST['signIn'])){
          $_SESSION['ID'] = $_POST['email'];
+         $_SESSION['PW'] = $_POST['password'];
+
          echo "email = ". $_SESSION['ID'];
+         echo "password = ". $_SESSION['PW'];
 
     }
 
