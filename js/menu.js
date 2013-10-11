@@ -9,14 +9,14 @@
 					}};
 
 		function addFavorite() {
-			var url = "../CustomCupcake/addUserFavorite.php";
+			var url = "addUserFavorite.php";
 			var pass = "jsonArr=" + JSON.stringify(json);
 		    request.open("POST", url, true);
 		    //if(request.readyState === 4)
 				request.send(pass);
 		}
 
-				//$('#reset').click(addFavorite());
+	$('#reset').click(addFavorite());
 
 	$(document).ready( function() {
 
