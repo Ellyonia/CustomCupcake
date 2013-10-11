@@ -8,11 +8,12 @@ Chris Linstromberg
   Custom Cupcakes -->
 
 
-  <?php
+<?php
 
     session_start();
     $_SESSION['ID'] = $_POST['email'];
     echo $_SESSION['ID'];
+    echo "Number = ". $_SESSION['email'];
 
 
 ?>
