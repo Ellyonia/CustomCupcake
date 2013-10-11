@@ -221,10 +221,10 @@ var request = new XMLHttpRequest();
 			var pass = "jsonArr=" + JSON.stringify(json);
 			console.log(pass);
 
-			request.onreadystatechange = function(e){
+			//request.onreadystatechange = function(e){
 				
-			if(request.readyState === 4)
-			{
+			//if(request.readyState === 4)
+			//{
 		    request.open("POST", url, true);
 		    //if(request.readyState === 4)
 			request.send(pass);
@@ -238,6 +238,6 @@ var request = new XMLHttpRequest();
 			//}
 
 
-			}
-		}
+			//}
+		//}
 		});
