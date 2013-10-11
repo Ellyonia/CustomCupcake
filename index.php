@@ -11,7 +11,6 @@ Chris Linstromberg
 <?php
 
     session_start();
-    session_register ("email");
     $_SESSION['ID'] = $_POST['email'];
     echo $_SESSION['ID'];
     echo "Number = ". $_SESSION['email'];
@@ -28,7 +27,7 @@ Chris Linstromberg
   </head>
 
   <body>
-    <form id="login">
+    <form id="login" action = "index.php" method = "post">
         <div class="logEmail">
             <label>Email: </label>
             <input type="email" id="email" required placeholder="email@example.com" oninvalid="setCustomValidity('Please eneter a valid email address')" onchange="try{setCustomValidity('')}catch(e){}"/>
