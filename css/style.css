@@ -207,9 +207,9 @@ li {
 	background-color: orange;
 }
 
-.orderList {
+/*.orderList {
 	list-style-type: circle;
-}
+}*/
 
 /*****************
 CSS FOR analytics.html
@@ -223,13 +223,4 @@ CSS FOR analytics.html
 
 #flavorLegend , #fillingLegend, #icingLegend {
 	float: right;
-	margin-left: 10%;
 }
-
-/*#fillingLengend {
-	float: right;
-}
-
-#icingLegend {
-	float: right;
-}*/
