@@ -239,7 +239,6 @@ function addSelected(e){
 
 window.addEventListener('load', function(e) {
 	console.log('window loaded');
-	addFavorite();
 }, false);
 
 $('#reset').click(addFavorite());
