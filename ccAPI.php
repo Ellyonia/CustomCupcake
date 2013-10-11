@@ -24,7 +24,7 @@ Takes in a JSON containing the favorite details, and updates the database.
 JSON Format:
  flavor => {flavor value}
  icing => {icing value}
- topping => {topping value}
+ topping=>[1=>{toppingID1},2=>{toppingID2},3=>{toppingID3},...n=>{toppingIDn}]
  filling => {filling value}
  customerID => {customerID value}
 
