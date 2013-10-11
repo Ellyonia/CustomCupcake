@@ -17,16 +17,16 @@ function init() {
 			"1" : "Sprinkles", "2" : "Craisins"
 		}};
 
-		function addFavorite() {
-			var url = "../CustomCupcake/addUserFavorite.php";
-			var pass = "jsonArr=" + JSON.stringify(json);
-		    request.open("POST", url, true);
-		    //if(request.readyState === 4)
-				request.send(pass);
-		}
+		// function addFavorite() {
+		// 	var url = "../CustomCupcake/addUserFavorite.php";
+		// 	var pass = "jsonArr=" + JSON.stringify(json);
+		//     request.open("POST", url, true);
+		//     //if(request.readyState === 4)
+		// 		request.send(pass);
+		// }
 
 
-	//$(document).ready( function() {
+	$(document).ready( function() {
 
 		request.open("GET",path, true);
 		request.send();
@@ -150,34 +150,9 @@ function init() {
 
 	}
 
-			$('#test li').on("click", function() {
-			    $('#test li').css("background-color", "red");
-			});
-
-	//});
+	});
 
 
-
-	function onMouseDown(e){
-
-	    var img = e.target;
-
-	    e.target.lastX = e.clientX;
-	    e.target.lastY = e.clientY;
-
-
-	    if(img.complete)
-	    {
-	    	$('.selected').removeClass('selected');
-	    	img.className = "selected";
-	    	changeImage(img);
-
-	    }
-	    else
-	    {
-	    	return 0;
-	    }
-	}
 
 	function addSelected(e){
 		$(this).addClass('selected');
