@@ -87,7 +87,8 @@ fieldset{
 }
 
 #flavor div {
-	width: 600px;
+	/*width: 600px;*/
+	margin-left: 20px
 	/*width: 1510px;*/
 	overflow-x: scroll;
     overflow-y: hidden;
@@ -181,5 +182,9 @@ li {
 	position: relative;
 	left: 130px;
 	top: 1010px;
+}
+
+.selected {
+	background-color: orange;
 }
 
