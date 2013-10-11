@@ -91,6 +91,11 @@ request.onreadystatechange = function(e){
 				toppings.append(listitem);
 			
 		}
+
+
+		$('#flavor')
+    .css('background-color', '')
+    .css('background-color', 'blue');
 	}
 
 }
@@ -126,9 +131,7 @@ window.addEventListener('load', function() {
 
 
 
-$('#flavor')
-    .css('background-color', '')
-    .css('background-color', 'blue');
+
 
 /*
 $('#flavor').css('background-color', 'blue');
