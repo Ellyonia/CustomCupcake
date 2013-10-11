@@ -63,7 +63,7 @@
 		</form>
 		
 		<div class="reset">
-				<input type="submit" value="Reset Cupcake" id="reset" action = "" method = "post"/> 
+				<input type="submit" value="Reset Cupcake" id="reset" action = "" method = "post" name="reset"/> 
 		</div>
 		<form class="update">	
 			<input type="number" value="1" id="amount" /> 

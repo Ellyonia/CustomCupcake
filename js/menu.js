@@ -205,27 +205,6 @@ var request = new XMLHttpRequest();
 
 
 
-	function onMouseDown(e){
-
-	    var img = e.target;
-
-	    e.target.lastX = e.clientX;
-	    e.target.lastY = e.clientY;
-
-
-	    if(img.complete)
-	    {
-	    	$('.selected').removeClass('selected');
-	    	img.className = "selected";
-	    	changeImage(img);
-
-	    }
-	    else
-	    {
-	    	return 0;
-	    }
-	}
-
 	function addSelected(e){
 		$(this).addClass('selected');
 	};
