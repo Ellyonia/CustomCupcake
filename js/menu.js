@@ -129,9 +129,23 @@ window.addEventListener('load', function() {
 
 
 /*$(document).ready(function(){*/
+
+
+
+$(document).ready(function(){
+
+//The .on function will attach the event to all current
+// elements that match the selector and all future elements
+// that will match the selector
 			$('#flavor').on("click", function() {
 		    $('#flavor').css("background-color", "red");
 			});
+/*
+	$(document).on('[EVENT]', '[SELECTOR]', function(){
+	//Do Stuff
+	});
+*/
+});
 /*});*/
 
 
