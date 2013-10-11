@@ -253,12 +253,11 @@ var request = new XMLHttpRequest();
   			dataType: "text",
   			data: "test=" + datastring,
   			url: 'addUserFavorite.php',
-  			success: function(data) {
-        		alert(data.d);
+  			success: function() {
+        		alert("yay");
     		},
-    		error: function(data){
-        	alert("fail");
+    		error: function(){
+        	alert("neigh");
     }
-  }
 });
 		});
