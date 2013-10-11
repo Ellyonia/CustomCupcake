@@ -13,7 +13,7 @@
 			<fieldset>
 				<legend>Order</legend>
 				<div>
-					<ul>
+					<ul class = "orderList">
 
 					</ul>
 				</div>
