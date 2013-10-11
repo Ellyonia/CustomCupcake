@@ -32,7 +32,27 @@ function getFavoritesFromDB($customerID)
 
 function addFavoriteToDB($arrToAdd, $customerID)
 {
-	
+	$con = mysql_connect("localhost", "phpuser", "weLoveCupcakes666");
+
+	if(!$con) { die('Could not connect: ' . mysql_error()); }
+
+	mysql_select_db("CustomCupcakes", $con) or die('Could not select db: ' . mysql_error());
+
+	$query = "SELECT favorite_ID FROM favorite ORDER BY favorite_ID DESC";
+
+	$resultForFavoriteID = mysql_query($query);
+
+	$rowForFavoriteID = mysql_fetch_arr($resultForFavoriteID);
+
+	$newFaveID = $rowForFavoriteID['favorite_ID'] + 1;
+
+	$query = "INSERT INTO Favorites VALUES ('" . $newFaveID .
+	"','" . $arrToAdd['flavor'] .
+	"','" . $arrToAdd['icing'] .
+	"','" . $arrToAdd['topping'] .
+	"','" . $arrToAdd['filling'] . "');";
+
+	mysql_query($query);
 }
 
 
