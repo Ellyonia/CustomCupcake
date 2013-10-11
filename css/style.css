@@ -75,10 +75,10 @@ fieldset {
 }
 
 .orderList {
-	max-height: 300px;
+	max-height: 180px;
 	overflow-x: hidden;
     overflow-y: auto;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 
 #fav fieldset {
