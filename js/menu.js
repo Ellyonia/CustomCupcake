@@ -227,10 +227,11 @@ var request = new XMLHttpRequest();
 			
 				console.log("NO MORE");
 		    	request.open("POST", url, true);
-				request.send(pass);
+				
 				request.onreadystatechange = function(){
+					
 				if(request.readyState === 4 && request.status === 200){
-
+					request.send(pass);
 					var string = request.responseText;
 					alert("FUCK THIS SHIT");
 					//alert(request.responseText);
