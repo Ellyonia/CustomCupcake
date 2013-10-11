@@ -39,7 +39,7 @@
     	}
 	}
 	$_SESSION['cID'] = $ID;
-	$sql2 = "INSERT INTO Customers VALUES ('$ID','$mailing','$fname','$lname','$address','$city','$state','$zip','$email','$pass','$phone')";
+	$sql2 = "INSERT INTO Customers VALUES ($ID,$mailing,'$fname','$lname','$address','$city','$state',$zip,'$email','$pass',$phone)";
 
 	$result = mysql_query($sql) or die(mysql_error());
  	header("Location: order.php");
