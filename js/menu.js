@@ -22,12 +22,7 @@
 						"1" : "Sprinkles", "2" : "Craisins"
 					}};
 
-		function addFavorite() {
-			var url = "../addUserFavorite.php";
-			var pass = "jsonArr=" + JSON.stringify(json);
-		    request.open("POST", url, true);
-		 	request.send(pass);
-		}
+
 
 
 
@@ -39,7 +34,12 @@
 
 		$('#reset').click(addFavorite());
 
-
+		function addFavorite() {
+			var url = "../addUserFavorite.php";
+			var pass = "jsonArr=" + JSON.stringify(json);
+		    request.open("POST", url, true);
+		 	request.send(pass);
+		}
 
 
 
