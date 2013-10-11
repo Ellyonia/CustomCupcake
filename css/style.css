@@ -121,15 +121,21 @@ fieldset{
 	border-radius: 50%;
 }
 
-#filling fieldset {
+.CFilling {
+	overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+/*#filling fieldset {
 	position: relative;
 	top: -350px;
 	left: 200px;
 	width: 82%;
-	/*display: inline;*/
+	/*display: inline;
 	white-space: nowrap;
 }
-
+*/
 #filling ul {
 	/*display: inline;*/
 	overflow-x: scroll;
