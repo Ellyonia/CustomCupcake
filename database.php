@@ -289,7 +289,7 @@ function getCustomerOrdersFromDB($customerID)
 
 	while($row = mysql_fetch_array($result))
 	{
-		$resultArr['order_ID'] => array("cupcakeFlavor_ID" => $row['cupcakeFlavor_ID'],
+		$resultArr['order_ID'] = array("cupcakeFlavor_ID" => $row['cupcakeFlavor_ID'],
 			"cupcakeIcing_ID" => $row['cupcakeIcing_ID'],
 			"cupcakeTopping_ID" => $row['cupcakeTopping_ID'],
 			"cupcakeFilling_ID" => $row['cupcakeFilling_ID'],
