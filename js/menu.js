@@ -129,7 +129,7 @@ window.addEventListener('load', function() {
 
 
 /*$(document).ready(function(){*/
-			$('#flavor').live("click", function() {
+			$('#flavor').on("click", function() {
 		    $('#flavor').css("background-color", "red");
 			});
 /*});*/
