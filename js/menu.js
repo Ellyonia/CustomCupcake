@@ -10,6 +10,8 @@ var request = new XMLHttpRequest();
 					}};
 
 		function addFavorite() {
+
+			console.log("HI");
 			var url = "addUserFavorite.php";
 			var pass = "jsonArr=" + JSON.stringify(json);
 
@@ -19,7 +21,7 @@ var request = new XMLHttpRequest();
 		    request.open("POST", url, true);
 		    //if(request.readyState === 4)
 				request.send(pass);
-				console.log("HI");
+
 
 			}
 		}
