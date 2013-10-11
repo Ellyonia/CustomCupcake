@@ -2,6 +2,12 @@
 
 include 'database.php';
 
+function ccAPI()
+{
+	session_start();
+}
+
+
 /**
 Takes in customerID, returns JSON of their favorite designs.
 
