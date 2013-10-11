@@ -92,7 +92,7 @@ request.onreadystatechange = function(e){
 			
 		}
 
-		/*$('#flavor').click().css('background-color', '').css('background-color', 'blue');*/
+		
 	}
 
 }
@@ -135,8 +135,8 @@ window.addEventListener('load', function() {
 $(document).ready(function(){
 
 
-			$('#test li').on("click", function() {
+		$('#test li').on("click", function() {
 		    $('#test li').css("background-color", "red");
-			});
+		});
 
 });
