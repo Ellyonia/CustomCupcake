@@ -10,25 +10,6 @@ var request = new XMLHttpRequest();
 					}};
 
 
-		function addUserFavorite() {
-			console.log("HI");
-			
-			var url = "addUserFavorite.php";
-			var pass = "jsonArr=" + JSON.stringify(json);
-
-			request.onreadystatechange = function(e){
-				
-			if(request.readyState === 4)
-			{
-		    request.open("POST", url, true);
-		    //if(request.readyState === 4)
-				request.send(pass);
-
-
-			}
-		}
-	}
-
 
 
 	$(document).ready( function() {
@@ -232,5 +213,22 @@ var request = new XMLHttpRequest();
 		console.log('window loaded');
 	}, false);
 
-	$('#reset').click(addUserFavorite()); 
+	$('#reset').click(function() {
 
+			console.log("HI");
+			
+			var url = "addUserFavorite.php";
+			var pass = "jsonArr=" + JSON.stringify(json);
+
+			request.onreadystatechange = function(e){
+				
+			if(request.readyState === 4)
+			{
+		    request.open("POST", url, true);
+		    //if(request.readyState === 4)
+				request.send(pass);
+
+
+			}
+		}
+		});
