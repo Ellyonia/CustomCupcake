@@ -3,7 +3,6 @@ function TChart() {
     var request = new XMLHttpRequest();
     var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/sales.json';
     request.open("GET",path, true);
-    request.send();
 
     request.onreadystatechange = function(e) {
 
@@ -31,34 +30,31 @@ function TChart() {
                
         }
     }
+    request.send();
 }
 
 function FChart() {
     var request = new XMLHttpRequest();
     var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/sales.json';
     request.open("GET",path, true);
-    request.send();
 
     request.onreadystatechange = function(e) {
 
         if(request.readyState === 4) {
-
-            
+     
             var jsonData = JSON.parse(request.responseText);
             console.log(jsonData);
             var data = jsonData.salesFlavor;
             var ctx = document.getElementById("myChart").getContext("2d");
 
-
             new Chart(ctx).Pie(data);
 
         }
     }
-
+    request.send();
 }
 
 $(document).ready(function() {
-
     TChart();
     FChart();
 });
