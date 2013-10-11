@@ -4,7 +4,7 @@
 	{
 		header("Location: index.php");
 	}
-	$sql = "SELECT * from Cupcakes NATURAL JOIN Favorites WHERE customer_ID = '$_SESSION['cID']' AND Cupcakes.cupcake_ID = Favorites.cupcake_ID"
+	$sql = "SELECT * from Cupcakes NATURAL JOIN Favorites WHERE customer_ID = '$_SESSION['cID']' AND Cupcakes.cupcake_ID = Favorites.cupcake_ID";
 ?>
 
 <!DOCTYPE html>
