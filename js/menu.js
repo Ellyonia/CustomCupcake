@@ -1,14 +1,15 @@
+
+
+
+$(document).ready( function() {
+	var mCurrentIndex = 0;
 var request = new XMLHttpRequest();
 var mImages = new Array();
+var json;
+var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/menu.json';
 
-
-var json = {"flavor" : "Banana",
-			"frosting" : "chocolate_frosting",
-			"filling" : "Blueberry",
-			"toppings" : 
-			{
-				"1" : "Sprinkles", "2" : "Craisins"
-			}};
+request.open("GET",path, true);
+request.send();
 
 
 function addFavorite() {
@@ -18,16 +19,13 @@ function addFavorite() {
  	request.send(pass);
 }
 
-$(document).ready( function() {
-	var mCurrentIndex = 0;
-
-var json;
-var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/menu.json';
-
-request.open("GET",path, true);
-request.send();
-
-
+var json = {"flavor" : "Banana",
+			"frosting" : "chocolate_frosting",
+			"filling" : "Blueberry",
+			"toppings" : 
+			{
+				"1" : "Sprinkles", "2" : "Craisins"
+			}};
 
 
 
