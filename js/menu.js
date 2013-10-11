@@ -20,7 +20,7 @@ request.onreadystatechange = function(e){
 		for (var i = 0, len = jsonData.menu.cakes.length; i < len; i++){
 				var listitem = document.createElement("li");
 				var div = document.createElement("div");
-				var flavorflav = document.createElement("p");
+				var flavorflav = document.createElement("a");
 				var img = document.createElement("img");
 				img.setAttribute("src", "artwork/" + jsonData.menu.cakes[i].img_url);
 				img.setAttribute("value", jsonData.menu.cakes[i].flavor);
@@ -32,7 +32,6 @@ request.onreadystatechange = function(e){
 				$(div).addClass("test");
 				div.onclick = function(){
 					$(".selected").removeClass("selected");
-					//$(".div").removeClass("selected");
 					$(this).addClass("selected");
 				};
 				// // img.onclick = function(){
