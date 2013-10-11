@@ -17,7 +17,7 @@ Chris Linstromberg
          $_SESSION['PW'] = $_POST['password'];
 
          echo "email = ". $_SESSION['ID'];
-         echo "password = ". $_SESSION['PW'];
+         echo "\n password = ". $_SESSION['PW'];
 
     }
 
