@@ -46,14 +46,14 @@
 		</form>
 		<form id = 'icing'>
 				<a>Icing</a>
-				<div class='IFilling'>
+				<div class='CIcing'>
 					<ul>
 					</ul>
 				</div>
 		</form>
 		<form id = 'topping'>
 				<a>Toppings</a>
-				<div class='TFilling'>
+				<div class='CTopping'>
 					<ul>
 					</ul>
 				</div>
