@@ -248,7 +248,7 @@ var request = new XMLHttpRequest();
 */
 
 	$('#reset').click(function() {
-			$(".boxes").attr('checked', false);
+			//$(".boxes").attr('checked', false);
 			$(".selected").removeClass(".selected");
 });
 
