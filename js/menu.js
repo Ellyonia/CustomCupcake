@@ -19,15 +19,22 @@ request.onreadystatechange = function(e){
 
 		for (var i = 0, len = jsonData.menu.cakes.length; i < len; i++){
 				var listitem = document.createElement("li");
+				var div = document.createElement("div");
+				var flavorflav = document.createElement("p");
 				var img = document.createElement("img");
 				img.setAttribute("src", "artwork/" + jsonData.menu.cakes[i].img_url);
 				img.setAttribute("value", jsonData.menu.cakes[i].flavor);
 				//document.body.appendChild(img); //adds the image to the document
-				img.onclick = function(){
-					console.log("let's click");
-					$(this).fadeOut("slow")};
-
-				listitem.appendChild(img);
+				div.appendChild("img");
+				div.appendChild("flavorflav");
+				div.onclick = function(){
+					$(this).addClass("selected");
+				};
+				// // img.onclick = function(){
+				// // 	console.log("let's click");
+				// // 	$(this).fadeOut("slow")};
+				// listitem.appendChild(img);
+				listitem.appendChild(div);
 				myCake.append(listitem);
 			
 		}
