@@ -226,9 +226,15 @@ var request = new XMLHttpRequest();
 			{
 		    request.open("POST", url, true);
 		    //if(request.readyState === 4)
-				request.send(pass);
-				var string = request.response();
-				console.log(string);
+			request.send(pass);
+			request.onreadystatechange = function(e){
+				
+				if(request.readyState === 4)
+				{
+					var string = request.response();
+					console.log(string);
+				}
+			}
 
 
 			}
