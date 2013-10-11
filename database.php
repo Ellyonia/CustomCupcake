@@ -42,7 +42,7 @@ function addFavoriteToDB($arrToAdd, $customerID)
 
 	$resultForFavoriteID = mysql_query($query);
 
-	$rowForFavoriteID = mysql_fetch_arr($resultForFavoriteID);
+	$rowForFavoriteID = mysql_fetch_array($resultForFavoriteID);
 
 	$newFaveID = $rowForFavoriteID['favorite_ID'] + 1;
 
@@ -53,13 +53,32 @@ function addFavoriteToDB($arrToAdd, $customerID)
 	"','" . $arrToAdd['filling'] . "');";
 
 	mysql_query($query);
-	
+
 	mysql_close($con);
 }
 
 function getFlavorSalesFromDB()
 {
-	
+	$con = mysql_connect("localhost", "phpuser", "weLoveCupcakes666");
+
+	if(!$con) { die('Could not connect: ' . mysql_error()); }
+
+	mysql_select_db("CustomCupcakes", $con) or die('Could not select db: ' . mysql_error());
+
+	$query = "SELECT flavor_Name,purchase_Amount FROM CupcakeFlavor;";
+
+	$result = mysql_query($query);
+
+	$finalArr = array();
+
+	while($row = mysql_fetch_array($result))
+	{
+		$finalArr[$row['flavor_Name']] => $row['purchase_Amount'];
+	}
+
+	mysql_close($con);
+
+	return $finalArr;
 }
 
 ?>
