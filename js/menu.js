@@ -11,12 +11,12 @@ var request = new XMLHttpRequest();
 
 		function addFavorite() {
 
-			
+			console.log("HI");
 			var url = "addUserFavorite.php";
 			var pass = "jsonArr=" + JSON.stringify(json);
 
 			request.onreadystatechange = function(e){
-				console.log("HI");
+				
 			if(request.readyState === 4)
 			{
 		    request.open("POST", url, true);
@@ -28,7 +28,7 @@ var request = new XMLHttpRequest();
 		}
 		}
 
-	$('#reset').click(addFavorite());
+
 
 	$(document).ready( function() {
 
@@ -252,3 +252,4 @@ var request = new XMLHttpRequest();
 		console.log('window loaded');
 	}, false);
 
+	$('#reset').click(addFavorite());
