@@ -90,7 +90,7 @@ fieldset{
 }
 
 #flavor fieldset {
-	width: 80%;
+	width: 85%;
 }
 
 #flavor div {
@@ -144,8 +144,12 @@ fieldset{
 	white-space:nowrap;
 }
 
+#icing fieldset {
+	width: 80%;
+}
+
 #icing div {
-	width: 10%;
+	
 	overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -153,7 +157,7 @@ fieldset{
 
 #topping fieldset {
 	position: relative;
-	width: 83%;
+	width: 80%;
 	top: -250px;
 	left: 200px;
 	/*right: 5px;*/
