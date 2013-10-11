@@ -30,7 +30,7 @@
     		{
     			print "You have successfully Logined in. Welcome ";
     			$valid = 1;
-          //header("Location: order.php");
+          header("Location: order.php");
     		}
     	}
     }
