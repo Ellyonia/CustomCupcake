@@ -85,10 +85,11 @@ fieldset{
 	left: 200px;
 	clear: both;
 	border: ridge;
+	width: 90%;
 }
 
 #flavor fieldset {
-	width: 90%;
+	
 	overflow: auto;
 
 }
