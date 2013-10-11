@@ -94,7 +94,7 @@ function iChart() {
             var ctx = document.getElementById("icingChart").getContext("2d");
 
             
-            new Chart(ctx).Pie(data, options);
+            new Chart(ctx).Pie(data);
 
         }
     }
