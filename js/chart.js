@@ -102,9 +102,7 @@ function iChart() {
             var ctx = document.getElementById("icingChart").getContext("2d");
 
             options = {
-                barDatasetSpacing : 15,
-                barValueSpacing: 10,
-                barStrokeWidth: 15
+                animation : false;
             };
 
             new Chart(ctx).Pie(data, options);
