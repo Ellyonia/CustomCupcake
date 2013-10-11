@@ -291,11 +291,11 @@ var request = new XMLHttpRequest();
 	$('#update').click(function() {
 			var datastring = "lol"; //create json of the attributes (see ccAPI line#72 for formatting) and stringify it
 			$.ajax({
-  			type: "POST",
-  			data: "jsonArr=" + datastring,
-  			url: 'newOrder.php'
-   }
-});
+	  			type: "POST",
+	  			data: "jsonArr=" + datastring,
+	  			url: 'newOrder.php'
+   
+			});
 });
 
 
