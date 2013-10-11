@@ -294,11 +294,16 @@ var request = new XMLHttpRequest();
 			var temp = $('.CFlavor').find('.selected').attr('value');
 
 
-			// var temp2 = document.getElementById('CFlavor').getElementsByClassName('selected').getAttribute('value');
 
-			console.log(temp);
 
-			console.log($('.CFlavor .selected').attr("value"));
+
+			var orders = $("#order div ul");
+
+			var listitem = document.createElement("li");
+
+			listitem..appendChild(document.createTextNode(temp));
+
+			orders.append(listitem);
 
 			/*
 			$.ajax({
