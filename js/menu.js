@@ -24,6 +24,7 @@ request.onreadystatechange = function(e){
 				img.setAttribute("value", jsonData.menu.cakes[i].flavor);
 				//document.body.appendChild(img); //adds the image to the document
 				listitem.appendChild(img);
+				listitem.onclick = addSelected(listitem);
 				myCake.append(listitem);
 			
 		}
@@ -116,7 +117,6 @@ function onMouseDown(e){
     if(img.complete)
     {
     	$('.selected').removeClass('selected');
-    		
     	img.className = "selected";
     	changeImage(img);
 
