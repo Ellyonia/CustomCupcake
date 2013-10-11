@@ -92,8 +92,6 @@ request.onreadystatechange = function(e){
 			
 		}
 
-		waitForClick();
-
 		/*$('#flavor').click().css('background-color', '').css('background-color', 'blue');*/
 	}
 
@@ -129,12 +127,12 @@ window.addEventListener('load', function() {
 	console.log('window loaded');
 }, false);
 
+
 $(document).ready(fcuntion(){
 			$("flavor").on("click", function() {
 		    $(this).css("background", "red");
 		})
 })
-
 
 
 /*
