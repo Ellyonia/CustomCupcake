@@ -5,9 +5,67 @@ var mImages = new Array();
 var json;
 var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/menu.json';
 
-/*added*/
 request.open("GET",path, true);
 request.send();
+
+
+	var favs = document.getElementById("fav");
+
+	getUserID()
+
+    makeFavList(favs, 'getFavorites.php');
+
+    var uID = 
+
+
+
+     function makeFavList(input ,url) {
+        favs.innerHTML = "";
+        
+        var request = new XMLHttpRequest();
+        var mImages = new Array();
+        var json;
+        var ID;
+        var curr = 0;
+
+        request.open("GET", url, true);
+        request.send();
+
+        request.onreadystatechange = function(e) {
+
+            if(request.readyState === 4){
+                var jData = JSON.parse(request.responseText);
+                
+                
+                ID = jData.favorites;
+                
+                var numFavs = ID.length;
+                
+
+                for (var i = 0, len = numFavs; i < len; i++){
+	                var newLi = document.createElement("li");
+	                var val = document.createElement("img");
+
+
+	                val.setAttribute("src", "artwork/" + ID[i].Img_url);
+	                val.setAttribute("id", "fav"+i);
+	                val.setAttribute("name", ID[i].FavoriteID);
+	                var p = document.createElement('alt'),
+	                
+
+	                var text = document.createTextNode(ID[i].Name);
+	                p.appendChild(text);
+	                newLi.appendChild(val);
+	                newLi.appendChild(p);
+	                newLi.addEventListener("click", select, false);
+	                
+	                input.appendChild(newLi);
+                }
+            }
+        }
+
+    }
+
 
 request.onreadystatechange = function(e){
 	if(request.readyState === 4)

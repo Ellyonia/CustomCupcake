@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+$_Session['ID'] = $_POST['email'];
+
+
+?>
+
 <!-- Team 6
 Ryan Tanner
 Robert Stewart
@@ -17,7 +25,7 @@ Chris Linstromberg
     <form id="login">
         <div class="logEmail">
             <label>Email: </label>
-            <input type="email" id="logEmail" required placeholder="email@example.com" oninvalid="setCustomValidity('Please eneter a valid email address')" onchange="try{setCustomValidity('')}catch(e){}"/>
+            <input type="email" id="email" required placeholder="email@example.com" oninvalid="setCustomValidity('Please eneter a valid email address')" onchange="try{setCustomValidity('')}catch(e){}"/>
         </div>
         <div class="logPass"> 
             <label>Password: </label>
