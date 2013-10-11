@@ -17,9 +17,9 @@ JSON Format:
  @param int $customerID ID of the customer
  @return JSONArray the customer's favorites
 */
-function getUserFavorites($customerID)
+function getUserFavorites()
 {
-	$arr = getFavoritesFromDB($customerID);
+	$arr = getFavoritesFromDB($_SESSION['ID']);
 	$jsonarr = json_encode($arr);
 	return $jsonarr;
 }
@@ -33,12 +33,10 @@ JSON Format:
  topping=>[1=>{toppingID1},2=>{toppingID2},3=>{toppingID3},...n=>{toppingIDn}]
  filling => {filling value}
  customerID => {customerID value}
-
-@param JSONArray $favoriteAsJSON The favorite's settings to be stored
 */
-function addUserFavorite($favoriteAsJSON)
+function addUserFavorite()
 {
-	$arr = json_decode($favoriteAsJSON);
+	$arr = json_decode($_POST['jsonArr']);
 	$customerID = $arr['customerID'];
 	$arrToSubmit = array_pop($arr);
 	addFavoriteToDB($arrToSubmit, $customerID);
@@ -69,41 +67,11 @@ This function takes in a JSON containing the sales information of the cupcakes b
 
 JSON Format:
 [customerID=>{val},cupcakeFlavor_ID=>{val},cupcakeIcing_ID=>{val},cupcakeTopping_ID=>{val},cupcakeFilling_ID=>{val},cupcakeQuantity=>{val}]
-
-@param JSONArray $informationAsJSON The order details
 */
-function addSaleInformation($informationAsJSON)
+function addSaleInformation()
 {
-	$arr = json_decode($informationAsJSON);
+	$arr = json_decode($_POST['jsonArr']);
 	updateSaleToDB($arr);
-}
-
-/**
-This function takes in a customerID value and returns all the orders associated with that customer as a JSON array.
-
-JSON Format:
-[{orderID1}=>[cupcakeFlavor_ID=>{val},cupcakeIcing_ID=>{val},cupcakeTopping_ID=>{val},cupcakeFilling_ID=>{val},cupcakeQuantity=>{val}],{orderID2}=>[...],...]
-
-@param JSONArray $customerID The customer's ID
-@return JSONArray The JSONArray containing all of the customer's orders
-*/
-function getCustomerOrders($customerID)
-{
-	$arr = getCustomerOrdersFromDB($customerID);
-	$jsonarr = json_encode($arr);
-	return $jsonarr;
-}
-
-/*
-This function takes in a username, and will return the internal customer ID associated with that username.
-
-@param string $username The username for the user to be looked up
-@return int The ID number of the username
-**/
-function getCustomerID($username)
-{
-	$result = getCustomerIDFromDB($username);
-	return $result;
 }
 
 ?>
