@@ -204,7 +204,7 @@ request.onreadystatechange = function(e){
 
 });
 
-addFavorite();
+
 
 function onMouseDown(e){
 
@@ -233,5 +233,6 @@ function addSelected(e){
 
 window.addEventListener('load', function(e) {
 	console.log('window loaded');
+	addFavorite();
 }, false);
 
