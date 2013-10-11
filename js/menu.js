@@ -127,9 +127,9 @@ window.addEventListener('load', function() {
 
 var flavors = $('flavor').find('li').click().css('background-color: blue');
 
-
+/*
 
 for(var i = 0, len = flavors.length; i < len; i++){
 
 	flavors[i].addEventListener('mousedown', onMouseDown, false);
-}
+}*/
