@@ -27,6 +27,7 @@ var request = new XMLHttpRequest();
 
 			}
 		}
+	}
 
 
 
