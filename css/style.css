@@ -53,7 +53,7 @@ CSS FOR index.html
 CSS FOR order.html
 ******************/
 
-fieldset{
+fieldset {
     overflow: hidden;
     float: left;
 }
@@ -79,6 +79,10 @@ fieldset{
 	margin-top: 100px;
 }
 
+.member {
+	display: inline;
+}
+
 #flavor {
 	position: relative;
 	top: -380px;
@@ -99,10 +103,6 @@ fieldset{
 	padding-right: 5px;
 	margin-right: 5px;
 	margin-left: 5px;
-}
-
-.member {
-	display: inline;
 }
 
 .circle {
@@ -134,25 +134,6 @@ fieldset{
 	margin-left: 20px;
 }
 
-/*#filling fieldset {
-	position: relative;
-	top: -350px;
-	left: 200px;
-	width: 82%;
-	/*display: inline;
-	white-space: nowrap;
-}
-*/
-
-
-/*#filling ul {
-	/*display: inline;
-	overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}*/
-
-
 #icing {
 	position: relative;
 	top: -300px;
@@ -182,24 +163,6 @@ fieldset{
 	width: 80%;
 }
 
-/*.CTopping {
-	overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}*/
-
-#topping li {
-
-}
-
-/*#topping fieldset {
-	position: relative;
-	width: 82%;
-	top: -250px;
-	left: 200px;
-	/*right: 5px;
-}*/
-
 #topping li  {
 	float: left;
 	padding-left: 5px;
@@ -213,7 +176,6 @@ fieldset{
 	margin-top: 100px;
 	clear:both;
 	text-align: center;
-	/*top: 70%;*/
 }
 
 li {
@@ -229,8 +191,6 @@ li {
 
 .update {
 	position: absolute;
-	/*left: 130px;*/
-	/*top: -200px;*/
 }
 
 .selected {
