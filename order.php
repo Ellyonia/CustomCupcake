@@ -62,7 +62,7 @@
 			</div>
 			
 			<div class="reset">
-					<input type="submit" value="Reset Cupcake" id="reset" action = "" method = "post" name="reset"/> 
+					<input type="button" value="Reset Cupcake" id="reset" action = "" method = "post" name="reset"/> 
 			</div>
 			<div class="update">	
 				<input type="number" value="1" id="amount" /> 
