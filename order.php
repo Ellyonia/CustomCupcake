@@ -31,11 +31,13 @@
 						<input type="submit" value="Order" id="submitOrder" /> 
 					</div>
 			</div>
-			<div id = 'fav'>	
-					<a>Favorites</a>
+			<div id = 'fav'>
+				<fieldset>
+					<legend>Favorites</legend>
 					<div>
 						<ul></ul>
-					</div>	
+					</div>
+				</fieldset>
 			</div>
 			<div id = 'flavor'>
 					<a>Cupcake Flavor</a>
