@@ -1,3 +1,7 @@
+var request = new XMLHttpRequest();
+var mImages = new Array();
+
+
 var json = {"flavor" : "Banana",
 			"frosting" : "chocolate_frosting",
 			"filling" : "Blueberry",
@@ -16,8 +20,7 @@ function addFavorite() {
 
 $(document).ready( function() {
 	var mCurrentIndex = 0;
-var request = new XMLHttpRequest();
-var mImages = new Array();
+
 var json;
 var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/menu.json';
 
