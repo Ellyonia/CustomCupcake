@@ -1,5 +1,6 @@
 [
  {
+    "label" : "hey guys",
     "value": 30,
     "color": "#F38630"
   },
@@ -10,5 +11,6 @@
   {
     "value" : 100,
     "color" : "#69D2E7"
-  }]
+  }
+  ]
   
