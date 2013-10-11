@@ -96,6 +96,10 @@ fieldset{
     white-space: nowrap;
 }
 
+.test {
+	display: inline;
+}
+
 #flavor li {
 	display: inline;
 	padding-left: 5px;
