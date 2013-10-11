@@ -28,11 +28,9 @@ request.onreadystatechange = function(e){
 				//document.body.appendChild(img); //adds the image to the document
 				div.appendChild(img);
 				div.appendChild(flavorflav);
+				div.addClass("test");
 				div.onclick = function(){
-					$(#flavorflav div ul div).removeClass("selected");
-					// for (var j = 0, len = jsonData.menu.cakes.length; j < len; j++){
-					// 	if()
-					// }
+					$(".div").removeClass("selected");
 					$(this).addClass("selected");
 				};
 				// // img.onclick = function(){
