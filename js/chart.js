@@ -56,7 +56,7 @@ request.onreadystatechange = function(e) {
             options = {
                 barDatasetSpacing : 15,
                 barValueSpacing: 10,
-                scaleLineWidth: 20 
+                barStrokeWidth: 5
             };
  
             //Create the chart
