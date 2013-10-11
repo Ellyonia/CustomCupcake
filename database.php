@@ -53,8 +53,14 @@ function addFavoriteToDB($arrToAdd, $customerID)
 	"','" . $arrToAdd['filling'] . "');";
 
 	mysql_query($query);
+	
+	mysql_close($con);
 }
 
+function getFlavorSalesFromDB()
+{
+	
+}
 
 ?>
 
