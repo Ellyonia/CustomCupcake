@@ -91,13 +91,14 @@ fieldset{
 }
 
 .testa {
-	overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
+	
 }
 
 .test {
 	display: inline; 
+	overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
 #flavor li {
