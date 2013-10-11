@@ -47,17 +47,16 @@ function flavChart() {
             var data = jsonData.salesFlavor;
             var ctx = document.getElementById("flavorChart").getContext("2d");
 
-            options = {
-                animation : false,
-                showLabels : true,
-                resizeLabels : false,
-                hoveredColor : "pink",
-                type: 'stacked'
-            };
+            // options = {
+            //     animation : false,
+            //     showLabels : true,
+            //     resizeLabels : false,
+            //     hoveredColor : "pink",
+            //     type: 'stacked'
+            // };
 
-            new Chart(ctx).Pie(data, options);
-            legend(document.getElementById("pieLegend"), data[0]);
-            console.log(legend);
+            new Chart(ctx).Pie(data);
+            legend(document.getElementById("pieLegend"), data);
         }
     }
     request.send();

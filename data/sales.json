@@ -29,21 +29,21 @@
  {
     "value" : 30,
     "color" : "#F38630",
-    "label" : "Chocolate",
+    "title" : "Chocolate",
     "labelColor" : "black",
     "labelFontSize" : "16px"
   },
   {
     "value" : 50,
     "color" : "#E0E4CC",
-    "label" : "Vanilla",
+    "title" : "Vanilla",
     "labelColor" : "black",
     "labelFontSize" : "16px"
   },
   {
     "value" : 100,
     "color" : "#69D2E7",
-    "label" : "strawb",
+    "title" : "strawb",
     "labelColor" : "black",
     "labelFontSize" : "16px"
   }],
