@@ -81,7 +81,7 @@ fieldset{
 
 #flavor {
 	position: relative;
-	top: -400px;
+	top: -380px;
 	left: 200px;
 	clear: both;
 	border: ridge;
@@ -89,9 +89,13 @@ fieldset{
 }
 
 #flavor fieldset {
+<<<<<<< HEAD
 	
 	overflow: auto;
 
+=======
+	overflow: auto;
+>>>>>>> 6b9d840bc7a4bd3161be70f0870433ea547f127e
 }
 
 .testa {
@@ -101,7 +105,7 @@ fieldset{
 }
 
 .test {
-	display: inline;
+	display: block;
 }
 
 #flavor li {
