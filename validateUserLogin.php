@@ -26,11 +26,11 @@
     {
     	if ($cname == "password")
     	{
-    		if ( $Pass == $cvalue)
+    		if ( $pass == $cvalue)
     		{
     			print "You have successfully Logined in. Welcome ";
     			$valid = 1;
-header("Location: order.php");
+          header("Location: order.php");
     		}
     	}
     }
