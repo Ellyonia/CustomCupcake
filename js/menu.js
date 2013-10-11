@@ -234,7 +234,7 @@ var request = new XMLHttpRequest();
 		console.log('window loaded');
 	}, false);
 
-	$('#reset').click(function addFavorite() {
+	$('#reset').click(function() {
 
 			console.log("HI");
 			var url = "addUserFavorite.php";
