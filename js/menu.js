@@ -11,9 +11,16 @@
 		function addFavorite() {
 			var url = "addUserFavorite.php";
 			var pass = "jsonArr=" + JSON.stringify(json);
+
+			request.onreadystatechange = function(e){
+			if(request.readyState === 4)
+			{
 		    request.open("POST", url, true);
 		    //if(request.readyState === 4)
 				request.send(pass);
+
+			}
+		}
 		}
 
 	//$('#reset').click(addFavorite());
