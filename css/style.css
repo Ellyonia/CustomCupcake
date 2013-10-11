@@ -87,7 +87,6 @@ fieldset{
 }
 
 #flavor fieldset {
-	float: left;
 	width: 82%;
 }
 
@@ -98,6 +97,7 @@ fieldset{
 }
 
 #flavor li {
+	float: left;
 	padding-left: 5px;
 	padding-right: 5px;
 	margin-right: 5px;
