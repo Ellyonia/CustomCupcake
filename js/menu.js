@@ -234,7 +234,7 @@ var request = new XMLHttpRequest();
 				// {
 					var string = request.responseText;
 					alert("FUCK THIS SHIT");
-					alert(request.responseText);
+					//alert(request.responseText);
 					console.log(string);
 				// }
 			// }
