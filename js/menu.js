@@ -147,7 +147,7 @@ request.onreadystatechange = function(e){
 				img.setAttribute("src", "artwork/" + jsonData.menu.frosting[i].img_url);
 				img.setAttribute("value", jsonData.menu.frosting[i].flavor);
 				listitem.setAttribute("value", jsonData.menu.frosting[i].flavor);
-				aitem = listitem.value;
+				aitem.setAttribute("value", listitem.value);
 				//document.body.appendChild(img); //adds the image to the document
 				listitem.appendChild(img);
 				listitem.appendChild(aitem);
