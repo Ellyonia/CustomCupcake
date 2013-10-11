@@ -91,10 +91,7 @@ request.onreadystatechange = function(e){
 					$(".selected").removeClass("selected");
 					$(this).addClass("selected");
 				};
-				// // img.onclick = function(){
-				// // 	console.log("let's click");
-				// // 	$(this).fadeOut("slow")};
-				// listitem.appendChild(img);
+
 				listitem.appendChild(div);
 				myCake.append(listitem);
 			
@@ -108,7 +105,7 @@ request.onreadystatechange = function(e){
 
 		for (var i = 0, len = jsonData.menu.fillings.length; i < len; i++){
 				var listitem = document.createElement("li");
-				var container = document.createElement("div");
+				var div = document.createElement("div");
 				var par = document.createElement("p");
 				var circle = document.createElement("div");
 				par.innerHTML = jsonData.menu.fillings[i].flavor;
@@ -118,11 +115,11 @@ request.onreadystatechange = function(e){
 				myId = myId + jsonData.menu.fillings[i].flavor;
 				myId = myId.replace(/\s+/g,"");
 				circle.setAttribute("id", myId);
-				container.appendChild(circle);
-				container.appendChild(par);
-				$(container).addClass("member");
-				listitem.appendChild(container);
-				container.onclick = function(){
+				div.appendChild(circle);
+				div.appendChild(par);
+				$(div).addClass("member");
+				listitem.appendChild(div);
+				div.onclick = function(){
 					$(".selected").removeClass("selected");
 					$(this).addClass("selected");
 				};
