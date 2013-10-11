@@ -86,9 +86,8 @@ request.onreadystatechange = function(e){
 				//document.body.appendChild(img); //adds the image to the document
 				div.appendChild(img);
 				div.appendChild(flavorflav);
-				
 				$(div).addClass("member");
-				$(div).onclick = function(){
+				div.onclick = function(){
 					$(".selected").removeClass("selected");
 					$(this).addClass("selected");
 				};
@@ -122,10 +121,6 @@ request.onreadystatechange = function(e){
 				container.appendChild(circle);
 				container.appendChild(par);
 				$(container).addClass("member");
-				container.onclick = function(){
-					$(".selected").removeClass("selected");
-					$(this).addClass("selected");
-				};
 				listitem.appendChild(container);
 				myCake.append(listitem);
 				$('#' + myId).css('background-color', jsonData.menu.fillings[i].rgb);
