@@ -59,7 +59,7 @@ fieldset {
     float: left;
 }
 
-#order fieldset {
+#order div {
 	width: 500px;
 	height: 200px;
 	float: right;
