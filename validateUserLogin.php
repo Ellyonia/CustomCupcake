@@ -9,7 +9,7 @@
 </head>
 <body>
 	<?php
-
+  $valid = 0;
 	$con = mysql_connect("localhost","DBandGUI","narwhal");
   	if (!$con)
   	{
