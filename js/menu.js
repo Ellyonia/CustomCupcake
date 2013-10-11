@@ -299,13 +299,17 @@ var request = new XMLHttpRequest();
 
 			var orders = $("#order div ul");
 
+
+
 			var listitem = document.createElement("li");
 
 			listitem.appendChild(document.createTextNode(temp));
 
 			orders.append(listitem);
 
-			orders.css("list-style-type", "circle");
+			var li = $("#order div ul li");
+
+			li.css("list-style-type", "circle");
 
 			/*
 			$.ajax({
