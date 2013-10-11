@@ -120,7 +120,7 @@ request.onreadystatechange = function(e){
 				$(div).addClass("member");
 				listitem.appendChild(div);
 				div.onclick = function(){
-					$(".selected").removeClass("selected");
+					$("#filling .selected").removeClass("selected");
 					$(this).addClass("selected");
 				};
 				myCake.append(listitem);
@@ -142,6 +142,7 @@ request.onreadystatechange = function(e){
 				//document.body.appendChild(img); //adds the image to the document
 				listitem.appendChild(img);
 				listitem.onclick = function(){
+					$("#icing .selected").removeClass("selected");
 					$(this).addClass("selected");
 					console.log("blajb");
 				}
