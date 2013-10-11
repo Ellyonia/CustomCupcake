@@ -86,6 +86,7 @@ request.onreadystatechange = function(e){
 				var img = document.createElement("img");
 				img.setAttribute("src", "artwork/" + jsonData.menu.cakes[i].img_url);
 				img.setAttribute("value", jsonData.menu.cakes[i].flavor);
+				listitem.setAttribute("value", jsonData.menu.cakes[i].flavor);
 				flavorflav.innerHTML = jsonData.menu.cakes[i].flavor;
 				//document.body.appendChild(img); //adds the image to the document
 				div.appendChild(img);
@@ -115,6 +116,7 @@ request.onreadystatechange = function(e){
 				par.innerHTML = jsonData.menu.fillings[i].flavor;
 				circle.setAttribute("class", "circle");
 				circle.setAttribute("value", jsonData.menu.fillings[i].flavor);
+				listitem.setAttribute("value", jsonData.menu.fillings[i].flavor);
 				var myId = "c";
 				myId = myId + jsonData.menu.fillings[i].flavor;
 				myId = myId.replace(/\s+/g,"");
@@ -143,6 +145,7 @@ request.onreadystatechange = function(e){
 				var img = document.createElement("img");
 				img.setAttribute("src", "artwork/" + jsonData.menu.frosting[i].img_url);
 				img.setAttribute("value", jsonData.menu.frosting[i].flavor);
+				listitem.setAttribute("value", jsonData.menu.frosting[i].flavor);
 				//document.body.appendChild(img); //adds the image to the document
 				listitem.appendChild(img);
 				listitem.onclick = function(){
