@@ -42,22 +42,9 @@ function FChart() {
 
         if(request.readyState === 4) {
      
-            // var jsonData = JSON.parse(request.responseText);
-            // console.log(jsonData);
-            var data = [
-    {
-        value: 30,
-        color:"#F38630"
-    },
-    {
-        value : 50,
-        color : "#E0E4CC"
-    },
-    {
-        value : 100,
-        color : "#69D2E7"
-    }           
-];
+            var jsonData = JSON.parse(request.responseText);
+            console.log(jsonData);
+            var data = [jsonData];
             var ctx = document.getElementById("myChart2").getContext("2d");
 
             options = {
