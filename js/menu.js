@@ -88,7 +88,7 @@ request.onreadystatechange = function(e){
 				container.appendChild(flavorflav);
 				
 				$(container).addClass("member");
-				container.onclick = function(){
+				$(".member").onclick = function(){
 					$(".selected").removeClass("selected");
 					$(this).addClass("selected");
 				};
