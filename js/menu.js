@@ -11,11 +11,12 @@ var request = new XMLHttpRequest();
 
 		function addFavorite() {
 
-			console.log("HI");
+			
 			var url = "addUserFavorite.php";
 			var pass = "jsonArr=" + JSON.stringify(json);
 
 			request.onreadystatechange = function(e){
+				console.log("HI");
 			if(request.readyState === 4)
 			{
 		    request.open("POST", url, true);
