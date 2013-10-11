@@ -208,7 +208,7 @@ li {
 }
 
 #order div ul {
-	ul.cirlce;
+	list-style-type: circle;
 }
 
 /*****************
