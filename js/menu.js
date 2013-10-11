@@ -25,7 +25,7 @@ request.onreadystatechange = function(e){
 				//document.body.appendChild(img); //adds the image to the document
 				img.onclick = function(){
 					console.log("let's click")
-					$(this).addClass('selected');};
+					$('img').addClass('selected');};
 
 				listitem.appendChild(img);
 				myCake.append(listitem);
