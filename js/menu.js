@@ -11,11 +11,11 @@ request.send();
 
 	var favs = document.getElementById("fav");
 
-	getUserID()
+	//getUserID()
 
     makeFavList(favs, 'getFavorites.php');
 
-    var uID = 
+   // var uID = 
 
 
 
