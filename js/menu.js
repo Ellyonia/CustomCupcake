@@ -248,8 +248,8 @@ var request = new XMLHttpRequest();
 */
 
 	$('#reset').click(function() {
-			//$(".boxes").attr('checked', false);
-			$(".selected").removeClass(".selected");
+			$(".boxes").attr('checked', false);
+			$("#icing .selected").removeClass("selected");
 });
 
 
