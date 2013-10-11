@@ -61,7 +61,6 @@ var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcak
         }
 
 	}
-}
 // 		new Chart(ctx).PolarArea(data,{
 // 	//Boolean - Whether we should show a stroke on each segment
 // 	segmentShowStroke : true,
@@ -94,41 +93,41 @@ var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcak
 
 // }
 
-$(document).ready(function() {
-	// body...
+// $(document).ready(function() {
+// 	// body...
 
 
-// function createChart()
-        {
-            //Get the context of the canvas element we want to select
-            var ctx = document.getElementById("myChart").getContext("2d");
+// // function createChart()
+//         {
+//             //Get the context of the canvas element we want to select
+//             var ctx = document.getElementById("myChart").getContext("2d");
  
-            //Create the data object to pass to the chart
+//             //Create the data object to pass to the chart
 
-            var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/sales.json';
-            var data = {
-                labels : ["January","February","March","April","May","June","July"],
-                datasets : [
-                            {
-                                fillColor : "rgba(220,220,220,0.5)",
-                                strokeColor : "rgba(220,220,220,1)",
-                                data : [65,59,90,81,56,55,40]
-                            },
-                            {
-                                fillColor : "rgba(151,187,205,0.5)",
-                                strokeColor : "rgba(151,187,205,1)",
-                                data : [28,48,40,19,96,27,100]
-                            }
-                           ]
-                      };
+//             var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/sales.json';
+//             var data = {
+//                 labels : ["January","February","March","April","May","June","July"],
+//                 datasets : [
+//                             {
+//                                 fillColor : "rgba(220,220,220,0.5)",
+//                                 strokeColor : "rgba(220,220,220,1)",
+//                                 data : [65,59,90,81,56,55,40]
+//                             },
+//                             {
+//                                 fillColor : "rgba(151,187,205,0.5)",
+//                                 strokeColor : "rgba(151,187,205,1)",
+//                                 data : [28,48,40,19,96,27,100]
+//                             }
+//                            ]
+//                       };
  
-            //The options we are going to pass to the chart
-            options = {
-                barDatasetSpacing : 15,
-                barValueSpacing: 10
-            };
+//             //The options we are going to pass to the chart
+//             options = {
+//                 barDatasetSpacing : 15,
+//                 barValueSpacing: 10
+//             };
  
-            //Create the chart
-            new Chart(ctx).Bar(data, options);
-        }
-});
+//             //Create the chart
+//             new Chart(ctx).Bar(data, options);
+//         }
+// });
