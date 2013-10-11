@@ -190,6 +190,7 @@ request.onreadystatechange = function(e){
 				toppings.append(listitem);
 			
 		}
+		addFavorite();
 
 		
 	}
