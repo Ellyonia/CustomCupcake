@@ -1,5 +1,5 @@
 
-function TChart() {
+function tChart() {
     var request = new XMLHttpRequest();
     var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/sales.json';
     request.open("GET",path, true);
@@ -33,7 +33,7 @@ function TChart() {
     request.send();
 }
 
-function FlavChart() {
+function flavChart() {
     var request = new XMLHttpRequest();
     var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/sales.json';
     request.open("GET",path, true);
@@ -60,7 +60,7 @@ function FlavChart() {
     request.send();
 }
 
-function FillChart() {
+function fillChart() {
     var request = new XMLHttpRequest();
     var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/sales.json';
     request.open("GET",path, true);
@@ -87,7 +87,7 @@ function FillChart() {
     request.send();
 }
 
-function IChart() {
+function iChart() {
     var request = new XMLHttpRequest();
     var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/sales.json';
     request.open("GET",path, true);
@@ -115,8 +115,8 @@ function IChart() {
 }
 
 $(document).ready(function() {
-    TChart();
-    Ichart();
-    FillChart();
-    flavchart();
+    tChart();
+    iChart();
+    fillChart();
+    flavChart();
 });
