@@ -187,12 +187,14 @@ li {
 
 .reset {
 	position: relative;
-	left: 25%;
-	top: -200px;
+	left: 20%;
+	top: -225px;
 }
 
 .update {
-	position: absolute;
+	position: relative;
+	left: 80%;
+	top: -225;
 }
 
 .selected {
