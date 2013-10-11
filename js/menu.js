@@ -217,7 +217,7 @@ var request = new XMLHttpRequest();
 
 			console.log("HI");
 			
-			var url = "addUserFavorite.php";
+			var url = "http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/addUserFavorite.php";
 			var pass = "jsonArr=" + JSON.stringify(json);
 			console.log(pass);
 			//alert("FUCK THIS SHIT");
@@ -230,16 +230,11 @@ var request = new XMLHttpRequest();
 				request.send(pass);
 				request.onreadystatechange = function(){
 				if(request.readyState === 4 && request.status === 200){
-				//request.onreadystatechange = function(){
-				
-				// if(request.readyState === 4)
-				// {
+
 					var string = request.responseText;
 					alert("FUCK THIS SHIT");
 					//alert(request.responseText);
 					console.log(string);
-				// }
-			// }
 
 
 			}
