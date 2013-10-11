@@ -27,7 +27,7 @@
 
 "salesFlavor" : [
  {
-    "value" : 30,
+    "value" : 0,
     "color" : "#F38630",
     "title" : "Chocolate",
     "labelFontSize" : "16px"
