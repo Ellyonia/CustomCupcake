@@ -88,16 +88,6 @@ fieldset{
 	width: 90%;
 }
 
-#flavor fieldset {
-<<<<<<< HEAD
-	
-	overflow: auto;
-
-=======
-	overflow: auto;
->>>>>>> 6b9d840bc7a4bd3161be70f0870433ea547f127e
-}
-
 .CFlavor {
 	overflow-x: scroll;
     overflow-y: hidden;
@@ -140,7 +130,8 @@ fieldset{
 	position: relative; 
 	top: -350px;
 	left: 200px;
-	width: 82%;
+	width: 90%;
+	border: ridge;
 	display: inline;
 	white-space: nowrap;
 }
