@@ -42,8 +42,8 @@ function FChart() {
 
         if(request.readyState === 4) {
      
-            var jsonData = JSON.parse(request.responseText);
-            console.log(jsonData);
+            // var jsonData = JSON.parse(request.responseText);
+            // console.log(jsonData);
             var data = [
     {
         value: 30,
