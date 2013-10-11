@@ -217,8 +217,12 @@ CSS FOR analytics.html
 	margin-bottom: 20px;
 }
 
-#flavorLengend,
-#fillingLengend, 
+#flavorLengend {
+	float: right;
+}
+#fillingLengend {
+	float: right;
+}
 #icingLegend {
-	float: left;
+	float: right;
 }
