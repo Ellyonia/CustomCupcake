@@ -88,6 +88,10 @@ fieldset{
 	/*width: 200px;*/
 }
 
+#flavor fieldset {
+	width: 90%;
+}
+
 #flavor div {
 	width: 90%;
 	overflow-x: scroll;
@@ -100,7 +104,6 @@ fieldset{
 	padding-right: 5px;
 	margin-right: 5px;
 	margin-left: 5px;
-	
 }
 
 .circle {
