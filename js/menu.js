@@ -25,7 +25,7 @@
 
 
 		function addFavorite() {
-			var url = "../CustonCupcake/addUserFavorite.php";
+			var url = "../CustomCupcake/addUserFavorite.php";
 			var pass = "jsonArr=" + JSON.stringify(json);
 		    request.open("POST", url, true);
 		    //if(request.readyState === 4)
