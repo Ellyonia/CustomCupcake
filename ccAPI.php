@@ -87,4 +87,17 @@ function getCustomerOrders($customerID)
 	$jsonarr = json_encode($arr);
 	return $jsonarr;
 }
+
+/*
+This function takes in a username, and will return the internal customer ID associated with that username.
+
+@param string $username The username for the user to be looked up
+@return int The ID number of the username
+**/
+function getCustomerID($username)
+{
+	$result = getCustomerIDFromDB($username);
+	return $result;
+}
+
 ?>

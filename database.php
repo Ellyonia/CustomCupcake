@@ -1,5 +1,12 @@
 <?php
 
+/**
+This function takes a customer ID and returns a 2 dimensional array of all his favorites and all the elements belonging to those favorites.
+Connects to the CustomCupcakes database and queries the favorites table.  It then builds the arrays off the results found.
+
+@param int $customerID The ID number for the customer
+@return Array An array containing every favorite, and the contained elements for each favorite.
+*/
 function getFavoritesFromDB($customerID)
 {
 
@@ -14,6 +21,7 @@ function getFavoritesFromDB($customerID)
 
 	$resultArr = array();
 
+	// Iterates over the results and builds the 2-D array for the results
 	while($row = mysql_fetch_array($result))
 	{
 		$resultArr[$row['favorite_ID']] = array(
@@ -29,6 +37,13 @@ function getFavoritesFromDB($customerID)
 	return $resultArr;
 }
 
+/**
+Takes in a favorite for the user and stores it in the table.
+This function receives both the customer's ID and his favorite to be added.  This favorite is then inserted into the Favorites table
+
+@param Array $arrToAdd An array containing the information of the favorite to be added
+@param int $customerID The ID number for the customer that has the favorite to be added.
+*/
 function addFavoriteToDB($arrToAdd, $customerID)
 {
 	$con = mysql_connect("localhost", "DBandGUI", "narwhal");
@@ -37,7 +52,8 @@ function addFavoriteToDB($arrToAdd, $customerID)
 
 	mysql_select_db("CustomCupcakes", $con) or die('Could not select db: ' . mysql_error());
 
-	$query = "SELECT favorite_ID FROM favorite ORDER BY favorite_ID DESC";
+	// This query retrieves the current highest favorite_ID in the table, and then increments it by 1
+	$query = "SELECT favorite_ID FROM Favorites ORDER BY favorite_ID DESC";
 
 	$resultForFavoriteID = mysql_query($query);
 
@@ -45,17 +61,25 @@ function addFavoriteToDB($arrToAdd, $customerID)
 
 	$newFaveID = $rowForFavoriteID['favorite_ID'] + 1;
 
+	//This query actually adds in the new favorite
 	$query = "INSERT INTO Favorites VALUES ('" . $newFaveID .
 	"','" . $arrToAdd['flavor'] .
 	"','" . $arrToAdd['icing'] .
 	"','" . $arrToAdd['topping'] .
-	"','" . $arrToAdd['filling'] . "');";
+	"','" . $arrToAdd['filling'] .
+	"','" . $customerID . "');";
 
 	mysql_query($query);
 
 	mysql_close($con);
 }
 
+/**
+This function gets the sales info of flavors from the database.
+This information is stored in an array that links the flavor's name and the amount purchased.
+
+@return Array An array containing the flavor's name linked to the amount purchased.
+*/
 function getFlavorsSalesFromDB()
 {
 	$con = mysql_connect("localhost", "DBandGUI", "narwhal");
@@ -70,6 +94,7 @@ function getFlavorsSalesFromDB()
 
 	$finalArr = array();
 
+	// This loop iterates over the results from the query and builds it into an array that will be returned later
 	while($row = mysql_fetch_array($result))
 	{
 		$finalArr[$row['flavor_Name']] => $row['purchase_Amount'];
@@ -80,6 +105,12 @@ function getFlavorsSalesFromDB()
 	return $finalArr;
 }
 
+/**
+This function gets the sales info of icing from the database.
+This information is stored in an array that links the icing's name and the amount purchased.
+
+@return Array An array containing the icing's name linked to the amount purchased.
+*/
 function getIcingsSalesFromDB()
 {
 	$con = mysql_connect("localhost", "DBandGUI", "narwhal");
@@ -104,6 +135,12 @@ function getIcingsSalesFromDB()
 	return $finalArr;
 }
 
+/**
+This function gets the sales info of toppings from the database.
+This information is stored in an array that links the toppings's name and the amount purchased.
+
+@return Array An array containing the topping's name linked to the amount purchased.
+*/
 function getToppingsSalesFromDB()
 {
 	$con = mysql_connect("localhost", "DBandGUI", "narwhal");
@@ -128,6 +165,12 @@ function getToppingsSalesFromDB()
 	return $finalArr;
 }
 
+/**
+This function gets the sales info of fillings from the database.
+This information is stored in an array that links the filling's name and the amount purchased.
+
+@return Array An array containing the filling's name linked to the amount purchased.
+*/
 function getFillingsSalesFromDB()
 {
 	$con = mysql_connect("localhost", "DBandGUI", "narwhal");
@@ -152,6 +195,12 @@ function getFillingsSalesFromDB()
 	return $finalArr;
 }
 
+/**
+This function takes in an array of values that is not only updated into the Orders, but also the four attribute tables as well
+
+
+
+*/
 function updateSaleToDB($arrOfInfo)
 {
 	$customerID = $arrOfInfo['customerID'];
