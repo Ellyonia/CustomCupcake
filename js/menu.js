@@ -127,13 +127,13 @@ window.addEventListener('load', function() {
 	console.log('window loaded');
 }, false);
 
-function afterLoad() {
+
 	$(document).ready(fcuntion(){
 				$("flavor").on("click", function() {
 			    $(this).css("background", "red");
-			});
+				})
 	});
-}
+
 
 /*
 $('#flavor').css('background-color', 'blue');
