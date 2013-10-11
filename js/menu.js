@@ -14,7 +14,7 @@ var request = new XMLHttpRequest();
 
 	$(document).ready( function() {
 
-				var request = new XMLHttpRequest();
+		var request = new XMLHttpRequest();
 		var mImages = new Array();
 		var mCurrentIndex = 0;
 
@@ -212,7 +212,7 @@ var request = new XMLHttpRequest();
 	window.addEventListener('load', function(e) {
 		console.log('window loaded');
 	}, false);
-
+/*
 	$('#reset').click(function() {
 
 			console.log("HI");
@@ -241,6 +241,34 @@ var request = new XMLHttpRequest();
 			}
 			else{
 				alert(request.status);
+			}
+		}
+		});
+*/
+
+	$('#reset').click(function() {
+
+			console.log("HI");
+			
+			var url = "addUserFavorite.php";
+			var pass = "jsonArr=" + JSON.stringify(json);
+			//console.log(pass);
+
+			request.onreadystatechange = function(e){
+				
+			if(request.readyState === 4)
+			{
+		  	myAjax = new Ajax.Request(url, {
+        	method: 'post',
+        	data: "jsonArr=" + JSON.stringify(json),
+        	contentType: 'application/x-www-form-urlencoded',
+        	onComplete: function(e){
+            if (200 == e.status) {
+                result = e.responseText;
+                console.log(result);
+            }
+        }
+    });
 			}
 		}
 		});

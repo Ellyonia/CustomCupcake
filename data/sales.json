@@ -1,5 +1,30 @@
 {
-  "sales" : {
+  "salesToppings" : {
+  "labels" : ["Sprinkles",
+              "Mini Chocolate Chips",
+              "Mini Marshmellows",
+              "Bacon",
+              "Oreo Bits",
+              "Twix Bits",
+              "M&M's",
+              "Reese's Pieces",
+              "Butterfinger Bits",
+              "Snicker Bits",
+              "Skittles",
+              "Craisins",
+              "Maraschino Cherries",
+              "Gummy Bears",
+              "Pop Rocks"],
+  "datasets" : [
+    {
+      "fillColor" : "rgba(220,220,220,0.5)",
+      "strokeColor" : "rgba(220,220,220,1)",
+      "pointColor" : "rgba(220,220,220,1)",
+      "pointStrokeColor" : "#fff",
+      "data" : [65,59,90,81,56,55,40,53,75,25,85,65,54,92,45]
+    }]
+  },
+  "salesFlavor" : {
   "labels" : ["Sprinkles",
               "Mini Chocolate Chips",
               "Mini Marshmellows",
