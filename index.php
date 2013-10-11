@@ -63,8 +63,7 @@ Chris Linstromberg
         <div class="hr"><hr /></div>
     <ul>
         <li>
-            <input type="radio" name="mailingList" value="Yes" checked> Yes
-            <input type="radio" name="noMailingList" value="No"> No
+            <input type="radio" name="mailingList" value="1"> Yes
         </li>
         <li>
             <input type="text" placeholder="First Name" id="firstName" required/>

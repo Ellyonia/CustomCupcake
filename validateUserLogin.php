@@ -1,7 +1,7 @@
 <?php
 	$email = $_POST['email'];
 	$pass = $_POST['password'];
-
+  session_start();
 ?>
 <html>
 <head>
@@ -17,7 +17,7 @@
   	}
   	mysql_select_db("CustomCupcakes", $con);
 
-  	$sql = "SELECT password FROM Customers WHERE email = '$email'";
+  	$sql = "SELECT password, customer_ID FROM Customers WHERE email = '$email'";
 
   	$result = mysql_query($sql) or die(mysql_error());
   	while($row = mysql_fetch_assoc($result))
@@ -28,21 +28,21 @@
     	{
     		if ( $pass == $cvalue)
     		{
-    			print "You have successfully Logined in. Welcome ";
     			$valid = 1;
-          header("Location: order.php");
     		}
     	}
+      if ($cname == "customer_ID")
+      {
+        $_SESSION['cID'] = $cvalue;
+      }
     }
-    print "\r\n";
 }
 if ($valid == 0)
 {
-	print "Access Denied, Incorrect User Information.";
-header("Location: index.php");
+  header("Location: index.php");
 }
 
-
+  header("Location: order.php");
   mysql_close($con);
 
 ?>
