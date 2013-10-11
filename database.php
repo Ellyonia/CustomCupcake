@@ -115,7 +115,7 @@ function getFlavorsSalesFromDB()
 	// This loop iterates over the results from the query and builds it into an array that will be returned later
 	while($row = mysql_fetch_array($result))
 	{
-		$finalArr[$row['flavor_Name']] => $row['purchase_Amount'];
+		$finalArr[$row['flavor_Name']] = $row['purchase_Amount'];
 	}
 
 	mysql_close($con);
