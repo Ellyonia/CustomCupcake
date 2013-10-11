@@ -25,6 +25,8 @@ function init() {
 		// 		request.send(pass);
 		// }
 
+		// $('#reset').click(addFavorite());
+
 
 	$(document).ready( function() {
 
@@ -33,7 +35,7 @@ function init() {
 
 
 
-		$('#reset').click(addFavorite());
+		
 
 		request.onreadystatechange = function(e){
 			if(request.readyState === 4)
@@ -150,9 +152,31 @@ function init() {
 
 	}
 
+
 	});
 
 
+
+	function onMouseDown(e){
+
+	    var img = e.target;
+
+	    e.target.lastX = e.clientX;
+	    e.target.lastY = e.clientY;
+
+
+	    if(img.complete)
+	    {
+	    	$('.selected').removeClass('selected');
+	    	img.className = "selected";
+	    	changeImage(img);
+
+	    }
+	    else
+	    {
+	    	return 0;
+	    }
+	}
 
 	function addSelected(e){
 		$(this).addClass('selected');
