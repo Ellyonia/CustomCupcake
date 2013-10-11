@@ -88,7 +88,7 @@ fieldset{
 
 #flavor fieldset {
 	width: 1100px;
-	display: inline;
+	display: table;
 }
 
 .testa {
@@ -102,7 +102,6 @@ fieldset{
 }
 
 #flavor li {
-	display: inline;
 	padding-left: 5px;
 	padding-right: 5px;
 	margin-right: 5px;
