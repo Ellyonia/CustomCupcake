@@ -10,7 +10,7 @@
 
 	</head>
 	<body>
-		<canvas id="myChart" width="400" height="400"></canvas>
+		<canvas id="myChart" width="700" height="400"></canvas>
 		<header>stuff</header>
 	</body>
 </html>
