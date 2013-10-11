@@ -115,7 +115,7 @@ fieldset{
 	position: relative;
 	top: -350px;
 	left: 200px;
-	width: 80%;
+	width: 85%;
 	/*display: inline;*/
 	white-space: nowrap;
 }
@@ -144,7 +144,7 @@ fieldset{
 }
 
 #icing div {
-	width: 90%;
+	width: 85%;
 	/*width: 1510px;*/
 	overflow-x: scroll;
     overflow-y: hidden;
@@ -153,7 +153,7 @@ fieldset{
 
 #topping fieldset {
 	position: relative;
-	width: 90%;
+	width: 85%;
 	top: -250px;
 	left: 200px;
 	/*right: 5px;*/
