@@ -76,8 +76,8 @@ fieldset {
 
 .orderList {
 	max-height: 300px;
-	overflow-x: scroll;
-    overflow-y: hidden;
+	overflow-x: hidden;
+    overflow-y: auto;
     white-space: nowrap;
 }
 
