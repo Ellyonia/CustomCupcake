@@ -1,4 +1,5 @@
 
+var request = new XMLHttpRequest();
 
 		var json = {"flavor" : "Banana",
 					"frosting" : "chocolate_frosting",
