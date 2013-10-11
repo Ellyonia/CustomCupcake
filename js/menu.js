@@ -291,14 +291,14 @@ var request = new XMLHttpRequest();
 	$('#update').click(function() {
 			var datastring = "lol"; //create json of the attributes (see ccAPI line#72 for formatting) and stringify it
 
-			var temp = $('#CFlavor').find('.selected');
+			var temp = $('.CFlavor').find('.selected');
 
 
-			var temp2 = document.getElementById('CFlavor').getElementsByClassName('selected').getAttribute('value');
+			// var temp2 = document.getElementById('CFlavor').getElementsByClassName('selected').getAttribute('value');
 
-			console.log(temp2);
+			console.log(temp);
 
-			console.log($('#CFlavor .selected').attr("value"));
+			console.log($('.CFlavor .selected').attr("value"));
 
 			/*
 			$.ajax({
