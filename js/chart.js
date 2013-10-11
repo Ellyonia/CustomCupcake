@@ -35,7 +35,7 @@ function TChart() {
 
 function FChart() {
     var request = new XMLHttpRequest();
-    var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/test.json';
+    var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/sales.json';
     request.open("GET",path, true);
 
     request.onreadystatechange = function(e) {
@@ -44,21 +44,7 @@ function FChart() {
      
             var jsonData = JSON.parse(request.responseText);
             console.log(jsonData);
-            var data = jsonData;
- //            var data = [
- // {
- //    value: 30,
- //    color: "#F38630"
- //  },
- //  {
- //    value : 50,
- //    color : "#E0E4CC"
- //  },
- //  {
- //    value : 100,
- //    color : "#69D2E7"
- //  }];
-            console.log(data);
+            var data = jsonData.sales;
             var ctx = document.getElementById("myChart2").getContext("2d");
 
             options = {
