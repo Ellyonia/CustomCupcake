@@ -16,7 +16,7 @@
 				request.send(pass);
 		}
 
-	$('#reset').click(addFavorite());
+	//$('#reset').click(addFavorite());
 
 	$(document).ready( function() {
 
