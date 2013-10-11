@@ -87,9 +87,6 @@ fieldset{
 	/*width: 200px;*/
 }
 
-#flavor fieldset {
-}
-
 #flavor div {
 	width: 1100px;
 	/*margin-right: -700px;*/
@@ -115,11 +112,18 @@ fieldset{
 
 #filling fieldset {
 	position: relative;
-	top: 470px;
+	top: -350px;
 	left: 200px;
-	width: 200px;
+	width: 1100px;
 	display: inline;
 	white-space: nowrap;
+}
+
+#filling ul {
+	display: inline;
+	overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
 
@@ -133,13 +137,13 @@ fieldset{
 
 #icing {
 	position: relative;
-	top: 650px;
+	top: -300px;
 	left: 200px;
 	white-space:nowrap;
 }
 
 #icing div {
-	width: 600px;
+	width: 1100px;
 	/*width: 1510px;*/
 	overflow-x: scroll;
     overflow-y: hidden;
@@ -148,10 +152,10 @@ fieldset{
 
 #topping fieldset {
 	position: relative;
-	top: 850px;
+	top: -250px;
 	left: 200px;
 	right: 5px;
-	width: 200px;
+	width: 1100px;
 }
 
 #topping li  {
@@ -164,9 +168,9 @@ fieldset{
 
 .toppingClear { 
 	position: relative;
-	margin-left: 700px;
 	margin-top: 100px;
-	/*text-align: center;*/
+	clear:both;
+	text-align: center;
 	/*top: 70%;*/
 }
 
@@ -179,14 +183,14 @@ li {
 
 .reset {
 	position: relative;
-	left: 20px;
-	top: 1005px;
+	
+
 }
 
 .update {
 	position: relative;
-	left: 130px;
-	top: 1010px;
+	/*left: 130px;*/
+	/*top: -200px;*/
 }
 
 .selected {
