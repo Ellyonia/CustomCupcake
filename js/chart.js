@@ -46,16 +46,16 @@ function FChart() {
             console.log(jsonData);
             var data = [
  {
-    "value": "30",
-    "color": "#F38630"
+    value: 30,
+    color: "#F38630"
   },
   {
-    "value" : "50",
-    "color" : "#E0E4CC"
+    value : 50,
+    color : "#E0E4CC"
   },
   {
-    "value" : "100",
-    "color" : "#69D2E7"
+    value : 100,
+    color : "#69D2E7"
   }];
             console.log(data);
             var ctx = document.getElementById("myChart2").getContext("2d");
