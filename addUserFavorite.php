@@ -6,3 +6,7 @@
     //echo($start->addFavorites());
 
 ?>
+
+<html>
+<p> hi </p>
+</html>
