@@ -12,7 +12,7 @@
 	</head>
 	<body>
         <div>
-            <title>Flavor flav!</title>
+            <header>Flavor flav!</header>
 		<canvas id="flavorChart" width="700" height="400"></canvas>
     </div>
         <canvas id="fillingChart" width="700" height="400"></canvas>
