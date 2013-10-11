@@ -233,6 +233,8 @@ var request = new XMLHttpRequest();
 				if(request.readyState === 4)
 				{
 					var string = request.responseText;
+					alert("FUCK THIS SHIT");
+					alert(string);
 					console.log(string);
 				}
 			}
