@@ -48,9 +48,7 @@ function flavChart() {
             var ctx = document.getElementById("flavorChart").getContext("2d");
 
             options = {
-                barDatasetSpacing : 15,
-                barValueSpacing: 10,
-                barStrokeWidth: 15
+                animation : false
             };
 
             new Chart(ctx).Pie(data, options);
@@ -74,13 +72,7 @@ function fillChart() {
             var data = jsonData.salesFilling;
             var ctx = document.getElementById("fillingChart").getContext("2d");
 
-            options = {
-                barDatasetSpacing : 15,
-                barValueSpacing: 10,
-                barStrokeWidth: 15
-            };
-
-            new Chart(ctx).Pie(data, options);
+            new Chart(ctx).Pie(data);
 
         }
     }
@@ -101,10 +93,7 @@ function iChart() {
             var data = jsonData.salesIcing;
             var ctx = document.getElementById("icingChart").getContext("2d");
 
-            options = {
-                animation : false
-            };
-
+            
             new Chart(ctx).Pie(data, options);
 
         }
