@@ -27,7 +27,7 @@ function tChart() {
 
             //Create the chart
             new Chart(ctx).Bar(data, options);
-               
+            legend(document.getElementById("toppingLegend"), data);   
         }
     }
     request.send();
@@ -56,7 +56,7 @@ function flavChart() {
             // };
 
             new Chart(ctx).Pie(data);
-            legend(document.getElementById("pieLegend"), data);
+            legend(document.getElementById("flavorLegend"), data);
         }
     }
     request.send();
@@ -77,7 +77,7 @@ function fillChart() {
             var ctx = document.getElementById("fillingChart").getContext("2d");
 
             new Chart(ctx).Pie(data);
-
+            legend(document.getElementById("fillingLegend"), data);
         }
     }
     request.send();
@@ -99,7 +99,7 @@ function iChart() {
 
             
             new Chart(ctx).Pie(data);
-
+            legend(document.getElementById("icingLegend"), data);
         }
     }
     request.send();

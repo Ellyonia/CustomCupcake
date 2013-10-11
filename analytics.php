@@ -15,16 +15,15 @@
         <div id="charts">
             <header>Popular Flavors</header>
 		    <canvas id="flavorChart" width="700" height="400"></canvas>
-            <div id ="pieLegend"></div>
+            <div id ="flavorLegend"></div>
             <header>Popular Fillings</header>
             <canvas id="fillingChart" width="700" height="400"></canvas>
-            <div id ="pieLegend"></div>
+            <div id ="fillingLegend"></div>
             <header>Popular Icings</header>
             <canvas id="icingChart" width="700" height="400"></canvas>
-            <div id ="pieLegend"></div>
+            <div id ="icingLegend"></div>
             <header>Popular Toppings</header>
             <canvas id="toppingChart" width="700" height="400"></canvas>
-            <div id ="pieLegend"></div>
         </div>
 	</body>
 </html>
