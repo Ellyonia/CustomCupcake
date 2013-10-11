@@ -24,7 +24,7 @@ request.onreadystatechange = function(e) {
 // //This will get the first returned node in the jQuery collection.
 // var myNewChart = new Chart(ctx);
 // new Chart(ctx).PolarArea(data,options);
-var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/sales.json';
+//var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/sales.json';
 		var jsonData = JSON.parse(request.responseText);
 		console.log(jsonData);
 		var data = jsonData.sales.cakes;
