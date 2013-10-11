@@ -226,7 +226,7 @@ var request = new XMLHttpRequest();
 				
 			
 				console.log("NO MORE");
-		    	request.open("POST", url, true);
+		    	request.open("POST", url, false);
 				
 				request.onreadystatechange = function(){
 					
