@@ -49,7 +49,10 @@ function flavChart() {
 
             options = {
                 animation : false,
-                scaleShowLabels: true
+                showLabels: true,
+                resizeLabels: false,
+                hoveredColor: "pink"
+                type: 'stacked'
             };
 
             new Chart(ctx).Pie(data, options);
