@@ -62,7 +62,7 @@ function getSalesInformation()
 This function takes in a JSON containing the sales information of the cupcakes being sold, and ships it off to the DB to be inserted.
 
 JSON Format:
-[customerID=>{val},cupcakeFlavor_ID=>{val},cupcakeIcing_ID=>{val},cupcakeTopping_ID=>{val},cupcakeQuantity=>{val}]
+[customerID=>{val},cupcakeFlavor_ID=>{val},cupcakeIcing_ID=>{val},cupcakeTopping_ID=>{val},cupcakeFilling_ID=>{val},cupcakeQuantity=>{val}]
 
 @param JSONArray $informationAsJSON The order details
 */
