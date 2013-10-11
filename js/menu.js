@@ -1,3 +1,11 @@
+var json = {"flavor" : "Banana",
+			"frosting" : "chocolate_frosting",
+			"filling" : "Blueberry",
+			"toppings" : 
+			{
+				"1" : "Sprinkles", "2" : "Craisins"
+			}};
+
 
 function addFavorite() {
 	var url = "../addUserFavorite.php";
@@ -16,13 +24,7 @@ var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcak
 request.open("GET",path, true);
 request.send();
 
-var json = {"flavor" : "Banana",
-			"frosting" : "chocolate_frosting",
-			"filling" : "Blueberry",
-			"toppings" : 
-			{
-				"1" : "Sprinkles", "2" : "Craisins"
-			}};
+
 
 
 
