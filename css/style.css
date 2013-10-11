@@ -143,8 +143,12 @@ fieldset{
 	white-space:nowrap;
 }
 
+#icing fieldset {
+	width: 90%;
+}
+
 #icing div {
-	width: 85%;
+	/*width: 85%;*/
 	/*width: 1510px;*/
 	overflow-x: scroll;
     overflow-y: hidden;
