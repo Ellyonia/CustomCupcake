@@ -1,4 +1,4 @@
-
+<html> <body>
 <?php
     include "ccAPI.php";
 
@@ -8,6 +8,7 @@
 
 ?>
 
-<html>
+
 <p> hi </p>
+</body>
 </html>
