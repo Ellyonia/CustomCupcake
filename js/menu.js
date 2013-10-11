@@ -11,7 +11,8 @@ request.send();
 var json = {"flavor" : "Banana",
 			"frosting" : "chocolate_frosting",
 			"filling" : "Blueberry",
-			"toppings" : {
+			"toppings" : 
+			{
 				"1" : "Sprinkles", "2" : "Craisins"
 			}};
 
@@ -190,7 +191,7 @@ request.onreadystatechange = function(e){
 				toppings.append(listitem);
 			
 		}
-		addFavorite();
+		//addFavorite();
 
 		
 	}
