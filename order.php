@@ -58,12 +58,12 @@
 					</ul>
 				</div>
 				<div class="toppingClear">
-					<input type="submit" value="Clear All Toppings" id="toppingClear" /> 
+					<input type="button" value="Clear All Toppings" id="toppingClear" /> 
 				</div>
 		</form>
 		
 		<div class="reset">
-				<input type="button" value="Reset Cupcake" id="reset" action = "" method = "post" name="reset"/> 
+				<input type="submit" value="Reset Cupcake" id="reset" action = "" method = "post" name="reset"/> 
 		</div>
 		<form class="update">	
 			<input type="number" value="1" id="amount" /> 
