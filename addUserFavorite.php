@@ -1,9 +1,8 @@
 
 <?php
     include "ccAPI.php";
-
     $start = new ccAPI();
-    echo $_POST['data'];
+    echo $_POST['test'];
     //echo($start->addFavorites());
 
 ?>
