@@ -81,16 +81,17 @@ fieldset{
 
 #flavor {
 	position: relative;
-	
 	top: -400px;
 	left: 200px;
 	clear: both;
-	
-	/*width: 200px;*/
 }
 
 #flavor fieldset {
 	width: 85%;
+}
+
+#flavor li div {
+	float: left;
 }
 
 #flavor div {
