@@ -25,9 +25,8 @@
     }]
   },
 
-"test" : [
+"salesFlavor" : [
  {
-    "label" : "hey guys",
     "value": 30,
     "color": "#F38630"
   },
