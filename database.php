@@ -105,6 +105,54 @@ function getIcingsSalesFromDB()
 	return $finalArr;
 }
 
+function getToppingsSalesFromDB()
+{
+	$con = mysql_connect("localhost", "phpuser", "weLoveCupcakes666");
+
+	if(!$con) { die('Could not connect: ' . mysql_error()); }
+
+	mysql_select_db("CustomCupcakes", $con) or die('Could not select db: ' . mysql_error());
+
+	$query = "SELECT topping_Name,purchase_Amount FROM CupcakeTopping;";
+
+	$result = mysql_query($query);
+
+	$finalArr = array();
+
+	while($row = mysql_fetch_array($result))
+	{
+		$finalArr[$row['topping_Name']] => $row['purchase_Amount'];
+	}
+
+	mysql_close($con);
+
+	return $finalArr;
+}
+
+function getFillingsSalesFromDB()
+{
+	$con = mysql_connect("localhost", "phpuser", "weLoveCupcakes666");
+
+	if(!$con) { die('Could not connect: ' . mysql_error()); }
+
+	mysql_select_db("CustomCupcakes", $con) or die('Could not select db: ' . mysql_error());
+
+	$query = "SELECT filling_Name,purchase_Amount FROM CupcakeFilling;";
+
+	$result = mysql_query($query);
+
+	$finalArr = array();
+
+	while($row = mysql_fetch_array($result))
+	{
+		$finalArr[$row['filling_Name']] => $row['purchase_Amount'];
+	}
+
+	mysql_close($con);
+
+	return $finalArr;
+}
+
 
 ?>
 
