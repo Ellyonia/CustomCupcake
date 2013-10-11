@@ -1,4 +1,4 @@
-//function init() {
+
 
 
 
@@ -254,5 +254,3 @@
 		console.log('window loaded');
 	}, false);
 
-	
-//}
