@@ -18,6 +18,7 @@ Chris Linstromberg
 
          echo "email = ". $_SESSION['ID'];
          echo "\n password = ". $_SESSION['PW'];
+         header("Location: order.php");
 
     }
 
@@ -34,7 +35,7 @@ Chris Linstromberg
   </head>
 
   <body>
-    <form id="login" action = "" method = "post">
+    <form id="login" action = "index.php" method = "post">
         <div class="logEmail">
             <label>Email: </label>
             <input type="email" name = "email" id="email" required placeholder="email@example.com" oninvalid="setCustomValidity('Please eneter a valid email address')" onchange="try{setCustomValidity('')}catch(e){}"/>
@@ -57,7 +58,7 @@ Chris Linstromberg
 
 
 
-    <form id="register">
+    <form id="register" method = "post" action = "validateUserLogin.php">
         <header>Create a Custome Cupcake Account</header>
         <div class="hr"><hr /></div>
     <ul>
