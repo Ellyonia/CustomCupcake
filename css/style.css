@@ -84,20 +84,21 @@ fieldset{
 	top: -400px;
 	left: 200px;
 	clear: both;
+	border: ridge;
+	width: 90%;
 }
 
 #flavor fieldset {
-	width: 1100px;
+	
+	overflow: auto;
+
+}
+
+.testa {
 	overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
 }
-
-/*.testa {
-	overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}*/
 
 .test {
 	display: inline;
