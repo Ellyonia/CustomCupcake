@@ -305,6 +305,8 @@ var request = new XMLHttpRequest();
 
 			orders.append(listitem);
 
+			orders.css("list-style-type", "circle");
+
 			/*
 			$.ajax({
 	  			type: "POST",
