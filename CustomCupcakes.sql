@@ -6,6 +6,39 @@ CREATE SCHEMA IF NOT EXISTS `CustomCupcakes` DEFAULT CHARACTER SET latin1 COLLAT
 USE `CustomCupcakes` ;
 
 -- -----------------------------------------------------
+-- Table `CustomCupcakes`.`CupcakeIcing`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `CustomCupcakes`.`CupcakeIcing` (
+  `cupcakeIcing_ID` INT NOT NULL ,
+  `icing_Name` VARCHAR(20) NOT NULL ,
+  `purchase_Amount` INT NOT NULL ,
+  PRIMARY KEY (`cupcakeIcing_ID`) )
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `CustomCupcakes`.`CupcakeFlavor`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `CustomCupcakes`.`CupcakeFlavor` (
+  `cupcakeFlavor_ID` INT NOT NULL ,
+  `flavor_Name` VARCHAR(20) NOT NULL ,
+  `purchase_Amount` INT NOT NULL ,
+  PRIMARY KEY (`cupcakeFlavor_ID`) )
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `CustomCupcakes`.`CupcakeFilling`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `CustomCupcakes`.`CupcakeFilling` (
+  `cupcakeFilling_ID` INT NOT NULL ,
+  `filling_Name` VARCHAR(20) NOT NULL ,
+  `purchase_Amount` INT NOT NULL ,
+  PRIMARY KEY (`cupcakeFilling_ID`) )
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
 -- Table `CustomCupcakes`.`Customers`
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `CustomCupcakes`.`Customers` (
@@ -26,93 +59,58 @@ COMMENT = 'This table is for storing the information on the frequent cu' /* comm
 
 
 -- -----------------------------------------------------
--- Table `CustomCupcakes`.`CupcakeFlavor`
--- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `CustomCupcakes`.`CupcakeFlavor` (
-  `cupcakeFlavor_ID` INT NOT NULL ,
-  `flavor_Name` VARCHAR(20) NOT NULL ,
-  `purchase_Amount` INT NOT NULL ,
-  PRIMARY KEY (`cupcakeFlavor_ID`) )
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `CustomCupcakes`.`CupcakeIcing`
--- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `CustomCupcakes`.`CupcakeIcing` (
-  `cupcakeIcing_ID` INT NOT NULL ,
-  `icing_Name` VARCHAR(20) NOT NULL ,
-  `purchase_Amount` INT NOT NULL ,
-  PRIMARY KEY (`cupcakeIcing_ID`) )
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `CustomCupcakes`.`CupcakeTopping`
--- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `CustomCupcakes`.`CupcakeTopping` (
-  `cupcakeTopping_ID` INT NOT NULL ,
-  `topping_Name` VARCHAR(20) NOT NULL ,
-  `purchase_Amount` INT NOT NULL ,
-  PRIMARY KEY (`cupcakeTopping_ID`) )
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `CustomCupcakes`.`CupcakeFilling`
--- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `CustomCupcakes`.`CupcakeFilling` (
-  `cupcakeFilling_ID` INT NOT NULL ,
-  `filling_Name` VARCHAR(20) NOT NULL ,
-  `purchase_Amount` INT NOT NULL ,
-  PRIMARY KEY (`cupcakeFilling_ID`) )
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `CustomCupcakes`.`Orders`
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `CustomCupcakes`.`Orders` (
   `order_ID` INT NOT NULL ,
   `customer_ID` INT NOT NULL ,
-  `cupcakeFlavor_ID` INT NOT NULL ,
-  `cupcakeIcing_ID` INT NOT NULL ,
-  `cupcakeTopping_ID` INT NOT NULL DEFAULT 0 ,
-  `cupcakeFilling_ID` INT NOT NULL DEFAULT 0 ,
-  `cupcakeQuantity` INT NOT NULL DEFAULT 1 ,
   PRIMARY KEY (`order_ID`) ,
-  INDEX `customer_ID` (`customer_ID` ASC) ,
-  INDEX `cupcakeFlavor_ID` (`cupcakeFlavor_ID` ASC) ,
-  INDEX `cupcakeIcing_ID` (`cupcakeIcing_ID` ASC) ,
-  INDEX `cupcakeTopping_ID` (`cupcakeTopping_ID` ASC) ,
-  INDEX `cupcakeFilling_ID` (`cupcakeFilling_ID` ASC) ,
-  CONSTRAINT `customer_ID`
+  INDEX `customersF2_ID` (`customer_ID` ASC) ,
+  CONSTRAINT `customersF2_ID`
     FOREIGN KEY (`customer_ID` )
     REFERENCES `CustomCupcakes`.`Customers` (`customer_ID` )
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `cupcakeFlavor_ID`
-    FOREIGN KEY (`cupcakeFlavor_ID` )
-    REFERENCES `CustomCupcakes`.`CupcakeFlavor` (`cupcakeFlavor_ID` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `cupcakeIcing_ID`
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `CustomCupcakes`.`Cupcakes`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `CustomCupcakes`.`Cupcakes` (
+  `cupcake_ID` INT NOT NULL ,
+  `cupcakeFlavor_ID` INT NOT NULL ,
+  `cupcakeIcing_ID` INT NOT NULL ,
+  `cupcakeFilling_ID` INT NOT NULL DEFAULT 0 ,
+  `cupcakeQuantity` INT NOT NULL DEFAULT 1 ,
+  `order_ID` INT NOT NULL ,
+  PRIMARY KEY (`cupcake_ID`) ,
+  INDEX `icingF_ID` (`cupcakeIcing_ID` ASC) ,
+  INDEX `flavorF_ID` (`cupcakeFlavor_ID` ASC) ,
+  INDEX `fillingF_ID` (`cupcakeFilling_ID` ASC) ,
+  INDEX `orderF_ID` (`order_ID` ASC) ,
+  CONSTRAINT `icingF_ID`
     FOREIGN KEY (`cupcakeIcing_ID` )
     REFERENCES `CustomCupcakes`.`CupcakeIcing` (`cupcakeIcing_ID` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `cupcakeTopping_ID`
-    FOREIGN KEY (`cupcakeTopping_ID` )
-    REFERENCES `CustomCupcakes`.`CupcakeTopping` (`cupcakeTopping_ID` )
+  CONSTRAINT `flavorF_ID`
+    FOREIGN KEY (`cupcakeFlavor_ID` )
+    REFERENCES `CustomCupcakes`.`CupcakeFlavor` (`cupcakeFlavor_ID` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `cupcakeFilling_ID`
+  CONSTRAINT `fillingF_ID`
     FOREIGN KEY (`cupcakeFilling_ID` )
     REFERENCES `CustomCupcakes`.`CupcakeFilling` (`cupcakeFilling_ID` )
     ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `orderF_ID`
+    FOREIGN KEY (`order_ID` )
+    REFERENCES `CustomCupcakes`.`Orders` (`order_ID` )
+    ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-COMMENT = 'This table is for holding the current orders that Custom Cup' /* comment truncated */;
+COMMENT = '\n';
 
 
 -- -----------------------------------------------------
@@ -120,44 +118,58 @@ COMMENT = 'This table is for holding the current orders that Custom Cup' /* comm
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `CustomCupcakes`.`Favorites` (
   `favorite_ID` INT NOT NULL ,
-  `cupcakeFlavor_ID` INT NOT NULL ,
-  `cupcakeIcing_ID` INT NOT NULL ,
-  `cupcakeTopping_ID` INT NOT NULL ,
-  `cupcakeFilling_ID` INT NOT NULL ,
   `customer_ID` INT NOT NULL ,
+  `cupcake_ID` INT NOT NULL ,
+  `name` VARCHAR(45) NOT NULL ,
   PRIMARY KEY (`favorite_ID`) ,
-  INDEX `customer_ID` (`customer_ID` ASC) ,
-  INDEX `cupcakeFlavor_ID` (`cupcakeFlavor_ID` ASC) ,
-  INDEX `cupcakeIcing_ID` (`cupcakeIcing_ID` ASC) ,
-  INDEX `cupcakeTopping_ID` (`cupcakeTopping_ID` ASC) ,
-  INDEX `cupcakeFilling_ID` (`cupcakeFilling_ID` ASC) ,
+  INDEX `customerF_ID` (`customer_ID` ASC) ,
+  INDEX `cupcakesF_ID` (`cupcake_ID` ASC) ,
   CONSTRAINT `customerF_ID`
     FOREIGN KEY (`customer_ID` )
     REFERENCES `CustomCupcakes`.`Customers` (`customer_ID` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `cupcakeFlavorF_ID`
-    FOREIGN KEY (`cupcakeFlavor_ID` )
-    REFERENCES `CustomCupcakes`.`CupcakeFlavor` (`cupcakeFlavor_ID` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `cupcakeIcingF_ID`
-    FOREIGN KEY (`cupcakeIcing_ID` )
-    REFERENCES `CustomCupcakes`.`CupcakeIcing` (`cupcakeIcing_ID` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `cupcakeToppingF_ID`
-    FOREIGN KEY (`cupcakeTopping_ID` )
-    REFERENCES `CustomCupcakes`.`CupcakeTopping` (`cupcakeTopping_ID` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `cupcakeFillingF_ID`
-    FOREIGN KEY (`cupcakeFilling_ID` )
-    REFERENCES `CustomCupcakes`.`CupcakeFilling` (`cupcakeFilling_ID` )
+  CONSTRAINT `cupcakesF_ID`
+    FOREIGN KEY (`cupcake_ID` )
+    REFERENCES `CustomCupcakes`.`Cupcakes` (`cupcake_ID` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
 COMMENT = 'A listing of a Customers Favorite Cupcakes and their compone' /* comment truncated */;
+
+
+-- -----------------------------------------------------
+-- Table `CustomCupcakes`.`Toppings`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `CustomCupcakes`.`Toppings` (
+  `topping_ID` INT NOT NULL ,
+  `topping_Name` VARCHAR(20) NOT NULL ,
+  `purchase_Amount` INT NOT NULL ,
+  PRIMARY KEY (`topping_ID`) )
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `CustomCupcakes`.`CupcakeToppings`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `CustomCupcakes`.`CupcakeToppings` (
+  `cupcake_ID` INT NOT NULL ,
+  `topping_ID` INT NOT NULL ,
+  `Rn_ID` INT NOT NULL ,
+  PRIMARY KEY (`Rn_ID`) ,
+  INDEX `cupcakeF_ID` (`cupcake_ID` ASC) ,
+  INDEX `toppingF_ID` (`topping_ID` ASC) ,
+  CONSTRAINT `cupcakeF_ID`
+    FOREIGN KEY (`cupcake_ID` )
+    REFERENCES `CustomCupcakes`.`Cupcakes` (`cupcake_ID` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `toppingF_ID`
+    FOREIGN KEY (`topping_ID` )
+    REFERENCES `CustomCupcakes`.`Toppings` (`topping_ID` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
 
 
