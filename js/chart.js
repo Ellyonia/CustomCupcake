@@ -13,12 +13,17 @@ request.onreadystatechange = function(e) {
 		var toppingsChart = jsonData.salesToppings;
         var flavorChart = jsonData.salesFlavor;
         var ctx = document.getElementById("myChart").getContext("2d");
- 
+ var myNewChart = new Chart(ctx).PolarArea(data);
+
+ var ctx = $("#myChart").get(0).getContext("2d");
+//This will get the first returned node in the jQuery collection.
+var myNewChart = new Chart(ctx);
+
         //The options we are going to pass to the chart
         options1 = {
             barDatasetSpacing : 15,
             barValueSpacing: 10,
-            barStrokeWidth: 20
+            barStrokeWidth: 15
         };
 
         // options2 = {
