@@ -25,8 +25,8 @@ request.onreadystatechange = function(e){
 				img.setAttribute("src", "artwork/" + jsonData.menu.cakes[i].img_url);
 				img.setAttribute("value", jsonData.menu.cakes[i].flavor);
 				//document.body.appendChild(img); //adds the image to the document
-				div.appendChild("img");
-				div.appendChild("flavorflav");
+				div.appendChild(img);
+				div.appendChild(flavorflav);
 				div.onclick = function(){
 					$(this).addClass("selected");
 				};
