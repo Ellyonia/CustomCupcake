@@ -28,8 +28,8 @@ request.onreadystatechange = function(e){
 				//document.body.appendChild(img); //adds the image to the document
 				div.appendChild(img);
 				div.appendChild(flavorflav);
-				var innerDiv = $(div);
-				innderDiv.addClass("test");
+				
+				$(div).addClass("test");
 				div.onclick = function(){
 					$(".div").removeClass("selected");
 					$(this).addClass("selected");
