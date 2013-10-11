@@ -90,7 +90,7 @@ fieldset{
 	width: 82%;
 }
 
-.test {
+.test ul {
 	overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -191,11 +191,11 @@ li {
 }
 
 .reset {
-	position: relative;
+	position: absolute;
 }
 
 .update {
-	position: relative;
+	position: absolute;
 	/*left: 130px;*/
 	/*top: -200px;*/
 }
