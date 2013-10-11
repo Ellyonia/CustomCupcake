@@ -14,7 +14,7 @@ var request = new XMLHttpRequest();
 
 	$(document).ready( function() {
 
-				var request = new XMLHttpRequest();
+		var request = new XMLHttpRequest();
 		var mImages = new Array();
 		var mCurrentIndex = 0;
 
@@ -238,6 +238,23 @@ var request = new XMLHttpRequest();
 			//}
 
 
+			}
+		}
+		});
+
+	$('#reset').click(function() {
+
+			console.log("HI");
+			
+			var url = "addUserFavorite.php";
+			var pass = "jsonArr=" + JSON.stringify(json);
+			console.log(pass);
+
+			request.onreadystatechange = function(e){
+				
+			if(request.readyState === 4)
+			{
+		  		$.post("addUserFavorite.php", { 'jsonArr' : "John" } );
 			}
 		}
 		});
