@@ -101,13 +101,7 @@ request.onreadystatechange = function(e){
 
 });
 
-function waitForClick(){
-	while(true){
-			$("flavor").on("click", function() {
-		    $(this).css("background", "red");
-		})
-	}
-}
+
 
 function onMouseDown(e){
 
@@ -135,7 +129,11 @@ window.addEventListener('load', function() {
 	console.log('window loaded');
 }, false);
 
-
+$(document).ready(fcuntion(){
+			$("flavor").on("click", function() {
+		    $(this).css("background", "red");
+		})
+})
 
 
 
