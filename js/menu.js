@@ -92,9 +92,7 @@ request.onreadystatechange = function(e){
 			
 		}
 
-		$("flavor").on("click", function() {
-		    $(this).css("background", "red");
-		})
+		waitForClick();
 
 		/*$('#flavor').click().css('background-color', '').css('background-color', 'blue');*/
 	}
@@ -103,6 +101,13 @@ request.onreadystatechange = function(e){
 
 });
 
+function waitForClick(){
+	while(true){
+			$("flavor").on("click", function() {
+		    $(this).css("background", "red");
+		})
+	}
+}
 
 function onMouseDown(e){
 
