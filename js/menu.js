@@ -222,6 +222,7 @@ var request = new XMLHttpRequest();
 			console.log(pass);
 			//alert("FUCK THIS SHIT");
 			request.onreadystatechange = function(){
+				console.log("FUCK");
 				
 			if(request.readyState === 4 && request.status === 200){
 				console.log("NO MORE");
