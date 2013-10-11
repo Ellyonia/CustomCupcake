@@ -10,22 +10,16 @@
 	</head>
 	<body>
 			<form id = "orderForm">
-					<a>Order</a>
-					<div class="orderForm">
-						<ul class = "orderList">
-
-
-				<div id = 'order'>
+				<a>Order</a>
+				<div class="orderForm">
+					<div id = 'order'>
 						<a>Order</a>
-						<div>
-							<ul class = "orderList">
-
-
+							<div>
 							</ul>
-						</div>
-						<div class = "submitOrder">
-							<input type="submit" value="Order" id="submitOrder" /> 
-						</div>
+					</div>
+					<div class = "submitOrder">
+						<input type="submit" value="Order" id="submitOrder" /> 
+					</div>
 				</div>
 				<div id = 'fav'>
 					<fieldset>
