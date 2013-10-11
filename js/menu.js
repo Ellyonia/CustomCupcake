@@ -122,6 +122,10 @@ request.onreadystatechange = function(e){
 				container.appendChild(par);
 				$(container).addClass("member");
 				listitem.appendChild(container);
+				container.onclick = function(){
+					$(".selected").removeClass("selected");
+					$(this).addClass("selected");
+				};
 				myCake.append(listitem);
 				$('#' + myId).css('background-color', jsonData.menu.fillings[i].rgb);
 				//document.getElementById(myId).style.bgcolor=jsonData.menu.fillings[i].rgb;
