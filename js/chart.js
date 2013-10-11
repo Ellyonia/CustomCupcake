@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+TChart();
+    FChart();
+
     var request = new XMLHttpRequest();
     var path = 'http://ec2-54-200-98-78.us-west-2.compute.amazonaws.com/CustomCupcake/data/sales.json';
     request.open("GET",path, true);
@@ -44,6 +47,5 @@ $(document).ready(function() {
 
     }
 
-    TChart();
-    FChart();
+    
 });
