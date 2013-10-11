@@ -90,10 +90,6 @@ fieldset{
 	width: 82%;
 }
 
-.test {
-	float: left;
-}
-
 #flavor div {
 	overflow-x: scroll;
     overflow-y: hidden;
