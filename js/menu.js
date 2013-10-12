@@ -284,11 +284,11 @@ var request = new XMLHttpRequest();
 			var orders = $("#order div ul");
 			var listitem = document.createElement("li");
 
-			var par = document.createElement("p");
-			par.innerHTML = temp;
-			$(par).attr('value', $('amount').attr('value'));
-			$(par).attr('class', 'inOrder');
-			listitem.appendChild(par);
+			var div = document.createElement("div");
+			div.innerHTML = temp;
+			$(div).attr('value', $('amount').attr('value'));
+			$(div).attr('class', 'inOrder');
+			listitem.appendChild(div);
 			orders.append(listitem);
 			$("#order div ul li").css({"list-style-type":"circle", "display":"block"});
 });
