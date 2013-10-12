@@ -287,8 +287,7 @@ var request = new XMLHttpRequest();
 			var par = document.createElement("p");
 			par.innerHTML = temp;
 			$(par).attr('value', $('amount').attr('value'));
-			//$(".boxes").attr('checked', false);
-			//listitem.appendChild(document.createTextNode(temp));
+			$(par).attr('class', 'inOrder');
 			listitem.appendChild(par);
 			orders.append(listitem);
 			$("#order div ul li").css({"list-style-type":"circle", "display":"block"});
@@ -314,6 +313,12 @@ var request = new XMLHttpRequest();
 
 		$('#submitOrder').click(function() {
 			var datastring = '';
-			alert(' ');
+			var sum;
+
+			$('.inOrder').each(function() {
+        	sum += Number($(this).val());
+    		});
+
+			alert(sum);
 });
 
