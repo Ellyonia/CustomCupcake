@@ -316,11 +316,19 @@ var request = new XMLHttpRequest();
 		$('#submitOrder').click(function() {
 			var datastring = '';
 			var sum = 0;
+			var myString = 'You have ordered: \n';
+			var cake;
+			var num;
 
 			$('#order .inOrder').each(function() {
         	sum += Number($(this).attr('data-number'));
+        	num = Number($(this).attr('data-number'));
+        	myString = myString + num;
+        	cake = this.innerHTML;
+        	myString = myString + " " + cake + "\n";
     		});
-
-			alert(sum);
+			myString = myString + "\n";
+			myString = myString + "Total: $" + sum;
+			alert(myString);
 });
 
