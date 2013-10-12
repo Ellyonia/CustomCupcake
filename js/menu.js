@@ -286,7 +286,7 @@ var request = new XMLHttpRequest();
 
 			var div = document.createElement("div");
 			div.innerHTML = temp;
-			var num = $('amount').attr('value');
+			var num = $('amount').val();
 			console.log(num);
 			$(div).val(num);
 			$(div).attr('class', 'inOrder');
