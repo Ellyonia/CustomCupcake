@@ -313,10 +313,10 @@ var request = new XMLHttpRequest();
 
 		$('#submitOrder').click(function() {
 			var datastring = '';
-			var sum;
+			var sum = 0;
 
 			$('.inOrder').each(function() {
-        	sum += Number($(this).val());
+        	sum += Number($(this).attr('value'));
     		});
 
 			alert(sum);
