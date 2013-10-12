@@ -286,7 +286,7 @@ var request = new XMLHttpRequest();
 
 			var par = document.createElement("p");
 			par.innerHTML = temp;
-			par.attr('value', $('amount').attr('value'));
+			$(par).attr('value', $('amount').attr('value'));
 			//$(".boxes").attr('checked', false);
 			//listitem.appendChild(document.createTextNode(temp));
 			listitem.appendChild(par);
