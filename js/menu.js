@@ -313,19 +313,7 @@ var request = new XMLHttpRequest();
 });
 
 		$('#submitOrder').click(function() {
-			var datastring = "lol";
-			$.ajax({
-  			type: "POST",
-  			dataType: "text",
-  			data: "jsonArr=" + json,
-  			url: 'addUserFavorite.php',
-  			success: function(e) {
-  				//var message = e.responseText;
-        		alert(e);
-    		},
-    		error: function(){
-        	alert("neigh");
-    }
-});
+			var datastring = '';
+			alert(' ');
 });
 
