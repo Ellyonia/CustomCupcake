@@ -260,46 +260,38 @@ var request = new XMLHttpRequest();
 });
 
 
-	$('#amount').click(function() {
-			var datastring = "lol";
-			$.ajax({
-  			type: "POST",
-  			dataType: "text",
-  			data: "test=" + datastring,
-  			url: 'addUserFavorite.php',
-  			success: function(e) {
-  				//var message = e.responseText;
-        		alert(e);
-    		},
-    		error: function(){
-        	alert("neigh");
-    }
-});
-});
+// 	$('#amount').click(function() {
+// 			var datastring = "lol";
+// 			$.ajax({
+//   			type: "POST",
+//   			dataType: "text",
+//   			data: "test=" + datastring,
+//   			url: 'addUserFavorite.php',
+//   			success: function(e) {
+//   				//var message = e.responseText;
+//         		alert(e);
+//     		},
+//     		error: function(){
+//         	alert("neigh");
+//     }
+// });
+// });
 
 
 	$('#update').click(function() {
 			var datastring = "lol"; //create json of the attributes (see ccAPI line#72 for formatting) and stringify it
-
 			var temp = $('.CFlavor').find('.selected').attr('value');
-
 			var orders = $("#order div ul");
-
 			var listitem = document.createElement("li");
 
-			listitem.appendChild(document.createTextNode(temp));
-
+			var par = document.createElement("p");
+			par.innerHTML = temp;
+			par.attr('value', $('amount').attr('value'));
+			//$(".boxes").attr('checked', false);
+			//listitem.appendChild(document.createTextNode(temp));
+			listitem.appendChild(par);
 			orders.append(listitem);
-
 			$("#order div ul li").css({"list-style-type":"circle", "display":"block"});
-
-			/*
-			$.ajax({
-	  			type: "POST",
-	  			data: "jsonArr=" + datastring,
-	  			url: 'newOrder.php'
-   
-			});*/
 });
 
 
@@ -319,3 +311,21 @@ var request = new XMLHttpRequest();
     }
 });
 });
+
+		$('#submitOrder').click(function() {
+			var datastring = "lol";
+			$.ajax({
+  			type: "POST",
+  			dataType: "text",
+  			data: "jsonArr=" + json,
+  			url: 'addUserFavorite.php',
+  			success: function(e) {
+  				//var message = e.responseText;
+        		alert(e);
+    		},
+    		error: function(){
+        	alert("neigh");
+    }
+});
+});
+
