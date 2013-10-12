@@ -286,9 +286,9 @@ var request = new XMLHttpRequest();
 
 			var div = document.createElement("div");
 			div.innerHTML = temp;
-			var num = String($('#amount').val());
+			var num = $('#amount').val();
 			console.log(num);
-			$(div).val(num);
+			$(div).attr('data-number', num);
 			$(div).attr('class', 'inOrder');
 			listitem.appendChild(div);
 			orders.append(listitem);
@@ -318,7 +318,7 @@ var request = new XMLHttpRequest();
 			var sum = 0;
 
 			$('#order .inOrder').each(function() {
-        	sum += Number($(this).attr('value'));
+        	sum += Number($(this).attr('data-number'));
     		});
 
 			alert(sum);
